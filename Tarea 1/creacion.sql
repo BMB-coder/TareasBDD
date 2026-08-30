@@ -12,22 +12,14 @@ CREATE TABLE Prevision (
     Nombre VARCHAR(500) UNIQUE NOT NULL
 );
 
-INSERT INTO Prevision (Nombre) VALUES ('Fonasa'), ('Isapre'), ('Particular');
-
 CREATE TABLE Especialidad (
     Tipo_Especialidad VARCHAR(100) PRIMARY KEY
 );
-
-INSERT INTO Especialidad (Tipo_Especialidad) VALUES 
-('Cardiología'), ('Pediatría'), ('Traumatología'), ('Medicina General'), ('Dermatología');
 
 CREATE TABLE Estado_Cita (
     ID_Estado SERIAL PRIMARY KEY,
     Nombre VARCHAR(20) UNIQUE NOT NULL
 );
-
-INSERT INTO Estado_Cita (Nombre) VALUES 
-('Reservada'), ('Confirmada'), ('Atendida'), ('No Asistió'), ('Cancelada');
 
 CREATE TABLE Diagnostico (
     Codigo VARCHAR(10) PRIMARY KEY,
