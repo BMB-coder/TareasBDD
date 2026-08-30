@@ -5,12 +5,13 @@
 CREATE DATABASE salud_usm;
 \c salud_usm;
 
+
+-- CREACIÓN DE CATÁLOGOS
 CREATE TABLE Prevision (
     ID_Prevision SERIAL PRIMARY KEY,
     Nombre VARCHAR(500) UNIQUE NOT NULL
 );
 
--- CREACIÓN DE CATÁLOGOS
 INSERT INTO Prevision (Nombre) VALUES ('Fonasa'), ('Isapre'), ('Particular');
 
 CREATE TABLE Especialidad (
