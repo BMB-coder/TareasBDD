@@ -36,7 +36,7 @@ CREATE TABLE Diagnostico (
 
 -- CREACIÓN DE ENTIDADES PRINCIPALES
 CREATE TABLE Centro_Medico (
-    Codigo_interno SERIAL PRIMARY KEY
+    Codigo_interno SERIAL PRIMARY KEY,
     Nombre VARCHAR(150) NOT NULL,
     Comuna VARCHAR(150) NOT NULL,
     Region INT NOT NULL
