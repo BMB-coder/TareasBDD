@@ -1,8 +1,0 @@
-Supuestos Utilizados:
-	1. El médico no puede tener dos citas a la misma fecha y hora, aunque sea en distintos centros médicos.
-	2. Una entidad puede tener varios identificadores mientras todo ellos tengan presencia única (Unicidad).
-	3. Un paciente puede o no tener una cita agendada, ya que existen pacientes en la base de datos de un centro médico aunque no tengan citas.
-	4. Un diagnóstico existe solo si existe una atención.
-	5. Cada especialidad se diferencian por su nombre, no hay especialidades con el mismo nombre.
-	6. No fue necesario mencionar la visibilidad ni el tipo de atributo.
-	7. Un centro médico para ser considerado debe tener al menos un médico.
