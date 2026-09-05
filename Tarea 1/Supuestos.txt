@@ -1,0 +1,7 @@
+Supuestos Utilizados:
+	1. El médico no puede tener dos citas a la misma fecha y hora, aunque sea en distintos centros médicos.
+	2. Una entidad puede tener varios identificadores mientras todo ellos tengan presencia única (Unicidad).
+	3. Un paciente puede o no tener una cita agendada, ya que existen pacientes en la base de datos de un centro médico aunque no tengan citas.
+	5. No fue necesario mencionar la visibilidad ni el tipo de atributo.
+	6. Se asume para el DDL y las consultas que al ingresar un médico a la BDD si o si se ingresa al menos una especialidad.
+	7. Un clave primaria (PK) es considerada tanto Not Null (NN) como Unique (UQ), por lo que no es necesario mencionar las otras restricciones.
