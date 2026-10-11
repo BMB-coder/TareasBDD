@@ -1,0 +1,6 @@
+{
+    "nombre": "Administrador de prueba",
+    "email": "admin.prueba@example.test",
+    "contrasena_hash": "REEMPLAZAR",
+    "rol": "Administrador"
+}
