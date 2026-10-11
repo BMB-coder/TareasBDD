@@ -115,3 +115,28 @@ CREATE TABLE Atencion_Diagnostico (
     FOREIGN KEY (ID_Atencion) REFERENCES Atencion(ID_Atencion) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (Codigo) REFERENCES Diagnostico(Codigo) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB;
+
+-- MODIFICACION PARA INTEGRACCION DE ACCESOS
+ALTER TABLE Paciente ADD COLUMN Contrasena VARCHAR(255) NOT NULL DEFAULT 'Paciente123*';
+ALTER TABLE Medico ADD COLUMN Contrasena VARCHAR(255) NOT NULL DEFAULT 'Medico123*';
+
+-- Crear la tabla exclusiva para el Admin del sistema
+CREATE TABLE Administrador (
+    ID_Admin INT AUTO_INCREMENT PRIMARY KEY,
+    Username VARCHAR(50) UNIQUE NOT NULL,
+    Contrasena VARCHAR(255) NOT NULL
+) ENGINE=InnoDB;
+
+-- Crear la cuenta fundacional del Admin
+INSERT INTO Administrador (Username, Contrasena) VALUES ('admin_salud', 'Admin123*');
+
+-- Repetir diagnósticos específicos usando subconsultas para manipular la estadística
+-- Paso necesario para generar los casos para los reportes.
+INSERT IGNORE INTO Atencion_Diagnostico (ID_Atencion, Codigo)
+SELECT ID_Atencion, 'J03' FROM Atencion LIMIT 10;
+
+INSERT IGNORE INTO Atencion_Diagnostico (ID_Atencion, Codigo)
+SELECT ID_Atencion, 'I10' FROM Atencion LIMIT 8;
+
+INSERT IGNORE INTO Atencion_Diagnostico (ID_Atencion, Codigo)
+SELECT ID_Atencion, 'E11' FROM Atencion LIMIT 6;

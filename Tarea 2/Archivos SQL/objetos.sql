@@ -1,4 +1,4 @@
--- Procedimiento Almacenado usado para cumplir con la actualizacion de citas vencidas
+-- Procedimiento Almacenado usado para cumplir con la actualizacion de citas vencidas y poblamiento de BD
 
 DELIMITER //
 
@@ -10,6 +10,104 @@ BEGIN
     SET ID_Estado = 5
     WHERE ID_Estado IN (1, 2)
       AND Fecha_Hora < NOW();
+END //
+
+DELIMITER ;
+
+DELIMITER //
+
+CREATE PROCEDURE PoblarBD()
+BEGIN
+    DECLARE i INT DEFAULT 1;
+    DECLARE v_id_cita INT;
+    DECLARE v_id_atencion INT;
+    DECLARE v_estado INT;
+    DECLARE v_id_med_general INT;
+    DECLARE v_rut_medico VARCHAR(10);
+    DECLARE v_codigo_centro INT;
+    DECLARE v_id_prevision INT;
+
+    -- Obtener la especialidad base dinámicamente
+    SELECT ID_Especialidad INTO v_id_med_general FROM Especialidad WHERE Nombre = 'Medicina General' LIMIT 1;
+
+    -- 1. Insertar 15 Médicos
+    SET i = 1;
+    WHILE i <= 15 DO
+        SET v_rut_medico = CONCAT(LPAD(i, 8, '0'), '-K');
+        SET v_codigo_centro = 1 + (i % 4);
+        
+        INSERT INTO Medico (RUT_Medico, Nombre, Email, Contrasena) VALUES 
+            (v_rut_medico, CONCAT('Dr. Automático ', i), CONCAT('doc', i, '@saludusm.cl'), 'Medico123*');
+        INSERT INTO Centro_Medico_Del_Medico (Codigo_Interno, RUT_Medico) VALUES (v_codigo_centro, v_rut_medico);
+        INSERT INTO Medico_Especialidad (RUT_Medico, ID_Especialidad, Numero_Especialidad) VALUES (v_rut_medico, v_id_med_general, 1);
+        
+        SET i = i + 1;
+    END WHILE;
+
+    -- 2. Insertar 40 Pacientes (con búsqueda dinámica de ID de previsión)
+    SET i = 1;
+    WHILE i <= 40 DO
+        IF (i % 3) = 0 THEN
+            SELECT ID_Prevision INTO v_id_prevision FROM Prevision WHERE Tipo = 'Fonasa' LIMIT 1;
+        ELSEIF (i % 3) = 1 THEN
+            SELECT ID_Prevision INTO v_id_prevision FROM Prevision WHERE Tipo = 'Isapre' LIMIT 1;
+        ELSE
+            SELECT ID_Prevision INTO v_id_prevision FROM Prevision WHERE Tipo = 'Particular' LIMIT 1;
+        END IF;
+
+        -- Valor por defecto por si falla el SELECT
+        IF v_id_prevision IS NULL THEN
+            SET v_id_prevision = 1;
+        END IF;
+
+        INSERT INTO Paciente (RUT_Paciente, Nombre, Fecha_Nacimiento, Sexo, ID_Prevision, Comuna, Contrasena) VALUES
+            (CONCAT(LPAD((i + 100), 8, '0'), '-9'), CONCAT('Paciente Genérico ', i), '1990-05-14', 'F', v_id_prevision, 'Valparaíso', 'Paciente123*');
+        SET i = i + 1;
+    END WHILE;
+
+    -- 3. Insertar 120 Citas
+    SET i = 1;
+    WHILE i <= 120 DO
+        -- DISTRIBUCIÓN DE ESTADOS CORREGIDA
+        IF i <= 65 THEN 
+            SET v_estado = 3; 
+        ELSE 
+            CASE (i % 4)
+                WHEN 0 THEN SET v_estado = 1; -- Reservada
+                WHEN 1 THEN SET v_estado = 2; -- Confirmada
+                WHEN 2 THEN SET v_estado = 4; -- No Asistió
+                ELSE SET v_estado = 5;        -- Cancelada
+            END CASE;
+        END IF;
+        
+        -- Definir el RUT del médico
+        IF i <= 20 THEN 
+            SET v_rut_medico = '00000001-K'; 
+        ELSE 
+            SET v_rut_medico = CONCAT(LPAD(((i % 15) + 1), 8, '0'), '-K'); 
+        END IF;
+
+        -- Solución unificada: Buscar dinámicamente un centro donde ESTE médico sí atienda
+        SELECT Codigo_Interno INTO v_codigo_centro 
+        FROM Centro_Medico_Del_Medico 
+        WHERE RUT_Medico = v_rut_medico 
+        LIMIT 1;
+
+        INSERT INTO Cita (Fecha_Hora, RUT_Paciente, RUT_Medico, Codigo_Interno, ID_Especialidad, ID_Estado) VALUES
+            (DATE_ADD('2026-09-01 08:00:00', INTERVAL (i * 2) HOUR), CONCAT(LPAD(((i % 40) + 101), 8, '0'), '-9'), v_rut_medico, v_codigo_centro, v_id_med_general, v_estado);
+
+        SET v_id_cita = LAST_INSERT_ID();
+
+        IF v_estado = 3 AND v_id_cita > 0 THEN
+            INSERT INTO Atencion (ID_Cita, Motivo, Observaciones, ID_Estado) VALUES (v_id_cita, 'Control médico', 'Estable', 3);
+            SET v_id_atencion = LAST_INSERT_ID();
+            
+            INSERT INTO Atencion_Diagnostico (ID_Atencion, Codigo) VALUES (v_id_atencion, 'J00');
+            INSERT INTO Receta (ID_Atencion, Medicamento, Dosis, Dias_Tratamiento) VALUES (v_id_atencion, 'Paracetamol', '500mg', 5);
+        END IF;
+        
+        SET i = i + 1;
+    END WHILE;
 END //
 
 DELIMITER ;
