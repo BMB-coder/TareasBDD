@@ -39,6 +39,14 @@ $centros = $stmt->fetchAll();
     <div class="container">
         <h2 class="mb-4">Dashboard de Gestión</h2>
         
+        <!-- Accesos Rápidos del Administrador -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <a href="centros_medicos.php" class="btn btn-primary shadow-sm me-2">Gestionar Centros Médicos</a>
+                <a href="medicos.php" class="btn btn-primary shadow-sm">Gestionar Médicos y Asignaciones</a>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-8">
                 <div class="card shadow-sm border-0">
