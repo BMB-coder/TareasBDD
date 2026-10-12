@@ -66,8 +66,9 @@ function buscarCuenta(PDO $db, string $email): ?array {
         }
     }
     require_once __DIR__ . '/archivo_admin.php';
-    $admin = leerArchivoAdmin();
-    if (strtolower(trim($admin['email'])) === $email) {
+    // Sin JSON solo falla el acceso del administrador; pacientes y medicos siguen entrando.
+    $admin = leerArchivoAdminOpcional();
+    if ($admin !== null && strtolower(trim($admin['email'])) === $email) {
         $cuentas[] = ['id' => 'administrador', 'nombre' => $admin['nombre'],
             'email' => $admin['email'], 'hash' => $admin['contrasena_hash'],
             'rol' => 'Administrador'];

@@ -52,14 +52,18 @@ function crearPacienteRegistrado(PDO $db, array $datos, string $clave): void {
     $archivo = null;
     try {
         // Lectura protegida del JSON. Toda futura escritura debe usar LOCK_EX.
-        $archivo = @fopen(ARCHIVO_ADMINISTRADOR, 'rb');
-        if ($archivo === false || !flock($archivo, LOCK_SH)) {
-            throw new RuntimeException('No se puede leer el archivo privado del administrador.');
-        }
-        $admin = json_decode(stream_get_contents($archivo), true, 512, JSON_THROW_ON_ERROR);
-        if (!is_array($admin) || !isset($admin['email']) || !is_string($admin['email'])
-            || !filter_var($admin['email'], FILTER_VALIDATE_EMAIL)) {
-            throw new RuntimeException('Correo del administrador ausente o invalido.');
+        // Sin JSON no hay administrador con quien compartir el correo.
+        $admin = null;
+        if (is_file(ARCHIVO_ADMINISTRADOR)) {
+            $archivo = @fopen(ARCHIVO_ADMINISTRADOR, 'rb');
+            if ($archivo === false || !flock($archivo, LOCK_SH)) {
+                throw new RuntimeException('No se puede leer el archivo privado del administrador.');
+            }
+            $admin = json_decode(stream_get_contents($archivo), true, 512, JSON_THROW_ON_ERROR);
+            if (!is_array($admin) || !isset($admin['email']) || !is_string($admin['email'])
+                || !filter_var($admin['email'], FILTER_VALIDATE_EMAIL)) {
+                throw new RuntimeException('Correo del administrador ausente o invalido.');
+            }
         }
         $db->beginTransaction();
         $q = $db->prepare('SELECT 1 FROM paciente WHERE RUT_Paciente = ? LIMIT 1');
@@ -75,7 +79,7 @@ function crearPacienteRegistrado(PDO $db, array $datos, string $clave): void {
                 throw new DomainException('Ese correo ya está en uso. Utiliza otro correo.');
             }
         }
-        if (strtolower(trim($admin['email'])) === $datos['email']) {
+        if ($admin !== null && strtolower(trim($admin['email'])) === $datos['email']) {
             throw new DomainException('Ese correo ya está en uso. Utiliza otro correo.');
         }
         $q = $db->prepare('SELECT 1 FROM prevision WHERE ID_Prevision = ?');

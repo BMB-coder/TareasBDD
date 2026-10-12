@@ -9,6 +9,12 @@
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
+-- Datos de prueba: las fechas de las citas son relativas al dia de importacion
+-- (@lunes = lunes de la semana actual), asi siempre existen citas pasadas,
+-- del dia y futuras. Se calcula antes de cambiar time_zone para usar la hora local.
+-- NO reemplazar este archivo con una exportacion de phpMyAdmin: fijaria las fechas.
+SET @hoy = CURDATE();
+SET @lunes = DATE_SUB(@hoy, INTERVAL WEEKDAY(@hoy) DAY);
 SET time_zone = "+00:00";
 
 
@@ -73,6 +79,29 @@ CREATE TABLE `atencion` (
   `Nro_Cita` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `atencion`
+--
+
+INSERT INTO `atencion` (`Nro_Atencion`, `Motivo_Atencion`, `Observaciones_Atencion`, `Nro_Cita`) VALUES
+(1, 'Fiebre y congestión nasal', 'Rinofaringitis; presión arterial elevada en control.', 1),
+(2, 'Dolor de garganta y fiebre', 'Amígdalas inflamadas con exudado.', 2),
+(3, 'Irritación cutánea en antebrazos', 'Dermatitis de contacto leve.', 3),
+(4, 'Control de presión arterial', 'Presión 150/95 mmHg. Se ajusta tratamiento.', 5),
+(5, 'Tos y dificultad respiratoria', 'Sibilancias leves, cuadro viral asociado.', 6),
+(6, 'Cefalea recurrente', 'Migraña sin aura, examen neurológico normal.', 8),
+(7, 'Dolor epigástrico y acidez', 'Dolor a la palpación en epigastrio.', 10),
+(8, 'Insomnio y ansiedad', 'Síntomas ansiosos de 3 meses de evolución.', 12),
+(9, 'Dolor lumbar tras caída', 'Esguince de tobillo y lumbago mecánico.', 13),
+(10, 'Control cardiovascular', 'Hipertensión y glicemia elevada.', 15),
+(11, 'Resfrío y dolor de espalda', 'Cuadro viral leve y contractura dorsal.', 16),
+(12, 'Control de diabetes', 'Hemoglobina glicosilada 7,8%.', 18),
+(13, 'Dolor lumbar persistente', 'Lumbago sin irradiación.', 19),
+(14, 'Malestar general', 'Resfrío común; presión arterial controlada.', 20),
+(15, 'Ansiedad y dolor cervical', 'Mejoría parcial con tratamiento.', 22),
+(16, 'Diarrea y control de glicemia', 'Gastroenteritis aguda en paciente diabético.', 24),
+(17, 'Control de resfrío', 'Evolución favorable; sin indicación de fármacos.', 26);
+
 -- --------------------------------------------------------
 
 --
@@ -83,6 +112,41 @@ CREATE TABLE `atencion_diagnostico` (
   `Nro_Atencion` int(11) NOT NULL,
   `Codigo_Diagnostico` varchar(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `atencion_diagnostico`
+--
+
+INSERT INTO `atencion_diagnostico` (`Nro_Atencion`, `Codigo_Diagnostico`) VALUES
+(1, 'J00'),
+(1, 'I10'),
+(2, 'J03'),
+(2, 'J00'),
+(3, 'L30'),
+(4, 'I10'),
+(5, 'J00'),
+(5, 'J45'),
+(6, 'G43'),
+(7, 'K29'),
+(7, 'K21'),
+(8, 'F41'),
+(9, 'M54'),
+(9, 'S93'),
+(10, 'I10'),
+(10, 'E11'),
+(11, 'J00'),
+(11, 'M54'),
+(12, 'E11'),
+(12, 'J00'),
+(13, 'M54'),
+(14, 'J00'),
+(14, 'I10'),
+(15, 'F41'),
+(15, 'M54'),
+(16, 'E11'),
+(16, 'A09'),
+(17, 'J00'),
+(17, 'I10');
 
 -- --------------------------------------------------------
 
@@ -102,8 +166,11 @@ CREATE TABLE `centro_medico` (
 --
 
 INSERT INTO `centro_medico` (`Codigo_Centro`, `Nombre_Centro`, `Comuna_Centro`, `Region_Centro`) VALUES
-(1, 'CentroGenerico0', 'San Joaquín', 'RM'),
-(2, 'CentroPrueba1', 'San Joaquín', 'RM');
+(1, 'SaludUSM San Joaquín', 'San Joaquín', 'RM'),
+(2, 'SaludUSM Vitacura', 'Vitacura', 'RM'),
+(3, 'SaludUSM Valparaíso', 'Valparaíso', 'VA'),
+(4, 'SaludUSM Viña del Mar', 'Viña del Mar', 'VA'),
+(5, 'SaludUSM Concepción', 'Concepción', 'BI');
 
 -- --------------------------------------------------------
 
@@ -122,7 +189,15 @@ CREATE TABLE `centro_medico_medico` (
 
 INSERT INTO `centro_medico_medico` (`Codigo_Centro`, `RUT_Medico`) VALUES
 (1, '00000000-1'),
-(2, '00000000-1');
+(2, '00000000-1'),
+(3, '12345678-9'),
+(4, '12345678-9'),
+(1, '98765432-1'),
+(2, '13579246-8'),
+(5, '13579246-8'),
+(3, '17246813-5'),
+(5, '17246813-5'),
+(4, '16482753-1');
 
 -- --------------------------------------------------------
 
@@ -146,8 +221,54 @@ CREATE TABLE `cita` (
 --
 
 INSERT INTO `cita` (`Nro_Cita`, `Fecha_Cita`, `Hora_Cita`, `Codigo_Centro`, `RUT_Paciente`, `RUT_Medico`, `ID_Especialidad`, `ID_Estado`) VALUES
-(1, '2026-01-06', '10:40:00', 1, '00000000-0', '00000000-1', 1, 4),
-(5, '2026-10-11', '17:11:00', 1, '00000000-0', '00000000-1', 1, 0);
+(1, DATE_ADD(@lunes, INTERVAL -42 DAY), '09:00:00', 1, '00000000-0', '00000000-1', 4, 2),
+(2, DATE_ADD(@lunes, INTERVAL -41 DAY), '10:00:00', 3, '20123456-7', '12345678-9', 4, 2),
+(3, DATE_ADD(@lunes, INTERVAL -40 DAY), '11:00:00', 1, '15678901-K', '98765432-1', 5, 2),
+(4, DATE_ADD(@lunes, INTERVAL -39 DAY), '09:00:00', 1, '00000001-0', '00000000-1', 4, 3),
+(5, DATE_ADD(@lunes, INTERVAL -35 DAY), '09:30:00', 2, '00000000-0', '00000000-1', 1, 2),
+(6, DATE_ADD(@lunes, INTERVAL -34 DAY), '15:00:00', 4, '23456789-6', '12345678-9', 2, 2),
+(7, DATE_ADD(@lunes, INTERVAL -33 DAY), '11:00:00', 1, '18234567-0', '98765432-1', 5, 3),
+(8, DATE_ADD(@lunes, INTERVAL -32 DAY), '10:30:00', 5, '10987654-3', '13579246-8', 6, 2),
+(9, DATE_ADD(@lunes, INTERVAL -31 DAY), '10:00:00', 2, '20123456-7', '00000000-1', 1, 4),
+(10, DATE_ADD(@lunes, INTERVAL -28 DAY), '12:00:00', 3, '11223344-5', '17246813-5', 8, 2),
+(11, DATE_ADD(@lunes, INTERVAL -27 DAY), '10:00:00', 1, '21098765-4', '00000000-1', 1, 3),
+(12, DATE_ADD(@lunes, INTERVAL -26 DAY), '09:00:00', 2, '18234567-0', '13579246-8', 7, 2),
+(13, DATE_ADD(@lunes, INTERVAL -24 DAY), '16:00:00', 4, '20123456-7', '16482753-1', 3, 2),
+(14, DATE_ADD(@lunes, INTERVAL -21 DAY), '15:00:00', 4, '18234567-0', '16482753-1', 3, 4),
+(15, DATE_ADD(@lunes, INTERVAL -20 DAY), '09:00:00', 1, '10987654-3', '00000000-1', 1, 2),
+(16, DATE_ADD(@lunes, INTERVAL -19 DAY), '10:00:00', 3, '21098765-4', '12345678-9', 4, 2),
+(17, DATE_ADD(@lunes, INTERVAL -18 DAY), '12:00:00', 3, '23456789-6', '12345678-9', 2, 3),
+(18, DATE_ADD(@lunes, INTERVAL -17 DAY), '11:30:00', 5, '00000001-0', '17246813-5', 4, 2),
+(19, DATE_ADD(@lunes, INTERVAL -14 DAY), '14:00:00', 4, '11223344-5', '16482753-1', 3, 2),
+(20, DATE_ADD(@lunes, INTERVAL -13 DAY), '09:30:00', 1, '20123456-7', '00000000-1', 4, 2),
+(21, DATE_ADD(@lunes, INTERVAL -12 DAY), '16:00:00', 3, '21098765-4', '17246813-5', 8, 1),
+(22, DATE_ADD(@lunes, INTERVAL -11 DAY), '10:00:00', 2, '15678901-K', '13579246-8', 7, 2),
+(23, DATE_ADD(@lunes, INTERVAL -10 DAY), '09:00:00', 5, '11223344-5', '13579246-8', 6, 3),
+(24, DATE_ADD(@lunes, INTERVAL -7 DAY), '09:00:00', 3, '10987654-3', '17246813-5', 8, 2),
+(25, DATE_ADD(@lunes, INTERVAL -6 DAY), '11:00:00', 1, '15678901-K', '98765432-1', 5, 3),
+(26, DATE_ADD(@lunes, INTERVAL -5 DAY), '15:30:00', 1, '00000000-0', '00000000-1', 4, 2),
+(27, DATE_ADD(@lunes, INTERVAL -4 DAY), '09:30:00', 3, '00000000-0', '12345678-9', 4, 4),
+(28, DATE_ADD(@lunes, INTERVAL -3 DAY), '10:00:00', 2, '00000001-0', '00000000-1', 1, 0),
+(29, DATE_ADD(@lunes, INTERVAL 7 DAY), '09:00:00', 1, '00000000-0', '00000000-1', 4, 0),
+(30, DATE_ADD(@lunes, INTERVAL 8 DAY), '10:00:00', 2, '00000000-0', '00000000-1', 1, 1),
+(31, DATE_ADD(@lunes, INTERVAL 9 DAY), '11:00:00', 1, '15678901-K', '98765432-1', 5, 0),
+(32, DATE_ADD(@lunes, INTERVAL 10 DAY), '09:30:00', 3, '20123456-7', '12345678-9', 4, 1),
+(33, DATE_ADD(@lunes, INTERVAL 14 DAY), '10:00:00', 5, '18234567-0', '13579246-8', 7, 0),
+(34, DATE_ADD(@lunes, INTERVAL 15 DAY), '15:00:00', 4, '11223344-5', '16482753-1', 3, 0),
+(35, DATE_ADD(@lunes, INTERVAL 16 DAY), '09:00:00', 2, '00000001-0', '00000000-1', 1, 0),
+(36, DATE_ADD(@lunes, INTERVAL 18 DAY), '12:00:00', 5, '10987654-3', '17246813-5', 8, 1),
+(37, DATE_ADD(@lunes, INTERVAL 22 DAY), '10:30:00', 3, '21098765-4', '12345678-9', 2, 0),
+(38, DATE_ADD(@lunes, INTERVAL 24 DAY), '11:00:00', 1, '00000000-0', '98765432-1', 5, 0),
+-- Citas Atendidas sin atencion registrada: casos para registrar la atencion (04.3)
+(39, DATE_ADD(@lunes, INTERVAL -4 DAY), '11:00:00', 1, '10987654-3', '00000000-1', 4, 2),
+(40, DATE_ADD(@lunes, INTERVAL -3 DAY), '14:00:00', 4, '11223344-5', '12345678-9', 3, 2);
+
+-- Citas del dia actual para la agenda del medico (solo si hoy es dia habil)
+INSERT INTO `cita` (`Nro_Cita`, `Fecha_Cita`, `Hora_Cita`, `Codigo_Centro`, `RUT_Paciente`, `RUT_Medico`, `ID_Especialidad`, `ID_Estado`)
+SELECT 41, @hoy, '09:00:00', 1, '00000000-0', '00000000-1', 4, 1 FROM DUAL WHERE WEEKDAY(@hoy) < 5
+UNION ALL SELECT 42, @hoy, '10:30:00', 2, '10987654-3', '00000000-1', 1, 0 FROM DUAL WHERE WEEKDAY(@hoy) < 5
+UNION ALL SELECT 43, @hoy, '12:00:00', 1, '20123456-7', '00000000-1', 4, 1 FROM DUAL WHERE WEEKDAY(@hoy) < 5
+UNION ALL SELECT 44, @hoy, '15:00:00', 3, '23456789-6', '12345678-9', 2, 0 FROM DUAL WHERE WEEKDAY(@hoy) < 5;
 
 --
 -- Disparadores `cita`
@@ -197,6 +318,26 @@ CREATE TABLE `diagnostico` (
   `Descripcion_Diagnostico` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `diagnostico`
+--
+
+INSERT INTO `diagnostico` (`Codigo_Diagnostico`, `Descripcion_Diagnostico`) VALUES
+('A09', 'Gastroenteritis de presunto origen infeccioso'),
+('E11', 'Diabetes mellitus tipo 2'),
+('F41', 'Otros trastornos de ansiedad'),
+('G43', 'Migraña'),
+('I10', 'Hipertensión esencial (primaria)'),
+('J00', 'Rinofaringitis aguda (resfriado común)'),
+('J03', 'Amigdalitis aguda'),
+('J45', 'Asma'),
+('K21', 'Enfermedad del reflujo gastroesofágico'),
+('K29', 'Gastritis y duodenitis'),
+('L30', 'Otras dermatitis'),
+('M54', 'Dorsalgia'),
+('S93', 'Luxación y esguince de tobillo y pie'),
+('Z00', 'Examen general sin queja o diagnóstico informado');
+
 -- --------------------------------------------------------
 
 --
@@ -213,7 +354,7 @@ CREATE TABLE `especialidad` (
 --
 
 INSERT INTO `especialidad` (`ID_Especialidad`, `Nombre_Especialidad`) VALUES
-(5, ''),
+(5, 'Dermatología'),
 (1, 'Cardiología'),
 (8, 'Gastroenterología'),
 (4, 'Medicina General'),
@@ -231,7 +372,7 @@ INSERT INTO `especialidad` (`ID_Especialidad`, `Nombre_Especialidad`) VALUES
 CREATE TABLE `estado` (
   `ID_Estado` int(11) NOT NULL,
   `Estado_Cita` varchar(10) NOT NULL COMMENT 'Reservada | Confirmada | Atendida | No Asistió | Cancelada'
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `estado`
@@ -262,7 +403,12 @@ CREATE TABLE `medico` (
 --
 
 INSERT INTO `medico` (`RUT_Medico`, `Nombre_Medico`, `E-mail_Medico`, `Contrasena_Hash`) VALUES
-('00000000-1', 'MedicoGenerico0', 'medicogenerico0@gmail.com', '$2y$10$r6gF0V9xdE3YlnH7J1NIreva5mOZP.DDW0sfPXcNs.Rje9tZeOERu');
+('00000000-1', 'Dr. Andrés Vidal', 'medicogenerico0@gmail.com', '$2y$10$xUPtWBW1jjtMgY0wcePACOEpSABZPg30K54sFGBwG9IqTmuJOCDLy'),
+('12345678-9', 'Dr. Juan Pérez', 'juan.perez@saludusm.cl', NULL),
+('98765432-1', 'Dra. María González', 'maria.gonzalez@saludusm.cl', NULL),
+('13579246-8', 'Dr. Pedro Soto', 'pedro.soto@saludusm.cl', NULL),
+('17246813-5', 'Dra. Camila Fuentes', 'camila.fuentes@saludusm.cl', NULL),
+('16482753-1', 'Dr. Felipe Muñoz', 'felipe.munoz@saludusm.cl', NULL);
 
 -- --------------------------------------------------------
 
@@ -281,7 +427,16 @@ CREATE TABLE `medico_especialidad` (
 
 INSERT INTO `medico_especialidad` (`RUT_Medico`, `ID_Especialidad`) VALUES
 ('00000000-1', 1),
-('00000000-1', 4);
+('00000000-1', 4),
+('12345678-9', 2),
+('12345678-9', 3),
+('12345678-9', 4),
+('98765432-1', 5),
+('13579246-8', 6),
+('13579246-8', 7),
+('17246813-5', 4),
+('17246813-5', 8),
+('16482753-1', 3);
 
 -- --------------------------------------------------------
 
@@ -298,15 +453,22 @@ CREATE TABLE `paciente` (
   `ID_Prevision` int(11) NOT NULL,
   `Email_Paciente` varchar(255) DEFAULT NULL,
   `Contrasena_Hash` varchar(255) DEFAULT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `paciente`
 --
 
 INSERT INTO `paciente` (`RUT_Paciente`, `Nombre_Paciente`, `Telefono_Paciente`, `Fecha-Nacimiento_Paciente`, `Sexo_Paciente`, `ID_Prevision`, `Email_Paciente`, `Contrasena_Hash`) VALUES
-('00000000-0', 'PacienteGenerico0', '90000000001', '1995-01-01', 'M', 2, 'paciente.prueba@example.test', '$2y$10$kLjbFHC7SZ7JLBksG67x/..wwk0TVER5LhJxycjRbm1Ex/niirt8a'),
-('00000001-0', 'Paciente2', '900000002', '2000-01-02', 'M', 1, 'paciente2@gmail.com', '$2y$10$xfb1lfdIPImxhViFV0I1EOP7icBe4dDc7Wsfq0wudo6Qs0LtnJxYu');
+('00000000-0', 'Martina Díaz', '912345670', '1995-01-01', 'F', 2, 'paciente.prueba@example.test', '$2y$10$kLjbFHC7SZ7JLBksG67x/..wwk0TVER5LhJxycjRbm1Ex/niirt8a'),
+('00000001-0', 'Tomás Rivas', '912345671', '2000-01-02', 'M', 1, 'paciente2@gmail.com', '$2y$10$xfb1lfdIPImxhViFV0I1EOP7icBe4dDc7Wsfq0wudo6Qs0LtnJxYu'),
+('20123456-7', 'Carlos Silva', '911223344', '1995-04-12', 'M', 1, NULL, NULL),
+('15678901-K', 'Ana Rojas', '955667788', '1982-11-05', 'F', 2, NULL, NULL),
+('23456789-6', 'Valentina Torres', '922334455', '2015-06-20', 'F', 1, NULL, NULL),
+('10987654-3', 'Jorge Herrera', '933445566', '1958-03-02', 'M', 3, NULL, NULL),
+('18234567-0', 'Francisca Reyes', '944556677', '1990-09-14', 'F', 2, NULL, NULL),
+('11223344-5', 'Luis Castro', '966778899', '1972-01-30', 'M', 1, NULL, NULL),
+('21098765-4', 'Sofía Morales', '977889900', '2001-12-08', 'Otro', 3, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -317,7 +479,7 @@ INSERT INTO `paciente` (`RUT_Paciente`, `Nombre_Paciente`, `Telefono_Paciente`, 
 CREATE TABLE `prevision` (
   `ID_Prevision` int(11) NOT NULL,
   `Prevision_Paciente` varchar(10) NOT NULL COMMENT 'Fonasa | Isapre | Particular'
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `prevision`
@@ -341,6 +503,32 @@ CREATE TABLE `receta` (
   `Dias-Tratamiento_Receta` int(11) NOT NULL,
   `Nro_Atencion` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `receta`
+--
+
+INSERT INTO `receta` (`ID_Receta`, `Medicamento_Receta`, `Dosis_Receta`, `Dias-Tratamiento_Receta`, `Nro_Atencion`) VALUES
+(1, 'Paracetamol 500 mg', '1 comprimido cada 8 horas', 5, 1),
+(2, 'Losartán 50 mg', '1 comprimido cada 24 horas', 30, 1),
+(3, 'Amoxicilina 500 mg', '1 cápsula cada 8 horas', 7, 2),
+(4, 'Ibuprofeno 400 mg', '1 comprimido cada 8 horas', 5, 2),
+(5, 'Hidrocortisona crema 1%', 'Aplicar 2 veces al día', 10, 3),
+(6, 'Losartán 50 mg', '1 comprimido cada 24 horas', 30, 4),
+(7, 'Paracetamol jarabe 120 mg/5 ml', '5 ml cada 8 horas', 5, 5),
+(8, 'Salbutamol inhalador', '2 inhalaciones cada 6 horas', 7, 5),
+(9, 'Sumatriptán 50 mg', '1 comprimido al inicio de la crisis', 10, 6),
+(10, 'Omeprazol 20 mg', '1 cápsula cada 24 horas en ayunas', 30, 7),
+(11, 'Sertralina 50 mg', '1 comprimido cada 24 horas', 60, 8),
+(12, 'Ibuprofeno 600 mg', '1 comprimido cada 8 horas', 7, 9),
+(13, 'Metformina 850 mg', '1 comprimido cada 12 horas', 90, 10),
+(14, 'Losartán 50 mg', '1 comprimido cada 24 horas', 30, 10),
+(15, 'Paracetamol 500 mg', '1 comprimido cada 8 horas', 5, 11),
+(16, 'Metformina 850 mg', '1 comprimido cada 12 horas', 90, 12),
+(17, 'Diclofenaco 50 mg', '1 comprimido cada 12 horas', 7, 13),
+(18, 'Paracetamol 500 mg', '1 comprimido cada 8 horas', 4, 14),
+(19, 'Sertralina 50 mg', '1 comprimido cada 24 horas', 60, 15),
+(20, 'Sales de rehidratación oral', '1 sobre después de cada deposición', 3, 16);
 
 -- --------------------------------------------------------
 
@@ -459,19 +647,19 @@ ALTER TABLE `receta`
 -- AUTO_INCREMENT de la tabla `atencion`
 --
 ALTER TABLE `atencion`
-  MODIFY `Nro_Atencion` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Nro_Atencion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de la tabla `centro_medico`
 --
 ALTER TABLE `centro_medico`
-  MODIFY `Codigo_Centro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Codigo_Centro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `cita`
 --
 ALTER TABLE `cita`
-  MODIFY `Nro_Cita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `Nro_Cita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT de la tabla `especialidad`
@@ -483,13 +671,13 @@ ALTER TABLE `especialidad`
 -- AUTO_INCREMENT de la tabla `prevision`
 --
 ALTER TABLE `prevision`
-  MODIFY `ID_Prevision` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_Prevision` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `receta`
 --
 ALTER TABLE `receta`
-  MODIFY `ID_Receta` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_Receta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- Restricciones para tablas volcadas

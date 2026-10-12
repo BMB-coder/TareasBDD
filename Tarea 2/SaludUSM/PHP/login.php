@@ -31,6 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit;
             }
             $mensaje = 'Correo o contraseña incorrectos.';
+            if ($cuenta === null && !is_file(ARCHIVO_ADMINISTRADOR)) {
+                $mensaje .= ' Para entrar como administrador falta el archivo saludusm_config/administrador.json (ver README).';
+            }
         } catch (Throwable $error) {
             error_log('SaludUSM login: ' . $error->getMessage());
             $mensaje = 'No fue posible verificar el acceso. Revisa MySQL y la configuración del administrador.';

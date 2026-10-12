@@ -1,0 +1,6 @@
+{
+    "nombre": "Administrador de prueba",
+    "email": "admin.prueba@example.test",
+    "contrasena_hash": "$2y$10$WP3xcs25Tc2vCZlnMWYy3um7mpTnZZYYcXdFO3UNlLOWMiIRiVQKu",
+    "rol": "Administrador"
+}

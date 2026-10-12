@@ -75,7 +75,7 @@ function erroresPerfil(array $datos, string $rol, string $clave, string $confirm
     return $errores;
 }
 
-function comprobarCorreoPerfil(PDO $db, string $email, array $cuenta, array $admin): void {
+function comprobarCorreoPerfil(PDO $db, string $email, array $cuenta, ?array $admin): void {
     $consultas = [
         'Paciente' => 'SELECT RUT_Paciente FROM paciente WHERE LOWER(TRIM(Email_Paciente)) = ?',
         'Medico' => 'SELECT RUT_Medico FROM medico WHERE LOWER(TRIM(`E-mail_Medico`)) = ?'
@@ -89,7 +89,7 @@ function comprobarCorreoPerfil(PDO $db, string $email, array $cuenta, array $adm
             }
         }
     }
-    if ($cuenta['rol'] !== 'Administrador' && strtolower(trim($admin['email'])) === $email) {
+    if ($admin !== null && $cuenta['rol'] !== 'Administrador' && strtolower(trim($admin['email'])) === $email) {
         throw new DomainException('Ese correo ya está en uso por otra cuenta.');
     }
 }
@@ -106,16 +106,20 @@ function guardarPerfil(PDO $db, array $cuenta, array $datos, string $actual, str
     $f = null;
     try {
         $esAdmin = $cuenta['rol'] === 'Administrador';
-        $f = @fopen(ARCHIVO_ADMINISTRADOR, $esAdmin ? 'r+b' : 'rb');
-        if (!$f) {
-            throw new RuntimeException('No se pudo abrir el JSON privado con los permisos necesarios.');
+        // Pacientes y medicos pueden editar su perfil aunque falte el JSON.
+        $admin = null;
+        if ($esAdmin || is_file(ARCHIVO_ADMINISTRADOR)) {
+            $f = @fopen(ARCHIVO_ADMINISTRADOR, $esAdmin ? 'r+b' : 'rb');
+            if (!$f) {
+                throw new RuntimeException('No se pudo abrir el JSON privado con los permisos necesarios.');
+            }
+            bloquearArchivoAdmin($f, $esAdmin ? LOCK_EX : LOCK_SH);
+            $original = stream_get_contents($f);
+            if ($original === false) {
+                throw new RuntimeException('No se pudo leer el JSON.');
+            }
+            $admin = decodificarAdmin($original);
         }
-        bloquearArchivoAdmin($f, $esAdmin ? LOCK_EX : LOCK_SH);
-        $original = stream_get_contents($f);
-        if ($original === false) {
-            throw new RuntimeException('No se pudo leer el JSON.');
-        }
-        $admin = decodificarAdmin($original);
         $perfil = $esAdmin ? perfilAdmin($admin) : cargarPerfil($db, $cuenta);
         if (!hash_equals(versionPerfil($perfil), $version)) {
             throw new DomainException('El perfil cambió desde que abriste el formulario. Recarga la página antes de editarlo.');

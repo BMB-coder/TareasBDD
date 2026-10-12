@@ -45,6 +45,11 @@ function leerArchivoAdmin(): array {
     }
 }
 
+// null si el JSON no existe; un JSON presente pero invalido sigue siendo un error.
+function leerArchivoAdminOpcional(): ?array {
+    return is_file(ARCHIVO_ADMINISTRADOR) ? leerArchivoAdmin() : null;
+}
+
 function escribirCompletoAdmin($f, string $texto): void {
     if (!rewind($f)) {
         throw new RuntimeException('No se puede posicionar el archivo.');

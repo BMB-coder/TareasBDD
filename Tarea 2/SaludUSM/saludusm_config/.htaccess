@@ -1,0 +1,2 @@
+# Contiene el hash del administrador: nunca servirlo por HTTP.
+Require all denied
