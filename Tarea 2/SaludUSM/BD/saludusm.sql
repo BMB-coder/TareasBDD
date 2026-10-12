@@ -7,6 +7,11 @@
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
+
+CREATE DATABASE IF NOT EXISTS saludusm
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_0900_ai_ci;
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 -- Datos de prueba: las fechas de las citas son relativas al dia de importacion
@@ -16,7 +21,6 @@ START TRANSACTION;
 SET @hoy = CURDATE();
 SET @lunes = DATE_SUB(@hoy, INTERVAL WEEKDAY(@hoy) DAY);
 SET time_zone = "+00:00";
-
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -152,6 +156,26 @@ INSERT INTO `atencion` (`Nro_Atencion`, `Motivo_Atencion`, `Observaciones_Atenci
 (15, 'Ansiedad y dolor cervical', 'Mejoría parcial con tratamiento.', 22),
 (16, 'Diarrea y control de glicemia', 'Gastroenteritis aguda en paciente diabético.', 24),
 (17, 'Control de resfrío', 'Evolución favorable; sin indicación de fármacos.', 26);
+
+--
+-- Disparadores `atencion`
+-- Solo puede existir una atencion si la cita esta en estado Atendida.
+--
+DELIMITER $$
+CREATE TRIGGER `ValidarAtencion` BEFORE INSERT ON `atencion` FOR EACH ROW BEGIN
+    IF NOT EXISTS (
+        SELECT 1
+        FROM cita AS c
+        INNER JOIN estado AS e ON e.ID_Estado = c.ID_Estado
+        WHERE c.Nro_Cita = NEW.Nro_Cita
+          AND e.Estado_Cita = 'Atendida'
+    ) THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Solo se puede registrar una atención de una cita en estado Atendida';
+    END IF;
+END
+$$
+DELIMITER ;
 
 -- --------------------------------------------------------
 

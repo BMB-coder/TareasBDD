@@ -2,8 +2,8 @@
 // Menu para cuentas con sesion iniciada: los enlaces dependen del rol.
 $enlacesRol = [
     'Paciente' => [['/paciente/index.php', 'Mi panel'], ['/paciente/mis_citas.php', 'Mis citas'],
-                   ['/paciente/agendar.php', 'Agendar hora']],
-    'Medico' => [['/medico/index.php', 'Mi panel'], ['/medico/agenda.php', 'Agenda']],
+                   ['/paciente/agendar.php', 'Agendar hora'], ['/paciente/mi_historial.php', 'Mi Historial Clinico']],
+    'Medico' => [['/medico/index.php', 'Mi panel'], ['/medico/agenda.php', 'Agenda'], ['/medico/pacientes.php', 'Mis pacientes']],
     'Administrador' => [['/admin/index.php', 'Panel'], ['/admin/centros.php', 'Centros médicos'],
                         ['/admin/medicos.php', 'Médicos']]
 ];
