@@ -9,15 +9,18 @@ if (!isset($cuenta, $titulo)) {
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?= escapar($titulo) ?> | SaludUSM</title>
 <link rel="stylesheet" href="<?= escapar(BASE_ACCESO) ?>/../CSS/estilos.css">
-</head><body><main>
+</head><body>
+<?php require __DIR__ . '/nav_cuenta.php'; ?>
+<main>
 <h1><?= escapar($titulo) ?></h1>
 <p class="exito">Inicio de sesión correcto.</p>
 <p>Nombre: <?= escapar($cuenta['nombre']) ?></p>
 <p>Correo: <?= escapar($cuenta['email']) ?></p>
 <p>Rol: <strong><?= escapar($cuenta['rol']) ?></strong></p>
+<?php if ($cuenta['rol'] === 'Administrador'): ?>
+<p><a class="boton" href="<?= escapar(BASE_ACCESO) ?>/admin/centros.php">Gestionar centros médicos</a>
+<a class="boton" href="<?= escapar(BASE_ACCESO) ?>/admin/medicos.php">Gestionar médicos</a></p>
+<?php endif; ?>
 <p><a class="boton" href="<?= escapar(BASE_ACCESO) ?>/perfil.php">Ver y editar mi perfil</a></p>
 <p><a href="<?= escapar(BASE_ACCESO) ?>/index.php">Inicio público</a></p>
-<form method="post" action="<?= escapar(BASE_ACCESO) ?>/logout.php">
-<input type="hidden" name="csrf" value="<?= escapar($_SESSION['csrf']) ?>">
-<button class="boton" type="submit">Cerrar sesión</button>
-</form></main></body></html>
+</main></body></html>

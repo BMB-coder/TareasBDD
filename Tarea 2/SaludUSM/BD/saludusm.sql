@@ -199,6 +199,29 @@ INSERT INTO `centro_medico_medico` (`Codigo_Centro`, `RUT_Medico`) VALUES
 (5, '17246813-5'),
 (4, '16482753-1');
 
+--
+-- Disparadores `centro_medico_medico`
+-- Impiden quitar la asignacion si el medico tiene citas futuras
+-- (Reservada o Confirmada desde hoy) que dependen de ella.
+--
+DELIMITER $$
+CREATE TRIGGER `ProtegerCentroMedico` BEFORE DELETE ON `centro_medico_medico` FOR EACH ROW BEGIN
+    IF EXISTS (
+        SELECT 1
+        FROM cita AS c
+        INNER JOIN estado AS e ON e.ID_Estado = c.ID_Estado
+        WHERE c.RUT_Medico = OLD.RUT_Medico
+          AND c.Codigo_Centro = OLD.Codigo_Centro
+          AND e.Estado_Cita IN ('Reservada', 'Confirmada')
+          AND c.Fecha_Cita >= CURDATE()
+    ) THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'No se puede quitar el centro: el médico tiene citas futuras en él';
+    END IF;
+END
+$$
+DELIMITER ;
+
 -- --------------------------------------------------------
 
 --
@@ -261,7 +284,7 @@ INSERT INTO `cita` (`Nro_Cita`, `Fecha_Cita`, `Hora_Cita`, `Codigo_Centro`, `RUT
 (38, DATE_ADD(@lunes, INTERVAL 24 DAY), '11:00:00', 1, '00000000-0', '98765432-1', 5, 0),
 -- Citas Atendidas sin atencion registrada: casos para registrar la atencion (04.3)
 (39, DATE_ADD(@lunes, INTERVAL -4 DAY), '11:00:00', 1, '10987654-3', '00000000-1', 4, 2),
-(40, DATE_ADD(@lunes, INTERVAL -3 DAY), '14:00:00', 4, '11223344-5', '12345678-9', 3, 2);
+(40, DATE_ADD(@lunes, INTERVAL -3 DAY), '14:00:00', 4, '11223344-5', '16482753-1', 3, 2);
 
 -- Citas del dia actual para la agenda del medico (solo si hoy es dia habil)
 INSERT INTO `cita` (`Nro_Cita`, `Fecha_Cita`, `Hora_Cita`, `Codigo_Centro`, `RUT_Paciente`, `RUT_Medico`, `ID_Especialidad`, `ID_Estado`)
@@ -437,6 +460,29 @@ INSERT INTO `medico_especialidad` (`RUT_Medico`, `ID_Especialidad`) VALUES
 ('17246813-5', 4),
 ('17246813-5', 8),
 ('16482753-1', 3);
+
+--
+-- Disparadores `medico_especialidad`
+-- Impiden quitar la asignacion si el medico tiene citas futuras
+-- (Reservada o Confirmada desde hoy) que dependen de ella.
+--
+DELIMITER $$
+CREATE TRIGGER `ProtegerEspecialidadMedico` BEFORE DELETE ON `medico_especialidad` FOR EACH ROW BEGIN
+    IF EXISTS (
+        SELECT 1
+        FROM cita AS c
+        INNER JOIN estado AS e ON e.ID_Estado = c.ID_Estado
+        WHERE c.RUT_Medico = OLD.RUT_Medico
+          AND c.ID_Especialidad = OLD.ID_Especialidad
+          AND e.Estado_Cita IN ('Reservada', 'Confirmada')
+          AND c.Fecha_Cita >= CURDATE()
+    ) THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'No se puede quitar la especialidad: el médico tiene citas futuras con ella';
+    END IF;
+END
+$$
+DELIMITER ;
 
 -- --------------------------------------------------------
 

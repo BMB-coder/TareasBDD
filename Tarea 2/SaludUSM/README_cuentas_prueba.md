@@ -36,6 +36,3 @@ Adaptados y ampliados desde la Tarea 1. Las fechas de las citas se calculan al i
 
 ## Comprobación
 Hashes de las tres cuentas verificados desde almacenamiento. Pendiente login, sesiones, permisos y edición de perfiles en paso 5.2 y siguientes. No marcar 4.2 completamente verificado hasta probar el acceso real.
-
-## Instalación en otro equipo
-Recrear estas cuentas mediante preparar_cuentas.php sobre una base sin credenciales y configurar la ruta privada. No publicar administrador.json en htdocs ni en el repositorio. El instalador no sobrescribe cuentas existentes.

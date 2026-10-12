@@ -62,7 +62,9 @@ $hoy = (new DateTimeImmutable('today', new DateTimeZone('America/Santiago')))->f
 <!doctype html><html lang="es"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mi perfil | SaludUSM</title><link rel="stylesheet" href="../CSS/estilos.css">
-</head><body><main>
+</head><body>
+<?php require __DIR__ . '/includes/nav_cuenta.php'; ?>
+<main>
 <h1>Mi perfil</h1>
 <p><a href="<?= escapar(destinoRol($cuenta['rol'])) ?>">Volver a mi panel</a></p>
 <?php if ($exito): ?><p class="exito" role="status">Datos actualizados correctamente.</p><?php endif; ?>

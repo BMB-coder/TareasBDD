@@ -16,7 +16,7 @@ nav a {
 }
 
 main {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 30px auto;
     padding: 24px;
     background: white;
@@ -70,4 +70,61 @@ td {
 
 th {
     background: #eaf2ef;
+}
+
+.nav-salir {
+    display: inline;
+}
+
+.nav-salir button {
+    background: none;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.formulario input:not([type="checkbox"]),
+.formulario select {
+    width: 100%;
+    max-width: 420px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    margin: 16px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.opciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 6px 16px;
+}
+
+.acciones a,
+.acciones form {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+button.boton,
+.peligro {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.peligro {
+    background: #8b2020;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.sin-salto {
+    white-space: nowrap;
 }
