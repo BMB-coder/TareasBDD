@@ -329,3 +329,33 @@ function eliminarMedico(PDO $db, string $rut): void {
         throw $error;
     }
 }
+
+function indicadoresPorCentro(PDO $db): array {
+    $sql = "SELECT 
+            cm.Nombre_Centro,
+            COUNT(c.Nro_Cita) AS Total_Citas,
+            SUM(CASE WHEN e.Estado_Cita = 'No Asistió' THEN 1 ELSE 0 END) AS Total_Inasistencias,
+            ROUND(
+                (SUM(CASE WHEN e.Estado_Cita = 'No Asistió' THEN 1 ELSE 0 END) * 100.0) / NULLIF(COUNT(c.Nro_Cita), 0), 
+                2
+            ) AS Porcentaje_Inasistencia
+        FROM centro_medico cm
+        LEFT JOIN cita c ON c.Codigo_Centro = cm.Codigo_Centro
+        LEFT JOIN estado e ON e.ID_Estado = c.ID_Estado
+        GROUP BY cm.Codigo_Centro, cm.Nombre_Centro
+        ORDER BY Total_Citas DESC";
+    return $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function topDiagnosticos(PDO $db): array {
+    $sql = "SELECT 
+            d.Codigo_Diagnostico,
+            d.Descripcion_Diagnostico,
+            COUNT(ad.Codigo_Diagnostico) AS Total_Frecuencia
+        FROM diagnostico d
+        JOIN atencion_diagnostico ad ON ad.Codigo_Diagnostico = d.Codigo_Diagnostico
+        GROUP BY d.Codigo_Diagnostico, d.Descripcion_Diagnostico
+        ORDER BY Total_Frecuencia DESC
+        LIMIT 5";
+    return $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+}

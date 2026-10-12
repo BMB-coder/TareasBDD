@@ -346,3 +346,50 @@ function cambiarEstadoMedico(PDO $db, string $rutMedico, int $nro, string $nuevo
         throw errorCita($error);
     }
 }
+
+function buscarCitas(PDO $db, array $filtros, string $rol, string $rutUsuario = ''): array {
+    $sql = "SELECT c.Nro_Cita, c.Fecha_Cita, TIME_FORMAT(c.Hora_Cita, '%H:%i') AS Hora,
+            e.Estado_Cita, cm.Nombre_Centro, esp.Nombre_Especialidad,
+            m.RUT_Medico, m.Nombre_Medico, p.RUT_Paciente, p.Nombre_Paciente
+        FROM cita c
+        JOIN estado e ON e.ID_Estado = c.ID_Estado
+        JOIN centro_medico cm ON cm.Codigo_Centro = c.Codigo_Centro
+        JOIN especialidad esp ON esp.ID_Especialidad = c.ID_Especialidad
+        JOIN medico m ON m.RUT_Medico = c.RUT_Medico
+        LEFT JOIN paciente p ON p.RUT_Paciente = c.RUT_Paciente
+        WHERE 1=1";
+
+    $parametros = [];
+
+    if ($rol === 'Medico') {
+        $sql .= " AND c.RUT_Medico = ?";
+        $parametros[] = $rutUsuario;
+    } elseif ($rol === 'Paciente') {
+        $sql .= " AND c.RUT_Paciente = ?";
+        $parametros[] = $rutUsuario;
+    }
+
+    if (!empty($filtros['fecha'])) {
+        $sql .= " AND c.Fecha_Cita = ?";
+        $parametros[] = $filtros['fecha'];
+    }
+    if (!empty($filtros['centro'])) {
+        $sql .= " AND c.Codigo_Centro = ?";
+        $parametros[] = $filtros['centro'];
+    }
+    if (!empty($filtros['estado'])) {
+        $sql .= " AND e.Estado_Cita = ?";
+        $parametros[] = $filtros['estado'];
+    }
+
+    if (!empty($filtros['busqueda_medico'])) {
+        $sql .= " AND (m.Nombre_Medico LIKE ? OR esp.Nombre_Especialidad LIKE ?)";
+        $busqueda = '%' . $filtros['busqueda_medico'] . '%';
+        $parametros[] = $busqueda;
+        $parametros[] = $busqueda;
+    }
+
+    $sql .= " ORDER BY c.Fecha_Cita DESC, c.Hora_Cita ASC";
+
+    return consultarVista($db, $sql, $parametros);
+}

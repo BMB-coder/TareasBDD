@@ -46,6 +46,14 @@ function exigirRol(string $rol): array {
     return $_SESSION['cuenta'];
 }
 
+function obtenerCuentaAutenticada(): array {
+    if (empty($_SESSION['cuenta'])) {
+        header('Location: ' . BASE_ACCESO . '/login.php');
+        exit;
+    }
+    return $_SESSION['cuenta'];
+}
+
 function buscarCuenta(PDO $db, string $email): ?array {
     // Se consultan las tres fuentes. Correos ambiguos no pueden iniciar sesion.
     $cuentas = [];
