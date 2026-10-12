@@ -113,12 +113,3 @@ Citas (agendar, mis citas y agenda médica):
 - Las consultas sobre la vista usan preparación emulada de PDO, porque
   MariaDB de XAMPP responde el error 1615 al preparar en el servidor
   consultas sobre vistas. Los parámetros siguen escapados por PDO.
-
-Avance 5.1:
-- Conexión a la base de datos mediante PDO.
-- Página de inicio.
-- Listado de médicos obtenido desde la base.
-- Navegación mediante menú y enlaces.
-- Mensajes de error y presentación básica.
-
-El acceso por roles se implementará en el paso 5.2.
