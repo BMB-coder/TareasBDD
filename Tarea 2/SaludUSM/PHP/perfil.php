@@ -96,7 +96,7 @@ $hoy = (new DateTimeImmutable('today', new DateTimeZone('America/Santiago')))->f
 <?php endforeach; ?></select></p>
 <?php endif; ?>
 <fieldset><legend>Cambiar contraseña (opcional)</legend>
-<p>Deja ambos campos vacíos para conservarla. La nueva debe tener al menos 8 caracteres, una mayúscula A-Z, una minúscula a-z y un número. Máximo 72 bytes; los caracteres simples ocupan un byte.</p>
+<p>Deja ambos campos vacíos para conservarla. La nueva debe tener al menos 8 caracteres, una mayúscula A-Z, una minúscula a-z y un número.</p>
 <p><label for="nueva">Nueva contraseña</label><br><input id="nueva" name="nueva" type="password" autocomplete="new-password"></p>
 <p><label for="confirmar">Repite la nueva contraseña</label><br><input id="confirmar" name="confirmar" type="password" autocomplete="new-password"></p>
 </fieldset>

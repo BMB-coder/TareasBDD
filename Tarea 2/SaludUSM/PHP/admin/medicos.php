@@ -126,7 +126,7 @@ try {
     <?php endforeach; ?>
     </div></fieldset>
     <fieldset><legend><?= $editando ? 'Nueva contraseña (opcional)' : 'Contraseña inicial' ?></legend>
-    <p>Al menos 8 caracteres, con mayúscula A-Z, minúscula a-z y número. Máximo 72 bytes.<?= $editando ? ' Deja ambos campos vacíos para conservarla.' : '' ?></p>
+    <p>Al menos 8 caracteres, con mayúscula A-Z, minúscula a-z y número.<?= $editando ? ' Deja ambos campos vacíos para conservarla.' : '' ?></p>
     <p><label for="clave">Contraseña</label><br>
     <input id="clave" name="clave" type="password" autocomplete="new-password" <?= $editando ? '' : 'required minlength="8"' ?>></p>
     <p><label for="confirmacion">Repite la contraseña</label><br>

@@ -66,7 +66,7 @@ function erroresPerfil(array $datos, string $rol, string $clave, string $confirm
         $n = preg_match_all('/./us', $clave, $letras);
         if ($n === false || $n < 8 || strlen($clave) > 72 || strpos($clave, "\0") !== false
             || !preg_match('/[A-Z]/', $clave) || !preg_match('/[a-z]/', $clave) || !preg_match('/[0-9]/', $clave)) {
-            $errores[] = 'La nueva contraseña debe tener al menos 8 caracteres, mayúscula A-Z, minúscula a-z y número; máximo 72 bytes.';
+            $errores[] = 'La nueva contraseña debe tener al menos 8 caracteres, mayúscula A-Z, minúscula a-z y número.';
         }
         if ($clave !== $confirmar) {
             $errores[] = 'La nueva contraseña y su confirmación no coinciden.';

@@ -90,7 +90,7 @@ $hoy = (new DateTimeImmutable('today', new DateTimeZone('America/Santiago')))->f
         <?php foreach ($previsiones as $prevision): ?>
         <option value="<?= escapar($prevision['ID_Prevision']) ?>" <?= $datos['prevision'] === (string)$prevision['ID_Prevision'] ? 'selected' : '' ?>><?= escapar($prevision['Prevision_Paciente']) ?></option>
         <?php endforeach; ?></select></p>
-        <p id="reglas">Contraseña: al menos 8 caracteres, incluyendo mayúscula A-Z, minúscula a-z y un número. Máximo 72 bytes (72 caracteres si usas letras sin tildes, números y símbolos simples).</p>
+        <p id="reglas">Contraseña: al menos 8 caracteres, incluyendo mayúscula A-Z, minúscula a-z y un número.</p>
         <p><label for="clave">Contraseña</label><br><input id="clave" name="clave" type="password" required minlength="8" autocomplete="new-password" aria-describedby="reglas"></p>
         <p><label for="confirmacion">Repite la contraseña</label><br><input id="confirmacion" name="confirmacion" type="password" required autocomplete="new-password"></p>
         <button class="boton" type="submit">Crear cuenta de paciente</button>

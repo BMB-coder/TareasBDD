@@ -128,3 +128,14 @@ button.boton,
 .sin-salto {
     white-space: nowrap;
 }
+
+.bloques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.acciones input,
+.acciones select {
+    padding: 6px;
+}

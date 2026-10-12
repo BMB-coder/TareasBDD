@@ -57,6 +57,57 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `NULLCita` (IN `p_Nro_Cita` INT)  MO
     END IF;
 END$$
 
+-- Consulta 10 de la Tarea 1: citas Reservadas o Confirmadas con fecha anterior
+-- a hoy pasan a Cancelada. Se compara solo la fecha: las citas de hoy siguen
+-- vigentes para que el medico pueda marcarlas como Atendida o No Asistio.
+CREATE PROCEDURE `CancelarCitasVencidas` ()  MODIFIES SQL DATA BEGIN
+    DECLARE v_EstadoCancelada INT;
+
+    SET v_EstadoCancelada = (
+        SELECT ID_Estado
+        FROM estado
+        WHERE Estado_Cita = 'Cancelada'
+    );
+
+    UPDATE cita AS c
+    INNER JOIN estado AS e ON e.ID_Estado = c.ID_Estado
+    SET c.ID_Estado = v_EstadoCancelada
+    WHERE e.Estado_Cita IN ('Reservada', 'Confirmada')
+      AND c.Fecha_Cita < CURDATE();
+END$$
+
+-- Sin sobreagendamiento: el medico y el paciente no pueden tener otra cita
+-- vigente (no Cancelada) en el mismo bloque. Lo usan los triggers de cita.
+CREATE PROCEDURE `ValidarBloqueCita` (IN `p_Nro_Cita` INT, IN `p_RUT_Medico` VARCHAR(10) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci, IN `p_RUT_Paciente` VARCHAR(10) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci, IN `p_Fecha` DATE, IN `p_Hora` TIME)  READS SQL DATA BEGIN
+    IF EXISTS (
+        SELECT 1
+        FROM cita AS c
+        INNER JOIN estado AS e ON e.ID_Estado = c.ID_Estado
+        WHERE c.RUT_Medico = p_RUT_Medico
+          AND c.Fecha_Cita = p_Fecha
+          AND c.Hora_Cita = p_Hora
+          AND c.Nro_Cita <> IFNULL(p_Nro_Cita, 0)
+          AND e.Estado_Cita <> 'Cancelada'
+    ) THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'El médico ya tiene una cita en ese bloque horario';
+    END IF;
+
+    IF p_RUT_Paciente IS NOT NULL AND EXISTS (
+        SELECT 1
+        FROM cita AS c
+        INNER JOIN estado AS e ON e.ID_Estado = c.ID_Estado
+        WHERE c.RUT_Paciente = p_RUT_Paciente
+          AND c.Fecha_Cita = p_Fecha
+          AND c.Hora_Cita = p_Hora
+          AND c.Nro_Cita <> IFNULL(p_Nro_Cita, 0)
+          AND e.Estado_Cita <> 'Cancelada'
+    ) THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'El paciente ya tiene una cita a esa fecha y hora';
+    END IF;
+END$$
+
 --
 -- Funciones
 --
@@ -302,6 +353,30 @@ CREATE TRIGGER `FechaCita` BEFORE INSERT ON `cita` FOR EACH ROW BEGIN
         SIGNAL SQLSTATE '45000'
         SET MESSAGE_TEXT =
             'No se puede registrar una cita en una fecha y hora pasada';
+    END IF;
+END
+$$
+DELIMITER ;
+
+--
+-- Disparadores `cita`: validan el bloque al reservar y al reprogramar
+--
+DELIMITER $$
+CREATE TRIGGER `ValidarAgendaInsert` BEFORE INSERT ON `cita` FOR EACH ROW BEGIN
+    CALL ValidarBloqueCita(NULL, NEW.RUT_Medico, NEW.RUT_Paciente, NEW.Fecha_Cita, NEW.Hora_Cita);
+END
+$$
+DELIMITER ;
+DELIMITER $$
+CREATE TRIGGER `ValidarAgendaUpdate` BEFORE UPDATE ON `cita` FOR EACH ROW BEGIN
+    -- Solo al mover la cita: los cambios de estado no se validan aqui.
+    IF NEW.Fecha_Cita <> OLD.Fecha_Cita OR NEW.Hora_Cita <> OLD.Hora_Cita
+       OR NEW.RUT_Medico <> OLD.RUT_Medico THEN
+        IF TIMESTAMP(NEW.Fecha_Cita, NEW.Hora_Cita) < NOW() THEN
+            SIGNAL SQLSTATE '45000'
+            SET MESSAGE_TEXT = 'No se puede mover una cita a una fecha y hora pasada';
+        END IF;
+        CALL ValidarBloqueCita(OLD.Nro_Cita, NEW.RUT_Medico, NEW.RUT_Paciente, NEW.Fecha_Cita, NEW.Hora_Cita);
     END IF;
 END
 $$
@@ -621,9 +696,9 @@ ALTER TABLE `centro_medico_medico`
 --
 ALTER TABLE `cita`
   ADD PRIMARY KEY (`Nro_Cita`),
-  ADD UNIQUE KEY `uq_Medico_Fecha_Cita` (`RUT_Medico`,`Fecha_Cita`,`Hora_Cita`) USING BTREE,
+  ADD KEY `idx_Medico_Fecha_Cita` (`RUT_Medico`,`Fecha_Cita`,`Hora_Cita`),
   ADD UNIQUE KEY `uq_Cita_Estado_Cita` (`Nro_Cita`,`ID_Estado`),
-  ADD UNIQUE KEY `uq_Paciente_Fecha_Cita` (`RUT_Paciente`,`Fecha_Cita`,`Hora_Cita`) USING BTREE,
+  ADD KEY `idx_Paciente_Fecha_Cita` (`RUT_Paciente`,`Fecha_Cita`,`Hora_Cita`),
   ADD KEY `fkEstado_Cita` (`ID_Estado`),
   ADD KEY `fkCentroMedico_Cita` (`Codigo_Centro`,`RUT_Medico`),
   ADD KEY `fkMedicoEspecialidad_Cita` (`RUT_Medico`,`ID_Especialidad`),

@@ -135,7 +135,7 @@ function validarMedico(array $datos, bool $nuevo, string $clave, string $confirm
         $n = largoTexto($clave);
         if ($n < 8 || strlen($clave) > 72 || strpos($clave, "\0") !== false
             || !preg_match('/[A-Z]/', $clave) || !preg_match('/[a-z]/', $clave) || !preg_match('/[0-9]/', $clave)) {
-            $errores[] = 'La contraseña debe tener al menos 8 caracteres y como máximo 72 bytes, con mayúscula A-Z, minúscula a-z y número.';
+            $errores[] = 'La contraseña debe tener al menos 8 caracteres, con mayúscula A-Z, minúscula a-z y número.';
         }
         if ($clave !== $confirmacion) {
             $errores[] = 'Las contraseñas no coinciden.';

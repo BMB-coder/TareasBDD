@@ -48,6 +48,55 @@ Gestión del administrador (centros médicos y médicos):
 - Los cambios de un médico se guardan en una transacción: si se rechaza una
   asignación, no se aplica ningún cambio.
 
+Citas (agendar, mis citas y agenda médica):
+- Horario de atención: lunes a viernes, de 09:00 a 13:00 y de 14:00 a 18:00,
+  en bloques de 30 minutos (09:00, 09:30, ..., 12:30, 14:00, ..., 17:30).
+  Es el mismo horario para todos los médicos y centros.
+- Se puede reservar desde hoy hasta 90 días hacia adelante. En el día actual
+  solo se ofrecen los bloques que aún no pasan.
+- Agendar hora (paciente): se elige especialidad, luego centro (solo los que
+  tienen médicos de esa especialidad), médico (solo los que tienen la
+  especialidad y atienden en ese centro) y fecha. Se muestran solo los bloques
+  libres para el médico y para el paciente. La cita se crea como Reservada.
+- Reglas al reservar o reprogramar (se validan en PHP y en la base de datos):
+  * El médico no puede tener dos citas vigentes en el mismo bloque y el
+    paciente tampoco. Lo controla el procedimiento ValidarBloqueCita, llamado
+    por los triggers ValidarAgendaInsert y ValidarAgendaUpdate.
+  * Una cita Cancelada libera su bloque. Por eso cita no tiene claves únicas
+    por médico/paciente + fecha + hora (esas claves también contaban las
+    canceladas); se reemplazaron por los triggers anteriores.
+  * El médico debe tener la especialidad y atender en el centro elegidos.
+  * La fecha debe ser un día hábil dentro del rango y la hora un bloque futuro.
+- Mis citas (paciente): usa la vista comprobante_reserva_hora (Vista 1).
+  Próximas: citas Reservadas o Confirmadas desde hoy. Históricas: todas las
+  demás (Atendidas, No Asistió, Canceladas y pasadas), de la más reciente a la
+  más antigua.
+- Reprogramar: solo cambia la fecha y la hora; el médico, el centro y la
+  especialidad se mantienen (para cambiarlos se cancela y se reserva otra).
+  La cita reprogramada vuelve a estado Reservada, porque la confirmación
+  correspondía al horario anterior.
+- Reprogramar y cancelar solo se permite en citas propias, Reservadas o
+  Confirmadas, cuya fecha y hora aún no pasan. Cancelar usa el procedimiento
+  almacenado NULLCita.
+- Agenda (médico): muestra las citas de un día (por defecto hoy) ordenadas por
+  hora, con paciente, previsión, centro, especialidad y estado. Permite ver
+  otros días.
+- Cambios de estado del médico (solo en sus citas):
+  * Confirmada: solo antes de la hora de la cita, desde Reservada.
+  * Atendida o No Asistió: desde la hora de la cita, desde Reservada o
+    Confirmada. Se puede corregir entre Atendida y No Asistió mientras la
+    cita no tenga una atención registrada.
+  * El médico no cancela citas, y una cita Cancelada no cambia de estado.
+- Citas vencidas: las citas Reservadas o Confirmadas con fecha anterior a hoy
+  pasan a Cancelada mediante el procedimiento almacenado
+  CancelarCitasVencidas (consulta 10 de la Tarea 1). Se ejecuta cada vez que
+  se abre Mis citas, Agendar hora o la Agenda del médico. Se compara solo la
+  fecha (no la hora), para que el médico pueda marcar durante el mismo día
+  las citas de hoy como Atendida o No Asistió.
+- Las consultas sobre la vista usan preparación emulada de PDO, porque
+  MariaDB de XAMPP responde el error 1615 al preparar en el servidor
+  consultas sobre vistas. Los parámetros siguen escapados por PDO.
+
 Avance 5.1:
 - Conexión a la base de datos mediante PDO.
 - Página de inicio.

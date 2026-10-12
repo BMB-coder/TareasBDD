@@ -17,6 +17,12 @@ if (!isset($cuenta, $titulo)) {
 <p>Nombre: <?= escapar($cuenta['nombre']) ?></p>
 <p>Correo: <?= escapar($cuenta['email']) ?></p>
 <p>Rol: <strong><?= escapar($cuenta['rol']) ?></strong></p>
+<?php if ($cuenta['rol'] === 'Paciente'): ?>
+<p><a class="boton" href="<?= escapar(BASE_ACCESO) ?>/paciente/mis_citas.php">Mis citas</a>
+<a class="boton" href="<?= escapar(BASE_ACCESO) ?>/paciente/agendar.php">Agendar hora</a></p>
+<?php elseif ($cuenta['rol'] === 'Medico'): ?>
+<p><a class="boton" href="<?= escapar(BASE_ACCESO) ?>/medico/agenda.php">Ver mi agenda de hoy</a></p>
+<?php endif; ?>
 <?php if ($cuenta['rol'] === 'Administrador'): ?>
 <p><a class="boton" href="<?= escapar(BASE_ACCESO) ?>/admin/centros.php">Gestionar centros médicos</a>
 <a class="boton" href="<?= escapar(BASE_ACCESO) ?>/admin/medicos.php">Gestionar médicos</a></p>
