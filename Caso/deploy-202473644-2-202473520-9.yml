@@ -1,0 +1,31 @@
+name: saludusm-tarea3
+
+services:
+  mongo1:
+    image: mongo:8.0
+    command: ["mongod", "--replSet", "rsSaludUSM", "--bind_ip_all", "--port", "30001"]
+    ports:
+      - "127.0.0.1:30001:30001"
+    volumes:
+      - mongo1_data:/data/db
+
+  mongo2:
+    image: mongo:8.0
+    command: ["mongod", "--replSet", "rsSaludUSM", "--bind_ip_all", "--port", "30002"]
+    ports:
+      - "127.0.0.1:30002:30002"
+    volumes:
+      - mongo2_data:/data/db
+
+  mongo3:
+    image: mongo:8.0
+    command: ["mongod", "--replSet", "rsSaludUSM", "--bind_ip_all", "--port", "30003"]
+    ports:
+      - "127.0.0.1:30003:30003"
+    volumes:
+      - mongo3_data:/data/db
+
+volumes:
+  mongo1_data:
+  mongo2_data:
+  mongo3_data:
