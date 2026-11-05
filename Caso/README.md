@@ -417,7 +417,33 @@ No es necesario volver a importar el SQL ni repetir la migración si los datos y
 | MongoDB no encuentra un `PRIMARY` | Comprobar que los tres servicios estén iniciados y que el conjunto de réplicas esté inicializado. |
 | Las colecciones ya contienen documentos | Evitar repetir la inserción; continuar con las consultas y verificaciones del estado existente. |
 
+### 4.3. Consultas
+
+Con las conexiones de la sección 4.2 activas, ejecutar en orden las celdas de la sección 4.3 del notebook. Cada consulta muestra su resultado, su consulta SQL equivalente y la comparación con MySQL, por lo que el contenedor `mysql-tarea3` debe estar iniciado.
+
+**Criterio de desempate de la consulta (d):** los medicamentos con la misma cantidad de recetas se ordenan alfabéticamente de forma ascendente.
+
+### 4.4. Replicación
+
+Ejecutar en orden las celdas de la sección 4.4 después de las de la sección 4.3. Estas celdas modifican los datos, detienen el contenedor del nodo primario y lo vuelven a iniciar mediante `docker compose`, por lo que el notebook debe ejecutarse desde la carpeta `Caso`.
+
+Esta sección se ejecuta una sola vez sobre una base recién migrada: al repetirla, la reserva se rechaza porque el bloque ya está ocupado. Para repetir toda la demostración desde cero, se deben eliminar los datos de MongoDB y ejecutar nuevamente el notebook desde el inicio, reiniciando antes el kernel:
+
+```powershell
+docker compose -f ".\deploy-202473644-2-202473520-9.yml" down -v
+docker compose -f ".\deploy-202473644-2-202473520-9.yml" up -d
+```
+
+Después de esta sección, MongoDB queda con 207 citas, 207 comprobantes y 79 recetas embebidas.
+
 ## Supuestos
 - Se asume que se puede utilizar el mismo archivo .sql exportado desde phpmyadmin para ser utilizado en MySQL
+- Las consultas de la sección 4.3 usan `Citas` y `Atenciones` como fuente de verdad, ya que `Comprobantes` y `Fichas` son copias para presentar las vistas de usuario.
+- Las operaciones de la sección 4.4 actualizan en una misma transacción la colección principal y su copia en `Comprobantes` o `Fichas`.
+- Una cita está vencida si su fecha es anterior al día actual en Chile. Las citas del día actual siguen vigentes, igual que en el procedimiento `CancelarCitasVencidas` de MySQL.
+- La migración deja exactamente 80 recetas, el mínimo solicitado. La eliminación pedida en la sección 4.4 deja 79 en el estado final.
+- El identificador de una cita nueva es el mayor identificador existente más uno, reemplazando el `AUTO_INCREMENT` de MySQL.
+- La consulta (c) aplica el umbral del 15 % al porcentaje sin redondear.
+- El conjunto de réplicas se llama `rsSaludUSM` en lugar del nombre de ejemplo del enunciado.
 
 MySQLSaludUSM
