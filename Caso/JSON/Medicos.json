@@ -1,0 +1,391 @@
+[
+  {
+    "_id": "00000000-1",
+    "nombre": "Dr. Andrés Vidal",
+    "email": "medicogenerico0@gmail.com",
+    "contrasena_hash": "$2y$10$xUPtWBW1jjtMgY0wcePACOEpSABZPg30K54sFGBwG9IqTmuJOCDLy",
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      1,
+      4
+    ]
+  },
+  {
+    "_id": "10000000-8",
+    "nombre": "Médico Genérico1",
+    "email": "medicogenerico1@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "_id": "10000001-6",
+    "nombre": "Médico Genérico2",
+    "email": "medicogenerico2@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "_id": "10000002-4",
+    "nombre": "Médico Genérico3",
+    "email": "medicogenerico3@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      1,
+      7,
+      8
+    ]
+  },
+  {
+    "_id": "10000003-2",
+    "nombre": "Médico Genérico4",
+    "email": "medicogenerico4@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "_id": "10000004-0",
+    "nombre": "Médico Genérico5",
+    "email": "medicogenerico5@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "_id": "10000005-9",
+    "nombre": "Médico Genérico6",
+    "email": "medicogenerico6@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      1,
+      2,
+      8
+    ]
+  },
+  {
+    "_id": "10000006-7",
+    "nombre": "Médico Genérico7",
+    "email": "medicogenerico7@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "_id": "10000007-5",
+    "nombre": "Médico Genérico8",
+    "email": "medicogenerico8@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "_id": "10000008-3",
+    "nombre": "Médico Genérico9",
+    "email": "medicogenerico9@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "_id": "10000009-K",
+    "nombre": "Médico Genérico10",
+    "email": "medicogenerico10@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "_id": "10000010-5",
+    "nombre": "Médico Genérico11",
+    "email": "medicogenerico11@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      1,
+      7,
+      8
+    ]
+  },
+  {
+    "_id": "10000011-3",
+    "nombre": "Médico Genérico12",
+    "email": "medicogenerico12@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "_id": "10000012-1",
+    "nombre": "Médico Genérico13",
+    "email": "medicogenerico13@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "_id": "10000013-K",
+    "nombre": "Médico Genérico14",
+    "email": "medicogenerico14@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      1,
+      2,
+      8
+    ]
+  },
+  {
+    "_id": "10000014-8",
+    "nombre": "Médico Genérico15",
+    "email": "medicogenerico15@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "_id": "10000015-6",
+    "nombre": "Médico Genérico16",
+    "email": "medicogenerico16@gmail.com",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "_id": "12345678-9",
+    "nombre": "Dr. Juan Pérez",
+    "email": "juan.perez@saludusm.cl",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "_id": "13579246-8",
+    "nombre": "Dr. Pedro Soto",
+    "email": "pedro.soto@saludusm.cl",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      6,
+      7
+    ]
+  },
+  {
+    "_id": "16482753-1",
+    "nombre": "Dr. Felipe Muñoz",
+    "email": "felipe.munoz@saludusm.cl",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      3
+    ]
+  },
+  {
+    "_id": "17246813-5",
+    "nombre": "Dra. Camila Fuentes",
+    "email": "camila.fuentes@saludusm.cl",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      4,
+      8
+    ]
+  },
+  {
+    "_id": "98765432-1",
+    "nombre": "Dra. María González",
+    "email": "maria.gonzalez@saludusm.cl",
+    "contrasena_hash": null,
+    "centro_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "especialidad_ids": [
+      5
+    ]
+  }
+]

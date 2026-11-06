@@ -12,8 +12,8 @@ Repositorio del caso asignado para la asignatura de Bases de datos (INF-239) del
 - PyMongo: 4.19.0
 - PyMySQL: 1.2.3
 - JupyterLab: 4.6.5
-- MongoDB: [versión]
-## Instrucciones de ejecución
+- MongoDB: 8.0.34
+
 ## Instrucciones de ejecución
 
 ### 4.1. Diseño del modelo documental
@@ -446,4 +446,10 @@ Después de esta sección, MongoDB queda con 207 citas, 207 comprobantes y 79 re
 - La consulta (c) aplica el umbral del 15 % al porcentaje sin redondear.
 - El conjunto de réplicas se llama `rsSaludUSM` en lugar del nombre de ejemplo del enunciado.
 
-MySQLSaludUSM
+### 4.5 Análisis comparativo: SQL vs. NoSQL
+Falta hacer
+
+## Referencias
+- MongoDB. *Data Modeling*. https://www.mongodb.com/docs/manual/data-modeling/
+- MongoDB. *Data Consistency*. https://www.mongodb.com/docs/manual/data-modeling/data-consistency/
+- MySQL. *FOREIGN KEY Constraints*. https://dev.mysql.com/doc/refman/8.4/en/create-table-foreign-keys.html

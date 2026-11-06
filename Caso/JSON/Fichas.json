@@ -1,0 +1,3358 @@
+[
+  {
+    "_id": 1,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 1,
+      "fecha": {
+        "$date": "2026-09-21T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "00000000-0",
+        "nombre": "Martina Díaz",
+        "nacimiento": {
+          "$date": "1995-01-01T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "email": "medicogenerico0@gmail.com",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 1,
+        "motivo": "Fiebre y congestión nasal",
+        "observacion": "Rinofaringitis; presión arterial elevada en control.",
+        "diagnosticos": [
+          {
+            "codigo": "I10",
+            "descripcion": "Hipertensión esencial (primaria)"
+          },
+          {
+            "codigo": "J00",
+            "descripcion": "Rinofaringitis aguda (resfriado común)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 1,
+            "medicamento": "Paracetamol 500 mg",
+            "dosis": "1 comprimido cada 8 horas",
+            "dias": 5
+          },
+          {
+            "receta_id": 2,
+            "medicamento": "Losartán 50 mg",
+            "dosis": "1 comprimido cada 24 horas",
+            "dias": 30
+          },
+          {
+            "receta_id": 21,
+            "medicamento": "Medicamento de prueba grupo 3",
+            "dosis": "Pauta ficticia grupo 1",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 2,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 2,
+      "fecha": {
+        "$date": "2026-09-22T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "20123456-7",
+        "nombre": "Carlos Silva",
+        "nacimiento": {
+          "$date": "1995-04-12T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "email": "juan.perez@saludusm.cl",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 2,
+        "motivo": "Dolor de garganta y fiebre",
+        "observacion": "Amígdalas inflamadas con exudado.",
+        "diagnosticos": [
+          {
+            "codigo": "J00",
+            "descripcion": "Rinofaringitis aguda (resfriado común)"
+          },
+          {
+            "codigo": "J03",
+            "descripcion": "Amigdalitis aguda"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 3,
+            "medicamento": "Amoxicilina 500 mg",
+            "dosis": "1 cápsula cada 8 horas",
+            "dias": 7
+          },
+          {
+            "receta_id": 4,
+            "medicamento": "Ibuprofeno 400 mg",
+            "dosis": "1 comprimido cada 8 horas",
+            "dias": 5
+          },
+          {
+            "receta_id": 22,
+            "medicamento": "Medicamento de prueba grupo 3",
+            "dosis": "Pauta ficticia grupo 1",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 3,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 3,
+      "fecha": {
+        "$date": "2026-09-23T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "15678901-K",
+        "nombre": "Ana Rojas",
+        "nacimiento": {
+          "$date": "1982-11-05T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "email": "maria.gonzalez@saludusm.cl",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "atencion": {
+        "id": 3,
+        "motivo": "Irritación cutánea en antebrazos",
+        "observacion": "Dermatitis de contacto leve.",
+        "diagnosticos": [
+          {
+            "codigo": "L30",
+            "descripcion": "Otras dermatitis"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 5,
+            "medicamento": "Hidrocortisona crema 1%",
+            "dosis": "Aplicar 2 veces al día",
+            "dias": 10
+          },
+          {
+            "receta_id": 23,
+            "medicamento": "Medicamento de prueba grupo 3",
+            "dosis": "Pauta ficticia grupo 1",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 4,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 5,
+      "fecha": {
+        "$date": "2026-09-28T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura"
+      },
+      "paciente": {
+        "rut": "00000000-0",
+        "nombre": "Martina Díaz",
+        "nacimiento": {
+          "$date": "1995-01-01T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "email": "medicogenerico0@gmail.com",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "atencion": {
+        "id": 4,
+        "motivo": "Control de presión arterial",
+        "observacion": "Presión 150/95 mmHg. Se ajusta tratamiento.",
+        "diagnosticos": [
+          {
+            "codigo": "I10",
+            "descripcion": "Hipertensión esencial (primaria)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 6,
+            "medicamento": "Losartán 50 mg",
+            "dosis": "1 comprimido cada 24 horas",
+            "dias": 30
+          },
+          {
+            "receta_id": 24,
+            "medicamento": "Medicamento de prueba grupo 3",
+            "dosis": "Pauta ficticia grupo 1",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 5,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 6,
+      "fecha": {
+        "$date": "2026-09-29T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "23456789-6",
+        "nombre": "Valentina Torres",
+        "nacimiento": {
+          "$date": "2015-06-20T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "email": "juan.perez@saludusm.cl",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "atencion": {
+        "id": 5,
+        "motivo": "Tos y dificultad respiratoria",
+        "observacion": "Sibilancias leves, cuadro viral asociado.",
+        "diagnosticos": [
+          {
+            "codigo": "J00",
+            "descripcion": "Rinofaringitis aguda (resfriado común)"
+          },
+          {
+            "codigo": "J45",
+            "descripcion": "Asma"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 7,
+            "medicamento": "Paracetamol jarabe 120 mg/5 ml",
+            "dosis": "5 ml cada 8 horas",
+            "dias": 5
+          },
+          {
+            "receta_id": 8,
+            "medicamento": "Salbutamol inhalador",
+            "dosis": "2 inhalaciones cada 6 horas",
+            "dias": 7
+          },
+          {
+            "receta_id": 25,
+            "medicamento": "Medicamento de prueba grupo 3",
+            "dosis": "Pauta ficticia grupo 1",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 6,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 8,
+      "fecha": {
+        "$date": "2026-10-01T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción"
+      },
+      "paciente": {
+        "rut": "10987654-3",
+        "nombre": "Jorge Herrera",
+        "nacimiento": {
+          "$date": {
+            "$numberLong": "-373507200000"
+          }
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "email": "pedro.soto@saludusm.cl",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "atencion": {
+        "id": 6,
+        "motivo": "Cefalea recurrente",
+        "observacion": "Migraña sin aura, examen neurológico normal.",
+        "diagnosticos": [
+          {
+            "codigo": "G43",
+            "descripcion": "Migraña"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 9,
+            "medicamento": "Sumatriptán 50 mg",
+            "dosis": "1 comprimido al inicio de la crisis",
+            "dias": 10
+          },
+          {
+            "receta_id": 26,
+            "medicamento": "Medicamento de prueba grupo 3",
+            "dosis": "Pauta ficticia grupo 2",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 7,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 10,
+      "fecha": {
+        "$date": "2026-10-05T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "11223344-5",
+        "nombre": "Luis Castro",
+        "nacimiento": {
+          "$date": "1972-01-30T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "email": "camila.fuentes@saludusm.cl",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "atencion": {
+        "id": 7,
+        "motivo": "Dolor epigástrico y acidez",
+        "observacion": "Dolor a la palpación en epigastrio.",
+        "diagnosticos": [
+          {
+            "codigo": "K21",
+            "descripcion": "Enfermedad del reflujo gastroesofágico"
+          },
+          {
+            "codigo": "K29",
+            "descripcion": "Gastritis y duodenitis"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 10,
+            "medicamento": "Omeprazol 20 mg",
+            "dosis": "1 cápsula cada 24 horas en ayunas",
+            "dias": 30
+          },
+          {
+            "receta_id": 27,
+            "medicamento": "Medicamento de prueba grupo 3",
+            "dosis": "Pauta ficticia grupo 2",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 8,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 12,
+      "fecha": {
+        "$date": "2026-10-07T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura"
+      },
+      "paciente": {
+        "rut": "18234567-0",
+        "nombre": "Francisca Reyes",
+        "nacimiento": {
+          "$date": "1990-09-14T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "email": "pedro.soto@saludusm.cl",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "atencion": {
+        "id": 8,
+        "motivo": "Insomnio y ansiedad",
+        "observacion": "Síntomas ansiosos de 3 meses de evolución.",
+        "diagnosticos": [
+          {
+            "codigo": "F41",
+            "descripcion": "Otros trastornos de ansiedad"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 11,
+            "medicamento": "Sertralina 50 mg",
+            "dosis": "1 comprimido cada 24 horas",
+            "dias": 60
+          },
+          {
+            "receta_id": 28,
+            "medicamento": "Medicamento de prueba grupo 3",
+            "dosis": "Pauta ficticia grupo 2",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 9,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 13,
+      "fecha": {
+        "$date": "2026-10-09T00:00:00Z"
+      },
+      "hora": "16:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "20123456-7",
+        "nombre": "Carlos Silva",
+        "nacimiento": {
+          "$date": "1995-04-12T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "email": "felipe.munoz@saludusm.cl",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "atencion": {
+        "id": 9,
+        "motivo": "Dolor lumbar tras caída",
+        "observacion": "Esguince de tobillo y lumbago mecánico.",
+        "diagnosticos": [
+          {
+            "codigo": "M54",
+            "descripcion": "Dorsalgia"
+          },
+          {
+            "codigo": "S93",
+            "descripcion": "Luxación y esguince de tobillo y pie"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 12,
+            "medicamento": "Ibuprofeno 600 mg",
+            "dosis": "1 comprimido cada 8 horas",
+            "dias": 7
+          },
+          {
+            "receta_id": 29,
+            "medicamento": "Medicamento de prueba grupo 3",
+            "dosis": "Pauta ficticia grupo 2",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 10,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 15,
+      "fecha": {
+        "$date": "2026-10-13T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "10987654-3",
+        "nombre": "Jorge Herrera",
+        "nacimiento": {
+          "$date": {
+            "$numberLong": "-373507200000"
+          }
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "email": "medicogenerico0@gmail.com",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "atencion": {
+        "id": 10,
+        "motivo": "Control cardiovascular",
+        "observacion": "Hipertensión y glicemia elevada.",
+        "diagnosticos": [
+          {
+            "codigo": "E11",
+            "descripcion": "Diabetes mellitus tipo 2"
+          },
+          {
+            "codigo": "I10",
+            "descripcion": "Hipertensión esencial (primaria)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 13,
+            "medicamento": "Metformina 850 mg",
+            "dosis": "1 comprimido cada 12 horas",
+            "dias": 90
+          },
+          {
+            "receta_id": 14,
+            "medicamento": "Losartán 50 mg",
+            "dosis": "1 comprimido cada 24 horas",
+            "dias": 30
+          },
+          {
+            "receta_id": 30,
+            "medicamento": "Medicamento de prueba grupo 3",
+            "dosis": "Pauta ficticia grupo 2",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 11,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 16,
+      "fecha": {
+        "$date": "2026-10-14T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "21098765-4",
+        "nombre": "Sofía Morales",
+        "nacimiento": {
+          "$date": "2001-12-08T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "email": "juan.perez@saludusm.cl",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 11,
+        "motivo": "Resfrío y dolor de espalda",
+        "observacion": "Cuadro viral leve y contractura dorsal.",
+        "diagnosticos": [
+          {
+            "codigo": "J00",
+            "descripcion": "Rinofaringitis aguda (resfriado común)"
+          },
+          {
+            "codigo": "M54",
+            "descripcion": "Dorsalgia"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 15,
+            "medicamento": "Paracetamol 500 mg",
+            "dosis": "1 comprimido cada 8 horas",
+            "dias": 5
+          },
+          {
+            "receta_id": 31,
+            "medicamento": "Medicamento de prueba grupo 4",
+            "dosis": "Pauta ficticia grupo 3",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 12,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 18,
+      "fecha": {
+        "$date": "2026-10-16T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción"
+      },
+      "paciente": {
+        "rut": "00000001-0",
+        "nombre": "Tomás Rivas",
+        "nacimiento": {
+          "$date": "2000-01-02T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "email": "camila.fuentes@saludusm.cl",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 12,
+        "motivo": "Control de diabetes",
+        "observacion": "Hemoglobina glicosilada 7,8%.",
+        "diagnosticos": [
+          {
+            "codigo": "E11",
+            "descripcion": "Diabetes mellitus tipo 2"
+          },
+          {
+            "codigo": "J00",
+            "descripcion": "Rinofaringitis aguda (resfriado común)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 16,
+            "medicamento": "Metformina 850 mg",
+            "dosis": "1 comprimido cada 12 horas",
+            "dias": 90
+          },
+          {
+            "receta_id": 32,
+            "medicamento": "Medicamento de prueba grupo 4",
+            "dosis": "Pauta ficticia grupo 3",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 13,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 19,
+      "fecha": {
+        "$date": "2026-10-19T00:00:00Z"
+      },
+      "hora": "14:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "11223344-5",
+        "nombre": "Luis Castro",
+        "nacimiento": {
+          "$date": "1972-01-30T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "email": "felipe.munoz@saludusm.cl",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "atencion": {
+        "id": 13,
+        "motivo": "Dolor lumbar persistente",
+        "observacion": "Lumbago sin irradiación.",
+        "diagnosticos": [
+          {
+            "codigo": "M54",
+            "descripcion": "Dorsalgia"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 17,
+            "medicamento": "Diclofenaco 50 mg",
+            "dosis": "1 comprimido cada 12 horas",
+            "dias": 7
+          },
+          {
+            "receta_id": 33,
+            "medicamento": "Medicamento de prueba grupo 4",
+            "dosis": "Pauta ficticia grupo 3",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 14,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 20,
+      "fecha": {
+        "$date": "2026-10-20T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "20123456-7",
+        "nombre": "Carlos Silva",
+        "nacimiento": {
+          "$date": "1995-04-12T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "email": "medicogenerico0@gmail.com",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 14,
+        "motivo": "Malestar general",
+        "observacion": "Resfrío común; presión arterial controlada.",
+        "diagnosticos": [
+          {
+            "codigo": "I10",
+            "descripcion": "Hipertensión esencial (primaria)"
+          },
+          {
+            "codigo": "J00",
+            "descripcion": "Rinofaringitis aguda (resfriado común)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 18,
+            "medicamento": "Paracetamol 500 mg",
+            "dosis": "1 comprimido cada 8 horas",
+            "dias": 4
+          },
+          {
+            "receta_id": 34,
+            "medicamento": "Medicamento de prueba grupo 4",
+            "dosis": "Pauta ficticia grupo 3",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 15,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 22,
+      "fecha": {
+        "$date": "2026-10-22T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura"
+      },
+      "paciente": {
+        "rut": "15678901-K",
+        "nombre": "Ana Rojas",
+        "nacimiento": {
+          "$date": "1982-11-05T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "email": "pedro.soto@saludusm.cl",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "atencion": {
+        "id": 15,
+        "motivo": "Ansiedad y dolor cervical",
+        "observacion": "Mejoría parcial con tratamiento.",
+        "diagnosticos": [
+          {
+            "codigo": "F41",
+            "descripcion": "Otros trastornos de ansiedad"
+          },
+          {
+            "codigo": "M54",
+            "descripcion": "Dorsalgia"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 19,
+            "medicamento": "Sertralina 50 mg",
+            "dosis": "1 comprimido cada 24 horas",
+            "dias": 60
+          },
+          {
+            "receta_id": 35,
+            "medicamento": "Medicamento de prueba grupo 4",
+            "dosis": "Pauta ficticia grupo 3",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 16,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 24,
+      "fecha": {
+        "$date": "2026-10-26T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "10987654-3",
+        "nombre": "Jorge Herrera",
+        "nacimiento": {
+          "$date": {
+            "$numberLong": "-373507200000"
+          }
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "email": "camila.fuentes@saludusm.cl",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "atencion": {
+        "id": 16,
+        "motivo": "Diarrea y control de glicemia",
+        "observacion": "Gastroenteritis aguda en paciente diabético.",
+        "diagnosticos": [
+          {
+            "codigo": "A09",
+            "descripcion": "Gastroenteritis de presunto origen infeccioso"
+          },
+          {
+            "codigo": "E11",
+            "descripcion": "Diabetes mellitus tipo 2"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 20,
+            "medicamento": "Sales de rehidratación oral",
+            "dosis": "1 sobre después de cada deposición",
+            "dias": 3
+          },
+          {
+            "receta_id": 36,
+            "medicamento": "Medicamento de prueba grupo 4",
+            "dosis": "Pauta ficticia grupo 4",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 17,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 26,
+      "fecha": {
+        "$date": "2026-10-28T00:00:00Z"
+      },
+      "hora": "15:30:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "00000000-0",
+        "nombre": "Martina Díaz",
+        "nacimiento": {
+          "$date": "1995-01-01T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "email": "medicogenerico0@gmail.com",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 17,
+        "motivo": "Control de resfrío",
+        "observacion": "Evolución favorable; sin indicación de fármacos.",
+        "diagnosticos": [
+          {
+            "codigo": "I10",
+            "descripcion": "Hipertensión esencial (primaria)"
+          },
+          {
+            "codigo": "J00",
+            "descripcion": "Rinofaringitis aguda (resfriado común)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 37,
+            "medicamento": "Medicamento de prueba grupo 4",
+            "dosis": "Pauta ficticia grupo 4",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 18,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 39,
+      "fecha": {
+        "$date": "2026-10-29T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "10987654-3",
+        "nombre": "Jorge Herrera",
+        "nacimiento": {
+          "$date": {
+            "$numberLong": "-373507200000"
+          }
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "email": "medicogenerico0@gmail.com",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 18,
+        "motivo": "Motivo de prueba grupo 2",
+        "observacion": "Observación de prueba grupo 4",
+        "diagnosticos": [
+          {
+            "codigo": "A09",
+            "descripcion": "Gastroenteritis de presunto origen infeccioso"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 38,
+            "medicamento": "Medicamento de prueba grupo 4",
+            "dosis": "Pauta ficticia grupo 4",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 19,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 40,
+      "fecha": {
+        "$date": "2026-10-30T00:00:00Z"
+      },
+      "hora": "14:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "11223344-5",
+        "nombre": "Luis Castro",
+        "nacimiento": {
+          "$date": "1972-01-30T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "email": "felipe.munoz@saludusm.cl",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "atencion": {
+        "id": 19,
+        "motivo": "Motivo de prueba grupo 2",
+        "observacion": "Observación de prueba grupo 4",
+        "diagnosticos": [
+          {
+            "codigo": "E11",
+            "descripcion": "Diabetes mellitus tipo 2"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 39,
+            "medicamento": "Medicamento de prueba grupo 4",
+            "dosis": "Pauta ficticia grupo 4",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 20,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 165,
+      "fecha": {
+        "$date": "2020-01-01T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "00000001-9",
+        "nombre": "Paciente Genérico1",
+        "nacimiento": {
+          "$date": "2010-01-01T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "email": "medicogenerico0@gmail.com",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "atencion": {
+        "id": 20,
+        "motivo": "Motivo de prueba grupo 2",
+        "observacion": "Observación de prueba grupo 4",
+        "diagnosticos": [
+          {
+            "codigo": "F41",
+            "descripcion": "Otros trastornos de ansiedad"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 40,
+            "medicamento": "Medicamento de prueba grupo 4",
+            "dosis": "Pauta ficticia grupo 4",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 21,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 166,
+      "fecha": {
+        "$date": "2020-01-02T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura"
+      },
+      "paciente": {
+        "rut": "00000002-7",
+        "nombre": "Paciente Genérico2",
+        "nacimiento": {
+          "$date": "2000-01-02T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "10000000-8",
+        "nombre": "Médico Genérico1",
+        "email": "medicogenerico1@gmail.com",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "atencion": {
+        "id": 21,
+        "motivo": "Motivo de prueba grupo 3",
+        "observacion": "Observación de prueba grupo 5",
+        "diagnosticos": [
+          {
+            "codigo": "G43",
+            "descripcion": "Migraña"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 41,
+            "medicamento": "Medicamento de prueba grupo 5",
+            "dosis": "Pauta ficticia grupo 5",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 22,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 167,
+      "fecha": {
+        "$date": "2020-01-03T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "00000003-5",
+        "nombre": "Paciente Genérico3",
+        "nacimiento": {
+          "$date": "2000-01-03T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "10000001-6",
+        "nombre": "Médico Genérico2",
+        "email": "medicogenerico2@gmail.com",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 22,
+        "motivo": "Motivo de prueba grupo 3",
+        "observacion": "Observación de prueba grupo 5",
+        "diagnosticos": [
+          {
+            "codigo": "I10",
+            "descripcion": "Hipertensión esencial (primaria)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 42,
+            "medicamento": "Medicamento de prueba grupo 5",
+            "dosis": "Pauta ficticia grupo 5",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 23,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 168,
+      "fecha": {
+        "$date": "2020-01-04T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "00000004-3",
+        "nombre": "Paciente Genérico4",
+        "nacimiento": {
+          "$date": "2000-01-04T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "10000002-4",
+        "nombre": "Médico Genérico3",
+        "email": "medicogenerico3@gmail.com",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "atencion": {
+        "id": 23,
+        "motivo": "Motivo de prueba grupo 3",
+        "observacion": "Observación de prueba grupo 5",
+        "diagnosticos": [
+          {
+            "codigo": "J00",
+            "descripcion": "Rinofaringitis aguda (resfriado común)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 43,
+            "medicamento": "Medicamento de prueba grupo 5",
+            "dosis": "Pauta ficticia grupo 5",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 24,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 169,
+      "fecha": {
+        "$date": "2020-01-05T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción"
+      },
+      "paciente": {
+        "rut": "00000005-1",
+        "nombre": "Paciente Genérico5",
+        "nacimiento": {
+          "$date": "2000-01-05T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "10000003-2",
+        "nombre": "Médico Genérico4",
+        "email": "medicogenerico4@gmail.com",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "atencion": {
+        "id": 24,
+        "motivo": "Motivo de prueba grupo 3",
+        "observacion": "Observación de prueba grupo 5",
+        "diagnosticos": [
+          {
+            "codigo": "J03",
+            "descripcion": "Amigdalitis aguda"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 44,
+            "medicamento": "Medicamento de prueba grupo 5",
+            "dosis": "Pauta ficticia grupo 5",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 25,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 170,
+      "fecha": {
+        "$date": "2020-01-06T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "00000006-K",
+        "nombre": "Paciente Genérico6",
+        "nacimiento": {
+          "$date": "2000-01-06T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "10000004-0",
+        "nombre": "Médico Genérico5",
+        "email": "medicogenerico5@gmail.com",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "atencion": {
+        "id": 25,
+        "motivo": "Motivo de prueba grupo 3",
+        "observacion": "Observación de prueba grupo 5",
+        "diagnosticos": [
+          {
+            "codigo": "J45",
+            "descripcion": "Asma"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 45,
+            "medicamento": "Medicamento de prueba grupo 5",
+            "dosis": "Pauta ficticia grupo 5",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 26,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 171,
+      "fecha": {
+        "$date": "2020-01-07T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura"
+      },
+      "paciente": {
+        "rut": "00000007-8",
+        "nombre": "Paciente Genérico7",
+        "nacimiento": {
+          "$date": "2000-01-07T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "10000005-9",
+        "nombre": "Médico Genérico6",
+        "email": "medicogenerico6@gmail.com",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "atencion": {
+        "id": 26,
+        "motivo": "Motivo de prueba grupo 3",
+        "observacion": "Observación de prueba grupo 6",
+        "diagnosticos": [
+          {
+            "codigo": "K21",
+            "descripcion": "Enfermedad del reflujo gastroesofágico"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 46,
+            "medicamento": "Medicamento de prueba grupo 5",
+            "dosis": "Pauta ficticia grupo 6",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 27,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 172,
+      "fecha": {
+        "$date": "2020-01-08T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "00000008-6",
+        "nombre": "Paciente Genérico8",
+        "nacimiento": {
+          "$date": "2000-01-08T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "10000006-7",
+        "nombre": "Médico Genérico7",
+        "email": "medicogenerico7@gmail.com",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "atencion": {
+        "id": 27,
+        "motivo": "Motivo de prueba grupo 3",
+        "observacion": "Observación de prueba grupo 6",
+        "diagnosticos": [
+          {
+            "codigo": "K29",
+            "descripcion": "Gastritis y duodenitis"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 47,
+            "medicamento": "Medicamento de prueba grupo 5",
+            "dosis": "Pauta ficticia grupo 6",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 28,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 173,
+      "fecha": {
+        "$date": "2020-01-09T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "00000009-4",
+        "nombre": "Paciente Genérico9",
+        "nacimiento": {
+          "$date": "2000-01-09T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "10000007-5",
+        "nombre": "Médico Genérico8",
+        "email": "medicogenerico8@gmail.com",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "atencion": {
+        "id": 28,
+        "motivo": "Motivo de prueba grupo 3",
+        "observacion": "Observación de prueba grupo 6",
+        "diagnosticos": [
+          {
+            "codigo": "L30",
+            "descripcion": "Otras dermatitis"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 48,
+            "medicamento": "Medicamento de prueba grupo 5",
+            "dosis": "Pauta ficticia grupo 6",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 29,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 174,
+      "fecha": {
+        "$date": "2020-01-10T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción"
+      },
+      "paciente": {
+        "rut": "00000010-8",
+        "nombre": "Paciente Genérico10",
+        "nacimiento": {
+          "$date": "2000-01-10T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "10000008-3",
+        "nombre": "Médico Genérico9",
+        "email": "medicogenerico9@gmail.com",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "atencion": {
+        "id": 29,
+        "motivo": "Motivo de prueba grupo 3",
+        "observacion": "Observación de prueba grupo 6",
+        "diagnosticos": [
+          {
+            "codigo": "M54",
+            "descripcion": "Dorsalgia"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 49,
+            "medicamento": "Medicamento de prueba grupo 5",
+            "dosis": "Pauta ficticia grupo 6",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 30,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 175,
+      "fecha": {
+        "$date": "2020-01-11T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "00000011-6",
+        "nombre": "Paciente Genérico11",
+        "nacimiento": {
+          "$date": "2000-01-11T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "10000009-K",
+        "nombre": "Médico Genérico10",
+        "email": "medicogenerico10@gmail.com",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 30,
+        "motivo": "Motivo de prueba grupo 3",
+        "observacion": "Observación de prueba grupo 6",
+        "diagnosticos": [
+          {
+            "codigo": "S93",
+            "descripcion": "Luxación y esguince de tobillo y pie"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 50,
+            "medicamento": "Medicamento de prueba grupo 5",
+            "dosis": "Pauta ficticia grupo 6",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 31,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 176,
+      "fecha": {
+        "$date": "2020-01-12T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura"
+      },
+      "paciente": {
+        "rut": "00000012-4",
+        "nombre": "Paciente Genérico12",
+        "nacimiento": {
+          "$date": "2000-01-12T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "10000010-5",
+        "nombre": "Médico Genérico11",
+        "email": "medicogenerico11@gmail.com",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "atencion": {
+        "id": 31,
+        "motivo": "Motivo de prueba grupo 4",
+        "observacion": "Observación de prueba grupo 7",
+        "diagnosticos": [
+          {
+            "codigo": "Z00",
+            "descripcion": "Examen general sin queja o diagnóstico informado"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 51,
+            "medicamento": "Medicamento de prueba grupo 6",
+            "dosis": "Pauta ficticia grupo 7",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 32,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 177,
+      "fecha": {
+        "$date": "2020-01-13T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "00000013-2",
+        "nombre": "Paciente Genérico13",
+        "nacimiento": {
+          "$date": "2000-01-13T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "10000011-3",
+        "nombre": "Médico Genérico12",
+        "email": "medicogenerico12@gmail.com",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "atencion": {
+        "id": 32,
+        "motivo": "Motivo de prueba grupo 4",
+        "observacion": "Observación de prueba grupo 7",
+        "diagnosticos": [
+          {
+            "codigo": "A09",
+            "descripcion": "Gastroenteritis de presunto origen infeccioso"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 52,
+            "medicamento": "Medicamento de prueba grupo 6",
+            "dosis": "Pauta ficticia grupo 7",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 33,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 178,
+      "fecha": {
+        "$date": "2020-01-14T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "00000014-0",
+        "nombre": "Paciente Genérico14",
+        "nacimiento": {
+          "$date": "2000-01-14T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "10000012-1",
+        "nombre": "Médico Genérico13",
+        "email": "medicogenerico13@gmail.com",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "atencion": {
+        "id": 33,
+        "motivo": "Motivo de prueba grupo 4",
+        "observacion": "Observación de prueba grupo 7",
+        "diagnosticos": [
+          {
+            "codigo": "E11",
+            "descripcion": "Diabetes mellitus tipo 2"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 53,
+            "medicamento": "Medicamento de prueba grupo 6",
+            "dosis": "Pauta ficticia grupo 7",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 34,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 179,
+      "fecha": {
+        "$date": "2020-01-15T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción"
+      },
+      "paciente": {
+        "rut": "00000015-9",
+        "nombre": "Paciente Genérico15",
+        "nacimiento": {
+          "$date": "2000-01-15T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "10000013-K",
+        "nombre": "Médico Genérico14",
+        "email": "medicogenerico14@gmail.com",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "atencion": {
+        "id": 34,
+        "motivo": "Motivo de prueba grupo 4",
+        "observacion": "Observación de prueba grupo 7",
+        "diagnosticos": [
+          {
+            "codigo": "F41",
+            "descripcion": "Otros trastornos de ansiedad"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 54,
+            "medicamento": "Medicamento de prueba grupo 6",
+            "dosis": "Pauta ficticia grupo 7",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 35,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 180,
+      "fecha": {
+        "$date": "2020-01-16T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "00000016-7",
+        "nombre": "Paciente Genérico16",
+        "nacimiento": {
+          "$date": "2000-01-16T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "10000014-8",
+        "nombre": "Médico Genérico15",
+        "email": "medicogenerico15@gmail.com",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "atencion": {
+        "id": 35,
+        "motivo": "Motivo de prueba grupo 4",
+        "observacion": "Observación de prueba grupo 7",
+        "diagnosticos": [
+          {
+            "codigo": "G43",
+            "descripcion": "Migraña"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 55,
+            "medicamento": "Medicamento de prueba grupo 6",
+            "dosis": "Pauta ficticia grupo 7",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 36,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 181,
+      "fecha": {
+        "$date": "2020-01-17T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura"
+      },
+      "paciente": {
+        "rut": "00000017-5",
+        "nombre": "Paciente Genérico17",
+        "nacimiento": {
+          "$date": "2000-01-17T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "10000015-6",
+        "nombre": "Médico Genérico16",
+        "email": "medicogenerico16@gmail.com",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "atencion": {
+        "id": 36,
+        "motivo": "Motivo de prueba grupo 4",
+        "observacion": "Observación de prueba grupo 8",
+        "diagnosticos": [
+          {
+            "codigo": "I10",
+            "descripcion": "Hipertensión esencial (primaria)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 56,
+            "medicamento": "Medicamento de prueba grupo 6",
+            "dosis": "Pauta ficticia grupo 8",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 37,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 182,
+      "fecha": {
+        "$date": "2020-01-18T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "00000018-3",
+        "nombre": "Paciente Genérico18",
+        "nacimiento": {
+          "$date": "2000-01-18T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "email": "juan.perez@saludusm.cl",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "atencion": {
+        "id": 37,
+        "motivo": "Motivo de prueba grupo 4",
+        "observacion": "Observación de prueba grupo 8",
+        "diagnosticos": [
+          {
+            "codigo": "J00",
+            "descripcion": "Rinofaringitis aguda (resfriado común)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 57,
+            "medicamento": "Medicamento de prueba grupo 6",
+            "dosis": "Pauta ficticia grupo 8",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 38,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 183,
+      "fecha": {
+        "$date": "2020-01-19T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "00000019-1",
+        "nombre": "Paciente Genérico19",
+        "nacimiento": {
+          "$date": "2000-01-19T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "email": "pedro.soto@saludusm.cl",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "atencion": {
+        "id": 38,
+        "motivo": "Motivo de prueba grupo 4",
+        "observacion": "Observación de prueba grupo 8",
+        "diagnosticos": [
+          {
+            "codigo": "J03",
+            "descripcion": "Amigdalitis aguda"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 58,
+            "medicamento": "Medicamento de prueba grupo 6",
+            "dosis": "Pauta ficticia grupo 8",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 39,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 184,
+      "fecha": {
+        "$date": "2020-01-20T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción"
+      },
+      "paciente": {
+        "rut": "00000020-5",
+        "nombre": "Paciente Genérico20",
+        "nacimiento": {
+          "$date": "2000-01-20T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "email": "felipe.munoz@saludusm.cl",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "atencion": {
+        "id": 39,
+        "motivo": "Motivo de prueba grupo 4",
+        "observacion": "Observación de prueba grupo 8",
+        "diagnosticos": [
+          {
+            "codigo": "J45",
+            "descripcion": "Asma"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 59,
+            "medicamento": "Medicamento de prueba grupo 6",
+            "dosis": "Pauta ficticia grupo 8",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 40,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 185,
+      "fecha": {
+        "$date": "2020-01-21T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "00000021-3",
+        "nombre": "Paciente Genérico21",
+        "nacimiento": {
+          "$date": "2000-01-21T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "email": "camila.fuentes@saludusm.cl",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 40,
+        "motivo": "Motivo de prueba grupo 4",
+        "observacion": "Observación de prueba grupo 8",
+        "diagnosticos": [
+          {
+            "codigo": "K21",
+            "descripcion": "Enfermedad del reflujo gastroesofágico"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 60,
+            "medicamento": "Medicamento de prueba grupo 6",
+            "dosis": "Pauta ficticia grupo 8",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 41,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 186,
+      "fecha": {
+        "$date": "2020-01-22T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura"
+      },
+      "paciente": {
+        "rut": "00000022-1",
+        "nombre": "Paciente Genérico22",
+        "nacimiento": {
+          "$date": "2000-01-22T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "email": "maria.gonzalez@saludusm.cl",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "atencion": {
+        "id": 41,
+        "motivo": "Motivo de prueba grupo 5",
+        "observacion": "Observación de prueba grupo 9",
+        "diagnosticos": [
+          {
+            "codigo": "K29",
+            "descripcion": "Gastritis y duodenitis"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 61,
+            "medicamento": "Medicamento de prueba grupo 7",
+            "dosis": "Pauta ficticia grupo 9",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 42,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 187,
+      "fecha": {
+        "$date": "2020-01-23T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "00000023-K",
+        "nombre": "Paciente Genérico23",
+        "nacimiento": {
+          "$date": "2000-01-23T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "email": "medicogenerico0@gmail.com",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 42,
+        "motivo": "Motivo de prueba grupo 5",
+        "observacion": "Observación de prueba grupo 9",
+        "diagnosticos": [
+          {
+            "codigo": "L30",
+            "descripcion": "Otras dermatitis"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 62,
+            "medicamento": "Medicamento de prueba grupo 7",
+            "dosis": "Pauta ficticia grupo 9",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 43,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 188,
+      "fecha": {
+        "$date": "2020-01-24T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "00000024-8",
+        "nombre": "Paciente Genérico24",
+        "nacimiento": {
+          "$date": "2000-01-24T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "10000000-8",
+        "nombre": "Médico Genérico1",
+        "email": "medicogenerico1@gmail.com",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "atencion": {
+        "id": 43,
+        "motivo": "Motivo de prueba grupo 5",
+        "observacion": "Observación de prueba grupo 9",
+        "diagnosticos": [
+          {
+            "codigo": "M54",
+            "descripcion": "Dorsalgia"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 63,
+            "medicamento": "Medicamento de prueba grupo 7",
+            "dosis": "Pauta ficticia grupo 9",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 44,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 189,
+      "fecha": {
+        "$date": "2020-01-25T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción"
+      },
+      "paciente": {
+        "rut": "00000025-6",
+        "nombre": "Paciente Genérico25",
+        "nacimiento": {
+          "$date": "2000-01-25T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "10000001-6",
+        "nombre": "Médico Genérico2",
+        "email": "medicogenerico2@gmail.com",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "atencion": {
+        "id": 44,
+        "motivo": "Motivo de prueba grupo 5",
+        "observacion": "Observación de prueba grupo 9",
+        "diagnosticos": [
+          {
+            "codigo": "S93",
+            "descripcion": "Luxación y esguince de tobillo y pie"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 64,
+            "medicamento": "Medicamento de prueba grupo 7",
+            "dosis": "Pauta ficticia grupo 9",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 45,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 190,
+      "fecha": {
+        "$date": "2020-01-26T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "00000026-4",
+        "nombre": "Paciente Genérico26",
+        "nacimiento": {
+          "$date": "2000-01-26T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "10000002-4",
+        "nombre": "Médico Genérico3",
+        "email": "medicogenerico3@gmail.com",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "atencion": {
+        "id": 45,
+        "motivo": "Motivo de prueba grupo 5",
+        "observacion": "Observación de prueba grupo 9",
+        "diagnosticos": [
+          {
+            "codigo": "Z00",
+            "descripcion": "Examen general sin queja o diagnóstico informado"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 65,
+            "medicamento": "Medicamento de prueba grupo 7",
+            "dosis": "Pauta ficticia grupo 9",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 46,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 191,
+      "fecha": {
+        "$date": "2020-01-27T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura"
+      },
+      "paciente": {
+        "rut": "00000027-2",
+        "nombre": "Paciente Genérico27",
+        "nacimiento": {
+          "$date": "2000-01-27T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "10000003-2",
+        "nombre": "Médico Genérico4",
+        "email": "medicogenerico4@gmail.com",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "atencion": {
+        "id": 46,
+        "motivo": "Motivo de prueba grupo 5",
+        "observacion": "Observación de prueba grupo 10",
+        "diagnosticos": [
+          {
+            "codigo": "A09",
+            "descripcion": "Gastroenteritis de presunto origen infeccioso"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 66,
+            "medicamento": "Medicamento de prueba grupo 7",
+            "dosis": "Pauta ficticia grupo 10",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 47,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 192,
+      "fecha": {
+        "$date": "2020-01-28T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "00000028-0",
+        "nombre": "Paciente Genérico28",
+        "nacimiento": {
+          "$date": "2000-01-28T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "10000004-0",
+        "nombre": "Médico Genérico5",
+        "email": "medicogenerico5@gmail.com",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "atencion": {
+        "id": 47,
+        "motivo": "Motivo de prueba grupo 5",
+        "observacion": "Observación de prueba grupo 10",
+        "diagnosticos": [
+          {
+            "codigo": "E11",
+            "descripcion": "Diabetes mellitus tipo 2"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 67,
+            "medicamento": "Medicamento de prueba grupo 7",
+            "dosis": "Pauta ficticia grupo 10",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 48,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 193,
+      "fecha": {
+        "$date": "2020-01-29T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "00000029-9",
+        "nombre": "Paciente Genérico29",
+        "nacimiento": {
+          "$date": "2000-01-29T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "10000005-9",
+        "nombre": "Médico Genérico6",
+        "email": "medicogenerico6@gmail.com",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "atencion": {
+        "id": 48,
+        "motivo": "Motivo de prueba grupo 5",
+        "observacion": "Observación de prueba grupo 10",
+        "diagnosticos": [
+          {
+            "codigo": "F41",
+            "descripcion": "Otros trastornos de ansiedad"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 68,
+            "medicamento": "Medicamento de prueba grupo 7",
+            "dosis": "Pauta ficticia grupo 10",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 49,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 194,
+      "fecha": {
+        "$date": "2020-01-30T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción"
+      },
+      "paciente": {
+        "rut": "00000030-2",
+        "nombre": "Paciente Genérico30",
+        "nacimiento": {
+          "$date": "2000-01-30T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "10000006-7",
+        "nombre": "Médico Genérico7",
+        "email": "medicogenerico7@gmail.com",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 49,
+        "motivo": "Motivo de prueba grupo 5",
+        "observacion": "Observación de prueba grupo 10",
+        "diagnosticos": [
+          {
+            "codigo": "G43",
+            "descripcion": "Migraña"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 69,
+            "medicamento": "Medicamento de prueba grupo 7",
+            "dosis": "Pauta ficticia grupo 10",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 50,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 195,
+      "fecha": {
+        "$date": "2020-01-31T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "00000031-0",
+        "nombre": "Paciente Genérico31",
+        "nacimiento": {
+          "$date": "2000-01-31T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "10000007-5",
+        "nombre": "Médico Genérico8",
+        "email": "medicogenerico8@gmail.com",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "atencion": {
+        "id": 50,
+        "motivo": "Motivo de prueba grupo 5",
+        "observacion": "Observación de prueba grupo 10",
+        "diagnosticos": [
+          {
+            "codigo": "I10",
+            "descripcion": "Hipertensión esencial (primaria)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 70,
+            "medicamento": "Medicamento de prueba grupo 7",
+            "dosis": "Pauta ficticia grupo 10",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 51,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 196,
+      "fecha": {
+        "$date": "2020-02-01T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura"
+      },
+      "paciente": {
+        "rut": "00000032-9",
+        "nombre": "Paciente Genérico32",
+        "nacimiento": {
+          "$date": "2000-02-01T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "10000008-3",
+        "nombre": "Médico Genérico9",
+        "email": "medicogenerico9@gmail.com",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "atencion": {
+        "id": 51,
+        "motivo": "Motivo de prueba grupo 6",
+        "observacion": "Observación de prueba grupo 11",
+        "diagnosticos": [
+          {
+            "codigo": "J00",
+            "descripcion": "Rinofaringitis aguda (resfriado común)"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 71,
+            "medicamento": "Medicamento de prueba grupo 8",
+            "dosis": "Pauta ficticia grupo 11",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 52,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 197,
+      "fecha": {
+        "$date": "2020-02-02T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "00000033-7",
+        "nombre": "Paciente Genérico33",
+        "nacimiento": {
+          "$date": "2000-02-02T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "10000009-K",
+        "nombre": "Médico Genérico10",
+        "email": "medicogenerico10@gmail.com",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "atencion": {
+        "id": 52,
+        "motivo": "Motivo de prueba grupo 6",
+        "observacion": "Observación de prueba grupo 11",
+        "diagnosticos": [
+          {
+            "codigo": "J03",
+            "descripcion": "Amigdalitis aguda"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 72,
+            "medicamento": "Medicamento de prueba grupo 8",
+            "dosis": "Pauta ficticia grupo 11",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 53,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 198,
+      "fecha": {
+        "$date": "2020-02-03T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "00000034-5",
+        "nombre": "Paciente Genérico34",
+        "nacimiento": {
+          "$date": "2000-02-03T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "10000010-5",
+        "nombre": "Médico Genérico11",
+        "email": "medicogenerico11@gmail.com",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "atencion": {
+        "id": 53,
+        "motivo": "Motivo de prueba grupo 6",
+        "observacion": "Observación de prueba grupo 11",
+        "diagnosticos": [
+          {
+            "codigo": "J45",
+            "descripcion": "Asma"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 73,
+            "medicamento": "Medicamento de prueba grupo 8",
+            "dosis": "Pauta ficticia grupo 11",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 54,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 199,
+      "fecha": {
+        "$date": "2020-02-04T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción"
+      },
+      "paciente": {
+        "rut": "00000035-3",
+        "nombre": "Paciente Genérico35",
+        "nacimiento": {
+          "$date": "2000-02-04T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "10000011-3",
+        "nombre": "Médico Genérico12",
+        "email": "medicogenerico12@gmail.com",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "atencion": {
+        "id": 54,
+        "motivo": "Motivo de prueba grupo 6",
+        "observacion": "Observación de prueba grupo 11",
+        "diagnosticos": [
+          {
+            "codigo": "K21",
+            "descripcion": "Enfermedad del reflujo gastroesofágico"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 74,
+            "medicamento": "Medicamento de prueba grupo 8",
+            "dosis": "Pauta ficticia grupo 11",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 55,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 200,
+      "fecha": {
+        "$date": "2020-02-05T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "00000036-1",
+        "nombre": "Paciente Genérico36",
+        "nacimiento": {
+          "$date": "2000-02-05T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "10000012-1",
+        "nombre": "Médico Genérico13",
+        "email": "medicogenerico13@gmail.com",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "atencion": {
+        "id": 55,
+        "motivo": "Motivo de prueba grupo 6",
+        "observacion": "Observación de prueba grupo 11",
+        "diagnosticos": [
+          {
+            "codigo": "K29",
+            "descripcion": "Gastritis y duodenitis"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 75,
+            "medicamento": "Medicamento de prueba grupo 8",
+            "dosis": "Pauta ficticia grupo 11",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 56,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 201,
+      "fecha": {
+        "$date": "2020-02-06T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura"
+      },
+      "paciente": {
+        "rut": "00000037-K",
+        "nombre": "Paciente Genérico37",
+        "nacimiento": {
+          "$date": "2000-02-06T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "10000013-K",
+        "nombre": "Médico Genérico14",
+        "email": "medicogenerico14@gmail.com",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "atencion": {
+        "id": 56,
+        "motivo": "Motivo de prueba grupo 6",
+        "observacion": "Observación de prueba grupo 12",
+        "diagnosticos": [
+          {
+            "codigo": "L30",
+            "descripcion": "Otras dermatitis"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 76,
+            "medicamento": "Medicamento de prueba grupo 8",
+            "dosis": "Pauta ficticia grupo 12",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 57,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 202,
+      "fecha": {
+        "$date": "2020-02-07T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso"
+      },
+      "paciente": {
+        "rut": "00000038-8",
+        "nombre": "Paciente Genérico38",
+        "nacimiento": {
+          "$date": "2000-02-07T00:00:00Z"
+        },
+        "sexo": "F"
+      },
+      "medico": {
+        "rut": "10000014-8",
+        "nombre": "Médico Genérico15",
+        "email": "medicogenerico15@gmail.com",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "atencion": {
+        "id": 57,
+        "motivo": "Motivo de prueba grupo 6",
+        "observacion": "Observación de prueba grupo 12",
+        "diagnosticos": [
+          {
+            "codigo": "M54",
+            "descripcion": "Dorsalgia"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 77,
+            "medicamento": "Medicamento de prueba grupo 8",
+            "dosis": "Pauta ficticia grupo 12",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 58,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 203,
+      "fecha": {
+        "$date": "2020-02-08T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar"
+      },
+      "paciente": {
+        "rut": "00000039-6",
+        "nombre": "Paciente Genérico39",
+        "nacimiento": {
+          "$date": "2000-02-08T00:00:00Z"
+        },
+        "sexo": "Otro"
+      },
+      "medico": {
+        "rut": "10000015-6",
+        "nombre": "Médico Genérico16",
+        "email": "medicogenerico16@gmail.com",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "atencion": {
+        "id": 58,
+        "motivo": "Motivo de prueba grupo 6",
+        "observacion": "Observación de prueba grupo 12",
+        "diagnosticos": [
+          {
+            "codigo": "S93",
+            "descripcion": "Luxación y esguince de tobillo y pie"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 78,
+            "medicamento": "Medicamento de prueba grupo 8",
+            "dosis": "Pauta ficticia grupo 12",
+            "dias": 3
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 59,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 204,
+      "fecha": {
+        "$date": "2020-02-09T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción"
+      },
+      "paciente": {
+        "rut": "00000040-K",
+        "nombre": "Paciente Genérico40",
+        "nacimiento": {
+          "$date": "2000-02-09T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "email": "juan.perez@saludusm.cl",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "atencion": {
+        "id": 59,
+        "motivo": "Motivo de prueba grupo 6",
+        "observacion": "Observación de prueba grupo 12",
+        "diagnosticos": [
+          {
+            "codigo": "Z00",
+            "descripcion": "Examen general sin queja o diagnóstico informado"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 79,
+            "medicamento": "Medicamento de prueba grupo 8",
+            "dosis": "Pauta ficticia grupo 12",
+            "dias": 4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": 60,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 205,
+      "fecha": {
+        "$date": "2020-02-10T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín"
+      },
+      "paciente": {
+        "rut": "00000001-9",
+        "nombre": "Paciente Genérico1",
+        "nacimiento": {
+          "$date": "2010-01-01T00:00:00Z"
+        },
+        "sexo": "M"
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "email": "pedro.soto@saludusm.cl",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "atencion": {
+        "id": 60,
+        "motivo": "Motivo de prueba grupo 6",
+        "observacion": "Observación de prueba grupo 12",
+        "diagnosticos": [
+          {
+            "codigo": "A09",
+            "descripcion": "Gastroenteritis de presunto origen infeccioso"
+          }
+        ],
+        "recetas": [
+          {
+            "receta_id": 80,
+            "medicamento": "Medicamento de prueba grupo 8",
+            "dosis": "Pauta ficticia grupo 12",
+            "dias": 5
+          }
+        ]
+      }
+    }
+  }
+]

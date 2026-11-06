@@ -1,0 +1,22 @@
+[
+  {
+    "_id": 0,
+    "nombre": "Reservada"
+  },
+  {
+    "_id": 1,
+    "nombre": "Confirmada"
+  },
+  {
+    "_id": 2,
+    "nombre": "Atendida"
+  },
+  {
+    "_id": 3,
+    "nombre": "No Asistió"
+  },
+  {
+    "_id": 4,
+    "nombre": "Cancelada"
+  }
+]

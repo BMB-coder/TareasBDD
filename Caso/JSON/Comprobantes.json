@@ -1,0 +1,8202 @@
+[
+  {
+    "_id": 1,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 1,
+      "fecha": {
+        "$date": "2026-09-21T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000000-0",
+        "nombre": "Martina Díaz",
+        "telefono": "912345670",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 2,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 2,
+      "fecha": {
+        "$date": "2026-09-22T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "20123456-7",
+        "nombre": "Carlos Silva",
+        "telefono": "911223344",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 3,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 3,
+      "fecha": {
+        "$date": "2026-09-23T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "15678901-K",
+        "nombre": "Ana Rojas",
+        "telefono": "955667788",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 4,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 4,
+      "fecha": {
+        "$date": "2026-09-24T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 3,
+        "nombre": "No Asistió"
+      },
+      "paciente": {
+        "rut": "00000001-0",
+        "nombre": "Tomás Rivas",
+        "telefono": "912345671",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 5,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 5,
+      "fecha": {
+        "$date": "2026-09-28T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000000-0",
+        "nombre": "Martina Díaz",
+        "telefono": "912345670",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 6,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 6,
+      "fecha": {
+        "$date": "2026-09-29T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "23456789-6",
+        "nombre": "Valentina Torres",
+        "telefono": "922334455",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 7,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 7,
+      "fecha": {
+        "$date": "2026-09-30T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 3,
+        "nombre": "No Asistió"
+      },
+      "paciente": {
+        "rut": "18234567-0",
+        "nombre": "Francisca Reyes",
+        "telefono": "944556677",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 8,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 8,
+      "fecha": {
+        "$date": "2026-10-01T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "10987654-3",
+        "nombre": "Jorge Herrera",
+        "telefono": "933445566",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 9,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 9,
+      "fecha": {
+        "$date": "2026-10-02T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 4,
+        "nombre": "Cancelada"
+      },
+      "paciente": {
+        "rut": "20123456-7",
+        "nombre": "Carlos Silva",
+        "telefono": "911223344",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 10,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 10,
+      "fecha": {
+        "$date": "2026-10-05T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "11223344-5",
+        "nombre": "Luis Castro",
+        "telefono": "966778899",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 11,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 11,
+      "fecha": {
+        "$date": "2026-10-06T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 3,
+        "nombre": "No Asistió"
+      },
+      "paciente": {
+        "rut": "21098765-4",
+        "nombre": "Sofía Morales",
+        "telefono": "977889900",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 12,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 12,
+      "fecha": {
+        "$date": "2026-10-07T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "18234567-0",
+        "nombre": "Francisca Reyes",
+        "telefono": "944556677",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 13,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 13,
+      "fecha": {
+        "$date": "2026-10-09T00:00:00Z"
+      },
+      "hora": "16:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "20123456-7",
+        "nombre": "Carlos Silva",
+        "telefono": "911223344",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 14,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 14,
+      "fecha": {
+        "$date": "2026-10-12T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 4,
+        "nombre": "Cancelada"
+      },
+      "paciente": {
+        "rut": "18234567-0",
+        "nombre": "Francisca Reyes",
+        "telefono": "944556677",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 15,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 15,
+      "fecha": {
+        "$date": "2026-10-13T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "10987654-3",
+        "nombre": "Jorge Herrera",
+        "telefono": "933445566",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 16,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 16,
+      "fecha": {
+        "$date": "2026-10-14T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "21098765-4",
+        "nombre": "Sofía Morales",
+        "telefono": "977889900",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 17,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 17,
+      "fecha": {
+        "$date": "2026-10-15T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 3,
+        "nombre": "No Asistió"
+      },
+      "paciente": {
+        "rut": "23456789-6",
+        "nombre": "Valentina Torres",
+        "telefono": "922334455",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 18,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 18,
+      "fecha": {
+        "$date": "2026-10-16T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000001-0",
+        "nombre": "Tomás Rivas",
+        "telefono": "912345671",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 19,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 19,
+      "fecha": {
+        "$date": "2026-10-19T00:00:00Z"
+      },
+      "hora": "14:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "11223344-5",
+        "nombre": "Luis Castro",
+        "telefono": "966778899",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 20,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 20,
+      "fecha": {
+        "$date": "2026-10-20T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "20123456-7",
+        "nombre": "Carlos Silva",
+        "telefono": "911223344",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 21,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 21,
+      "fecha": {
+        "$date": "2026-10-21T00:00:00Z"
+      },
+      "hora": "16:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "21098765-4",
+        "nombre": "Sofía Morales",
+        "telefono": "977889900",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 22,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 22,
+      "fecha": {
+        "$date": "2026-10-22T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "15678901-K",
+        "nombre": "Ana Rojas",
+        "telefono": "955667788",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 23,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 23,
+      "fecha": {
+        "$date": "2026-10-23T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 3,
+        "nombre": "No Asistió"
+      },
+      "paciente": {
+        "rut": "11223344-5",
+        "nombre": "Luis Castro",
+        "telefono": "966778899",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 24,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 24,
+      "fecha": {
+        "$date": "2026-10-26T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "10987654-3",
+        "nombre": "Jorge Herrera",
+        "telefono": "933445566",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 25,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 25,
+      "fecha": {
+        "$date": "2026-10-27T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 3,
+        "nombre": "No Asistió"
+      },
+      "paciente": {
+        "rut": "15678901-K",
+        "nombre": "Ana Rojas",
+        "telefono": "955667788",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 26,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 26,
+      "fecha": {
+        "$date": "2026-10-28T00:00:00Z"
+      },
+      "hora": "15:30:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000000-0",
+        "nombre": "Martina Díaz",
+        "telefono": "912345670",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 27,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 27,
+      "fecha": {
+        "$date": "2026-10-29T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "estado": {
+        "id": 4,
+        "nombre": "Cancelada"
+      },
+      "paciente": {
+        "rut": "00000000-0",
+        "nombre": "Martina Díaz",
+        "telefono": "912345670",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 28,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 28,
+      "fecha": {
+        "$date": "2026-10-30T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000001-0",
+        "nombre": "Tomás Rivas",
+        "telefono": "912345671",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 29,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 29,
+      "fecha": {
+        "$date": "2026-11-09T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000000-0",
+        "nombre": "Martina Díaz",
+        "telefono": "912345670",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 30,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 30,
+      "fecha": {
+        "$date": "2026-11-10T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000000-0",
+        "nombre": "Martina Díaz",
+        "telefono": "912345670",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 31,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 31,
+      "fecha": {
+        "$date": "2026-11-11T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "15678901-K",
+        "nombre": "Ana Rojas",
+        "telefono": "955667788",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 32,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 32,
+      "fecha": {
+        "$date": "2026-11-12T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "20123456-7",
+        "nombre": "Carlos Silva",
+        "telefono": "911223344",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 33,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 33,
+      "fecha": {
+        "$date": "2026-11-16T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "18234567-0",
+        "nombre": "Francisca Reyes",
+        "telefono": "944556677",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 34,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 34,
+      "fecha": {
+        "$date": "2026-11-17T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "11223344-5",
+        "nombre": "Luis Castro",
+        "telefono": "966778899",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 35,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 35,
+      "fecha": {
+        "$date": "2026-11-18T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000001-0",
+        "nombre": "Tomás Rivas",
+        "telefono": "912345671",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 36,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 36,
+      "fecha": {
+        "$date": "2026-11-20T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "10987654-3",
+        "nombre": "Jorge Herrera",
+        "telefono": "933445566",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 37,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 37,
+      "fecha": {
+        "$date": "2026-11-24T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "21098765-4",
+        "nombre": "Sofía Morales",
+        "telefono": "977889900",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 38,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 38,
+      "fecha": {
+        "$date": "2026-11-26T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000000-0",
+        "nombre": "Martina Díaz",
+        "telefono": "912345670",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 39,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 39,
+      "fecha": {
+        "$date": "2026-10-29T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "10987654-3",
+        "nombre": "Jorge Herrera",
+        "telefono": "933445566",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 40,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 40,
+      "fecha": {
+        "$date": "2026-10-30T00:00:00Z"
+      },
+      "hora": "14:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "11223344-5",
+        "nombre": "Luis Castro",
+        "telefono": "966778899",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 41,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 41,
+      "fecha": {
+        "$date": "2026-11-02T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 3,
+        "nombre": "No Asistió"
+      },
+      "paciente": {
+        "rut": "00000000-0",
+        "nombre": "Martina Díaz",
+        "telefono": "912345670",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 42,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 42,
+      "fecha": {
+        "$date": "2026-11-02T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "10987654-3",
+        "nombre": "Jorge Herrera",
+        "telefono": "933445566",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 43,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 43,
+      "fecha": {
+        "$date": "2026-11-02T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 3,
+        "nombre": "No Asistió"
+      },
+      "paciente": {
+        "rut": "20123456-7",
+        "nombre": "Carlos Silva",
+        "telefono": "911223344",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 44,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 44,
+      "fecha": {
+        "$date": "2026-11-02T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "23456789-6",
+        "nombre": "Valentina Torres",
+        "telefono": "922334455",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 45,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 45,
+      "fecha": {
+        "$date": "2026-11-03T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 3,
+        "nombre": "No Asistió"
+      },
+      "paciente": {
+        "rut": "00000001-9",
+        "nombre": "Paciente Genérico1",
+        "telefono": "900000001",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 46,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 46,
+      "fecha": {
+        "$date": "2026-11-03T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000001-9",
+        "nombre": "Paciente Genérico1",
+        "telefono": "900000001",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000000-8",
+        "nombre": "Médico Genérico1",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 47,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 47,
+      "fecha": {
+        "$date": "2026-11-03T00:00:00Z"
+      },
+      "hora": "12:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000001-9",
+        "nombre": "Paciente Genérico1",
+        "telefono": "900000001",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000001-6",
+        "nombre": "Médico Genérico2",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 48,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 48,
+      "fecha": {
+        "$date": "2026-11-04T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000002-7",
+        "nombre": "Paciente Genérico2",
+        "telefono": "900000002",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000002-4",
+        "nombre": "Médico Genérico3",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 49,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 49,
+      "fecha": {
+        "$date": "2026-11-04T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000002-7",
+        "nombre": "Paciente Genérico2",
+        "telefono": "900000002",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000003-2",
+        "nombre": "Médico Genérico4",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 50,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 50,
+      "fecha": {
+        "$date": "2026-11-04T00:00:00Z"
+      },
+      "hora": "12:30:00",
+      "estado": {
+        "id": 3,
+        "nombre": "No Asistió"
+      },
+      "paciente": {
+        "rut": "00000002-7",
+        "nombre": "Paciente Genérico2",
+        "telefono": "900000002",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000004-0",
+        "nombre": "Médico Genérico5",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 51,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 51,
+      "fecha": {
+        "$date": "2026-11-05T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000003-5",
+        "nombre": "Paciente Genérico3",
+        "telefono": "900000003",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000005-9",
+        "nombre": "Médico Genérico6",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 52,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 52,
+      "fecha": {
+        "$date": "2026-11-05T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000003-5",
+        "nombre": "Paciente Genérico3",
+        "telefono": "900000003",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000006-7",
+        "nombre": "Médico Genérico7",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 53,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 53,
+      "fecha": {
+        "$date": "2026-11-05T00:00:00Z"
+      },
+      "hora": "12:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000003-5",
+        "nombre": "Paciente Genérico3",
+        "telefono": "900000003",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000007-5",
+        "nombre": "Médico Genérico8",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 54,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 54,
+      "fecha": {
+        "$date": "2026-11-06T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000004-3",
+        "nombre": "Paciente Genérico4",
+        "telefono": "900000004",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000008-3",
+        "nombre": "Médico Genérico9",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 55,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 55,
+      "fecha": {
+        "$date": "2026-11-06T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000004-3",
+        "nombre": "Paciente Genérico4",
+        "telefono": "900000004",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000009-K",
+        "nombre": "Médico Genérico10",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 56,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 56,
+      "fecha": {
+        "$date": "2026-11-06T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000004-3",
+        "nombre": "Paciente Genérico4",
+        "telefono": "900000004",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000010-5",
+        "nombre": "Médico Genérico11",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 57,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 57,
+      "fecha": {
+        "$date": "2026-11-07T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000005-1",
+        "nombre": "Paciente Genérico5",
+        "telefono": "900000005",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000011-3",
+        "nombre": "Médico Genérico12",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 58,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 58,
+      "fecha": {
+        "$date": "2026-11-07T00:00:00Z"
+      },
+      "hora": "12:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000005-1",
+        "nombre": "Paciente Genérico5",
+        "telefono": "900000005",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000012-1",
+        "nombre": "Médico Genérico13",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 59,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 59,
+      "fecha": {
+        "$date": "2026-11-07T00:00:00Z"
+      },
+      "hora": "13:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000005-1",
+        "nombre": "Paciente Genérico5",
+        "telefono": "900000005",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000013-K",
+        "nombre": "Médico Genérico14",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 60,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 60,
+      "fecha": {
+        "$date": "2026-11-08T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000006-K",
+        "nombre": "Paciente Genérico6",
+        "telefono": "900000006",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000014-8",
+        "nombre": "Médico Genérico15",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 61,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 61,
+      "fecha": {
+        "$date": "2026-11-08T00:00:00Z"
+      },
+      "hora": "12:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000006-K",
+        "nombre": "Paciente Genérico6",
+        "telefono": "900000006",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000015-6",
+        "nombre": "Médico Genérico16",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 62,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 62,
+      "fecha": {
+        "$date": "2026-11-08T00:00:00Z"
+      },
+      "hora": "13:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000006-K",
+        "nombre": "Paciente Genérico6",
+        "telefono": "900000006",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 63,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 63,
+      "fecha": {
+        "$date": "2026-11-09T00:00:00Z"
+      },
+      "hora": "14:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000007-8",
+        "nombre": "Paciente Genérico7",
+        "telefono": "900000007",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 64,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 64,
+      "fecha": {
+        "$date": "2026-11-09T00:00:00Z"
+      },
+      "hora": "14:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000007-8",
+        "nombre": "Paciente Genérico7",
+        "telefono": "900000007",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 65,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 65,
+      "fecha": {
+        "$date": "2026-11-09T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000007-8",
+        "nombre": "Paciente Genérico7",
+        "telefono": "900000007",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 66,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 66,
+      "fecha": {
+        "$date": "2026-11-10T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000008-6",
+        "nombre": "Paciente Genérico8",
+        "telefono": null,
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 67,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 67,
+      "fecha": {
+        "$date": "2026-11-10T00:00:00Z"
+      },
+      "hora": "15:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000008-6",
+        "nombre": "Paciente Genérico8",
+        "telefono": null,
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 68,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 68,
+      "fecha": {
+        "$date": "2026-11-10T00:00:00Z"
+      },
+      "hora": "16:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000008-6",
+        "nombre": "Paciente Genérico8",
+        "telefono": null,
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000000-8",
+        "nombre": "Médico Genérico1",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 69,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 69,
+      "fecha": {
+        "$date": "2026-11-11T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000009-4",
+        "nombre": "Paciente Genérico9",
+        "telefono": "900000009",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000001-6",
+        "nombre": "Médico Genérico2",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 70,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 70,
+      "fecha": {
+        "$date": "2026-11-11T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000009-4",
+        "nombre": "Paciente Genérico9",
+        "telefono": "900000009",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000002-4",
+        "nombre": "Médico Genérico3",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 71,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 71,
+      "fecha": {
+        "$date": "2026-11-11T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000009-4",
+        "nombre": "Paciente Genérico9",
+        "telefono": "900000009",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000003-2",
+        "nombre": "Médico Genérico4",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 72,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 72,
+      "fecha": {
+        "$date": "2026-11-12T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000010-8",
+        "nombre": "Paciente Genérico10",
+        "telefono": "900000010",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000004-0",
+        "nombre": "Médico Genérico5",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 73,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 73,
+      "fecha": {
+        "$date": "2026-11-12T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000010-8",
+        "nombre": "Paciente Genérico10",
+        "telefono": "900000010",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000005-9",
+        "nombre": "Médico Genérico6",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 74,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 74,
+      "fecha": {
+        "$date": "2026-11-12T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000010-8",
+        "nombre": "Paciente Genérico10",
+        "telefono": "900000010",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000006-7",
+        "nombre": "Médico Genérico7",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 75,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 75,
+      "fecha": {
+        "$date": "2026-11-13T00:00:00Z"
+      },
+      "hora": "14:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000011-6",
+        "nombre": "Paciente Genérico11",
+        "telefono": "900000011",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000007-5",
+        "nombre": "Médico Genérico8",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 76,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 76,
+      "fecha": {
+        "$date": "2026-11-13T00:00:00Z"
+      },
+      "hora": "14:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000011-6",
+        "nombre": "Paciente Genérico11",
+        "telefono": "900000011",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000008-3",
+        "nombre": "Médico Genérico9",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 77,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 77,
+      "fecha": {
+        "$date": "2026-11-13T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000011-6",
+        "nombre": "Paciente Genérico11",
+        "telefono": "900000011",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000009-K",
+        "nombre": "Médico Genérico10",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 78,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 78,
+      "fecha": {
+        "$date": "2026-11-14T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000012-4",
+        "nombre": "Paciente Genérico12",
+        "telefono": "900000012",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000010-5",
+        "nombre": "Médico Genérico11",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 79,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 79,
+      "fecha": {
+        "$date": "2026-11-14T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000012-4",
+        "nombre": "Paciente Genérico12",
+        "telefono": "900000012",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000011-3",
+        "nombre": "Médico Genérico12",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 80,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 80,
+      "fecha": {
+        "$date": "2026-11-14T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000012-4",
+        "nombre": "Paciente Genérico12",
+        "telefono": "900000012",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000012-1",
+        "nombre": "Médico Genérico13",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 81,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 81,
+      "fecha": {
+        "$date": "2026-11-15T00:00:00Z"
+      },
+      "hora": "14:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000013-2",
+        "nombre": "Paciente Genérico13",
+        "telefono": "900000013",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000013-K",
+        "nombre": "Médico Genérico14",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 82,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 82,
+      "fecha": {
+        "$date": "2026-11-15T00:00:00Z"
+      },
+      "hora": "14:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000013-2",
+        "nombre": "Paciente Genérico13",
+        "telefono": "900000013",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000014-8",
+        "nombre": "Médico Genérico15",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 83,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 83,
+      "fecha": {
+        "$date": "2026-11-15T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000013-2",
+        "nombre": "Paciente Genérico13",
+        "telefono": "900000013",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000015-6",
+        "nombre": "Médico Genérico16",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 84,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 84,
+      "fecha": {
+        "$date": "2026-11-16T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000014-0",
+        "nombre": "Paciente Genérico14",
+        "telefono": "900000014",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 85,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 85,
+      "fecha": {
+        "$date": "2026-11-16T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000014-0",
+        "nombre": "Paciente Genérico14",
+        "telefono": "900000014",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 86,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 86,
+      "fecha": {
+        "$date": "2026-11-16T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000014-0",
+        "nombre": "Paciente Genérico14",
+        "telefono": "900000014",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 87,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 87,
+      "fecha": {
+        "$date": "2026-11-17T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000015-9",
+        "nombre": "Paciente Genérico15",
+        "telefono": "900000015",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 88,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 88,
+      "fecha": {
+        "$date": "2026-11-17T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000015-9",
+        "nombre": "Paciente Genérico15",
+        "telefono": "900000015",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 89,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 89,
+      "fecha": {
+        "$date": "2026-11-17T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000015-9",
+        "nombre": "Paciente Genérico15",
+        "telefono": "900000015",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 90,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 90,
+      "fecha": {
+        "$date": "2026-11-18T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000016-7",
+        "nombre": "Paciente Genérico16",
+        "telefono": null,
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000000-8",
+        "nombre": "Médico Genérico1",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 91,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 91,
+      "fecha": {
+        "$date": "2026-11-18T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000016-7",
+        "nombre": "Paciente Genérico16",
+        "telefono": null,
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000001-6",
+        "nombre": "Médico Genérico2",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 92,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 92,
+      "fecha": {
+        "$date": "2026-11-18T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000016-7",
+        "nombre": "Paciente Genérico16",
+        "telefono": null,
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000002-4",
+        "nombre": "Médico Genérico3",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 93,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 93,
+      "fecha": {
+        "$date": "2026-11-19T00:00:00Z"
+      },
+      "hora": "12:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000017-5",
+        "nombre": "Paciente Genérico17",
+        "telefono": "900000017",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000003-2",
+        "nombre": "Médico Genérico4",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 94,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 94,
+      "fecha": {
+        "$date": "2026-11-19T00:00:00Z"
+      },
+      "hora": "13:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000017-5",
+        "nombre": "Paciente Genérico17",
+        "telefono": "900000017",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000004-0",
+        "nombre": "Médico Genérico5",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 95,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 95,
+      "fecha": {
+        "$date": "2026-11-19T00:00:00Z"
+      },
+      "hora": "13:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000017-5",
+        "nombre": "Paciente Genérico17",
+        "telefono": "900000017",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000005-9",
+        "nombre": "Médico Genérico6",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 96,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 96,
+      "fecha": {
+        "$date": "2026-11-20T00:00:00Z"
+      },
+      "hora": "12:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000018-3",
+        "nombre": "Paciente Genérico18",
+        "telefono": "900000018",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000006-7",
+        "nombre": "Médico Genérico7",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 97,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 97,
+      "fecha": {
+        "$date": "2026-11-20T00:00:00Z"
+      },
+      "hora": "13:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000018-3",
+        "nombre": "Paciente Genérico18",
+        "telefono": "900000018",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000007-5",
+        "nombre": "Médico Genérico8",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 98,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 98,
+      "fecha": {
+        "$date": "2026-11-20T00:00:00Z"
+      },
+      "hora": "13:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000018-3",
+        "nombre": "Paciente Genérico18",
+        "telefono": "900000018",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000008-3",
+        "nombre": "Médico Genérico9",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 99,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 99,
+      "fecha": {
+        "$date": "2026-11-21T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000019-1",
+        "nombre": "Paciente Genérico19",
+        "telefono": "900000019",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000009-K",
+        "nombre": "Médico Genérico10",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 100,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 100,
+      "fecha": {
+        "$date": "2026-11-21T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000019-1",
+        "nombre": "Paciente Genérico19",
+        "telefono": "900000019",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000010-5",
+        "nombre": "Médico Genérico11",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 101,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 101,
+      "fecha": {
+        "$date": "2026-11-21T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000019-1",
+        "nombre": "Paciente Genérico19",
+        "telefono": "900000019",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000011-3",
+        "nombre": "Médico Genérico12",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 102,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 102,
+      "fecha": {
+        "$date": "2026-11-22T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000020-5",
+        "nombre": "Paciente Genérico20",
+        "telefono": "900000020",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000012-1",
+        "nombre": "Médico Genérico13",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 103,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 103,
+      "fecha": {
+        "$date": "2026-11-22T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000020-5",
+        "nombre": "Paciente Genérico20",
+        "telefono": "900000020",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000013-K",
+        "nombre": "Médico Genérico14",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 104,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 104,
+      "fecha": {
+        "$date": "2026-11-22T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000020-5",
+        "nombre": "Paciente Genérico20",
+        "telefono": "900000020",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000014-8",
+        "nombre": "Médico Genérico15",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 105,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 105,
+      "fecha": {
+        "$date": "2026-11-23T00:00:00Z"
+      },
+      "hora": "14:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000021-3",
+        "nombre": "Paciente Genérico21",
+        "telefono": "900000021",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000015-6",
+        "nombre": "Médico Genérico16",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 106,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 106,
+      "fecha": {
+        "$date": "2026-11-23T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000021-3",
+        "nombre": "Paciente Genérico21",
+        "telefono": "900000021",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 107,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 107,
+      "fecha": {
+        "$date": "2026-11-23T00:00:00Z"
+      },
+      "hora": "15:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000021-3",
+        "nombre": "Paciente Genérico21",
+        "telefono": "900000021",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 108,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 108,
+      "fecha": {
+        "$date": "2026-11-24T00:00:00Z"
+      },
+      "hora": "14:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000022-1",
+        "nombre": "Paciente Genérico22",
+        "telefono": "900000022",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 109,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 109,
+      "fecha": {
+        "$date": "2026-11-24T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000022-1",
+        "nombre": "Paciente Genérico22",
+        "telefono": "900000022",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 110,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 110,
+      "fecha": {
+        "$date": "2026-11-24T00:00:00Z"
+      },
+      "hora": "15:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000022-1",
+        "nombre": "Paciente Genérico22",
+        "telefono": "900000022",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 111,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 111,
+      "fecha": {
+        "$date": "2026-11-25T00:00:00Z"
+      },
+      "hora": "12:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000023-K",
+        "nombre": "Paciente Genérico23",
+        "telefono": "900000023",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 112,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 112,
+      "fecha": {
+        "$date": "2026-11-25T00:00:00Z"
+      },
+      "hora": "13:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000023-K",
+        "nombre": "Paciente Genérico23",
+        "telefono": "900000023",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000000-8",
+        "nombre": "Médico Genérico1",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 113,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 113,
+      "fecha": {
+        "$date": "2026-11-25T00:00:00Z"
+      },
+      "hora": "13:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000023-K",
+        "nombre": "Paciente Genérico23",
+        "telefono": "900000023",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000001-6",
+        "nombre": "Médico Genérico2",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 114,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 114,
+      "fecha": {
+        "$date": "2026-11-26T00:00:00Z"
+      },
+      "hora": "13:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000024-8",
+        "nombre": "Paciente Genérico24",
+        "telefono": null,
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000002-4",
+        "nombre": "Médico Genérico3",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 115,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 115,
+      "fecha": {
+        "$date": "2026-11-26T00:00:00Z"
+      },
+      "hora": "14:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000024-8",
+        "nombre": "Paciente Genérico24",
+        "telefono": null,
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000003-2",
+        "nombre": "Médico Genérico4",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 116,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 116,
+      "fecha": {
+        "$date": "2026-11-26T00:00:00Z"
+      },
+      "hora": "14:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000024-8",
+        "nombre": "Paciente Genérico24",
+        "telefono": null,
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000004-0",
+        "nombre": "Médico Genérico5",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 117,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 117,
+      "fecha": {
+        "$date": "2026-11-27T00:00:00Z"
+      },
+      "hora": "14:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000025-6",
+        "nombre": "Paciente Genérico25",
+        "telefono": "900000025",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000005-9",
+        "nombre": "Médico Genérico6",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 118,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 118,
+      "fecha": {
+        "$date": "2026-11-27T00:00:00Z"
+      },
+      "hora": "14:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000025-6",
+        "nombre": "Paciente Genérico25",
+        "telefono": "900000025",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000006-7",
+        "nombre": "Médico Genérico7",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 119,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 119,
+      "fecha": {
+        "$date": "2026-11-27T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000025-6",
+        "nombre": "Paciente Genérico25",
+        "telefono": "900000025",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000007-5",
+        "nombre": "Médico Genérico8",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 120,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 120,
+      "fecha": {
+        "$date": "2026-11-28T00:00:00Z"
+      },
+      "hora": "15:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000026-4",
+        "nombre": "Paciente Genérico26",
+        "telefono": "900000026",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000008-3",
+        "nombre": "Médico Genérico9",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 121,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 121,
+      "fecha": {
+        "$date": "2026-11-28T00:00:00Z"
+      },
+      "hora": "15:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000026-4",
+        "nombre": "Paciente Genérico26",
+        "telefono": "900000026",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000009-K",
+        "nombre": "Médico Genérico10",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 122,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 122,
+      "fecha": {
+        "$date": "2026-11-28T00:00:00Z"
+      },
+      "hora": "16:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000026-4",
+        "nombre": "Paciente Genérico26",
+        "telefono": "900000026",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000010-5",
+        "nombre": "Médico Genérico11",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 123,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 123,
+      "fecha": {
+        "$date": "2026-11-29T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000027-2",
+        "nombre": "Paciente Genérico27",
+        "telefono": "900000027",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000011-3",
+        "nombre": "Médico Genérico12",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 124,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 124,
+      "fecha": {
+        "$date": "2026-11-29T00:00:00Z"
+      },
+      "hora": "12:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000027-2",
+        "nombre": "Paciente Genérico27",
+        "telefono": "900000027",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000012-1",
+        "nombre": "Médico Genérico13",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 125,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 125,
+      "fecha": {
+        "$date": "2026-11-29T00:00:00Z"
+      },
+      "hora": "13:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000027-2",
+        "nombre": "Paciente Genérico27",
+        "telefono": "900000027",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000013-K",
+        "nombre": "Médico Genérico14",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 126,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 126,
+      "fecha": {
+        "$date": "2026-11-30T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000028-0",
+        "nombre": "Paciente Genérico28",
+        "telefono": "900000028",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000014-8",
+        "nombre": "Médico Genérico15",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 127,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 127,
+      "fecha": {
+        "$date": "2026-11-30T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000028-0",
+        "nombre": "Paciente Genérico28",
+        "telefono": "900000028",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000015-6",
+        "nombre": "Médico Genérico16",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 128,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 128,
+      "fecha": {
+        "$date": "2026-11-30T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000028-0",
+        "nombre": "Paciente Genérico28",
+        "telefono": "900000028",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 129,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 129,
+      "fecha": {
+        "$date": "2026-12-01T00:00:00Z"
+      },
+      "hora": "13:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000029-9",
+        "nombre": "Paciente Genérico29",
+        "telefono": "900000029",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 130,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 130,
+      "fecha": {
+        "$date": "2026-12-01T00:00:00Z"
+      },
+      "hora": "14:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000029-9",
+        "nombre": "Paciente Genérico29",
+        "telefono": "900000029",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 131,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 131,
+      "fecha": {
+        "$date": "2026-12-01T00:00:00Z"
+      },
+      "hora": "14:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000029-9",
+        "nombre": "Paciente Genérico29",
+        "telefono": "900000029",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 132,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 132,
+      "fecha": {
+        "$date": "2026-12-02T00:00:00Z"
+      },
+      "hora": "15:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000030-2",
+        "nombre": "Paciente Genérico30",
+        "telefono": "900000030",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 133,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 133,
+      "fecha": {
+        "$date": "2026-12-02T00:00:00Z"
+      },
+      "hora": "16:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000030-2",
+        "nombre": "Paciente Genérico30",
+        "telefono": "900000030",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 134,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 134,
+      "fecha": {
+        "$date": "2026-12-02T00:00:00Z"
+      },
+      "hora": "16:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000030-2",
+        "nombre": "Paciente Genérico30",
+        "telefono": "900000030",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000000-8",
+        "nombre": "Médico Genérico1",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 135,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 135,
+      "fecha": {
+        "$date": "2026-12-03T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000031-0",
+        "nombre": "Paciente Genérico31",
+        "telefono": "900000031",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000001-6",
+        "nombre": "Médico Genérico2",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 136,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 136,
+      "fecha": {
+        "$date": "2026-12-03T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000031-0",
+        "nombre": "Paciente Genérico31",
+        "telefono": "900000031",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000002-4",
+        "nombre": "Médico Genérico3",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 137,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 137,
+      "fecha": {
+        "$date": "2026-12-03T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000031-0",
+        "nombre": "Paciente Genérico31",
+        "telefono": "900000031",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000003-2",
+        "nombre": "Médico Genérico4",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 138,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 138,
+      "fecha": {
+        "$date": "2026-12-04T00:00:00Z"
+      },
+      "hora": "13:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000032-9",
+        "nombre": "Paciente Genérico32",
+        "telefono": null,
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000004-0",
+        "nombre": "Médico Genérico5",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 139,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 139,
+      "fecha": {
+        "$date": "2026-12-04T00:00:00Z"
+      },
+      "hora": "13:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000032-9",
+        "nombre": "Paciente Genérico32",
+        "telefono": null,
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000005-9",
+        "nombre": "Médico Genérico6",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 140,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 140,
+      "fecha": {
+        "$date": "2026-12-04T00:00:00Z"
+      },
+      "hora": "14:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000032-9",
+        "nombre": "Paciente Genérico32",
+        "telefono": null,
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000006-7",
+        "nombre": "Médico Genérico7",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 141,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 141,
+      "fecha": {
+        "$date": "2026-12-05T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000033-7",
+        "nombre": "Paciente Genérico33",
+        "telefono": "900000033",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000007-5",
+        "nombre": "Médico Genérico8",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 142,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 142,
+      "fecha": {
+        "$date": "2026-12-05T00:00:00Z"
+      },
+      "hora": "12:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000033-7",
+        "nombre": "Paciente Genérico33",
+        "telefono": "900000033",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000008-3",
+        "nombre": "Médico Genérico9",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 143,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 143,
+      "fecha": {
+        "$date": "2026-12-05T00:00:00Z"
+      },
+      "hora": "13:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000033-7",
+        "nombre": "Paciente Genérico33",
+        "telefono": "900000033",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000009-K",
+        "nombre": "Médico Genérico10",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 144,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 144,
+      "fecha": {
+        "$date": "2026-12-06T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000034-5",
+        "nombre": "Paciente Genérico34",
+        "telefono": "900000034",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000010-5",
+        "nombre": "Médico Genérico11",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 145,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 145,
+      "fecha": {
+        "$date": "2026-12-06T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000034-5",
+        "nombre": "Paciente Genérico34",
+        "telefono": "900000034",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000011-3",
+        "nombre": "Médico Genérico12",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 146,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 146,
+      "fecha": {
+        "$date": "2026-12-06T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000034-5",
+        "nombre": "Paciente Genérico34",
+        "telefono": "900000034",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000012-1",
+        "nombre": "Médico Genérico13",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 147,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 147,
+      "fecha": {
+        "$date": "2026-12-07T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000035-3",
+        "nombre": "Paciente Genérico35",
+        "telefono": "900000035",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000013-K",
+        "nombre": "Médico Genérico14",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 148,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 148,
+      "fecha": {
+        "$date": "2026-12-07T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000035-3",
+        "nombre": "Paciente Genérico35",
+        "telefono": "900000035",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000014-8",
+        "nombre": "Médico Genérico15",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 149,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 149,
+      "fecha": {
+        "$date": "2026-12-07T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000035-3",
+        "nombre": "Paciente Genérico35",
+        "telefono": "900000035",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000015-6",
+        "nombre": "Médico Genérico16",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 150,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 150,
+      "fecha": {
+        "$date": "2026-12-08T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000036-1",
+        "nombre": "Paciente Genérico36",
+        "telefono": "900000036",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 151,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 151,
+      "fecha": {
+        "$date": "2026-12-08T00:00:00Z"
+      },
+      "hora": "12:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000036-1",
+        "nombre": "Paciente Genérico36",
+        "telefono": "900000036",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 152,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 152,
+      "fecha": {
+        "$date": "2026-12-08T00:00:00Z"
+      },
+      "hora": "12:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000036-1",
+        "nombre": "Paciente Genérico36",
+        "telefono": "900000036",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 153,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 153,
+      "fecha": {
+        "$date": "2026-12-09T00:00:00Z"
+      },
+      "hora": "15:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000037-K",
+        "nombre": "Paciente Genérico37",
+        "telefono": "900000037",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 154,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 154,
+      "fecha": {
+        "$date": "2026-12-09T00:00:00Z"
+      },
+      "hora": "16:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000037-K",
+        "nombre": "Paciente Genérico37",
+        "telefono": "900000037",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 155,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 155,
+      "fecha": {
+        "$date": "2026-12-09T00:00:00Z"
+      },
+      "hora": "16:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000037-K",
+        "nombre": "Paciente Genérico37",
+        "telefono": "900000037",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 156,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 156,
+      "fecha": {
+        "$date": "2026-12-10T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000038-8",
+        "nombre": "Paciente Genérico38",
+        "telefono": "900000038",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000000-8",
+        "nombre": "Médico Genérico1",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 157,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 157,
+      "fecha": {
+        "$date": "2026-12-10T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000038-8",
+        "nombre": "Paciente Genérico38",
+        "telefono": "900000038",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000001-6",
+        "nombre": "Médico Genérico2",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 158,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 158,
+      "fecha": {
+        "$date": "2026-12-10T00:00:00Z"
+      },
+      "hora": "11:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000038-8",
+        "nombre": "Paciente Genérico38",
+        "telefono": "900000038",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000002-4",
+        "nombre": "Médico Genérico3",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 159,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 159,
+      "fecha": {
+        "$date": "2026-12-11T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000039-6",
+        "nombre": "Paciente Genérico39",
+        "telefono": "900000039",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000003-2",
+        "nombre": "Médico Genérico4",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 160,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 160,
+      "fecha": {
+        "$date": "2026-12-11T00:00:00Z"
+      },
+      "hora": "10:30:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000039-6",
+        "nombre": "Paciente Genérico39",
+        "telefono": "900000039",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000004-0",
+        "nombre": "Médico Genérico5",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 161,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 161,
+      "fecha": {
+        "$date": "2026-12-11T00:00:00Z"
+      },
+      "hora": "11:00:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000039-6",
+        "nombre": "Paciente Genérico39",
+        "telefono": "900000039",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000005-9",
+        "nombre": "Médico Genérico6",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 162,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 162,
+      "fecha": {
+        "$date": "2026-12-12T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000040-K",
+        "nombre": "Paciente Genérico40",
+        "telefono": null,
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000006-7",
+        "nombre": "Médico Genérico7",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 163,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 163,
+      "fecha": {
+        "$date": "2026-12-12T00:00:00Z"
+      },
+      "hora": "09:30:00",
+      "estado": {
+        "id": 0,
+        "nombre": "Reservada"
+      },
+      "paciente": {
+        "rut": "00000040-K",
+        "nombre": "Paciente Genérico40",
+        "telefono": null,
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000007-5",
+        "nombre": "Médico Genérico8",
+        "especialidad": {
+          "id": 8,
+          "nombre": "Gastroenterología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 164,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 164,
+      "fecha": {
+        "$date": "2026-12-12T00:00:00Z"
+      },
+      "hora": "10:00:00",
+      "estado": {
+        "id": 1,
+        "nombre": "Confirmada"
+      },
+      "paciente": {
+        "rut": "00000040-K",
+        "nombre": "Paciente Genérico40",
+        "telefono": null,
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000008-3",
+        "nombre": "Médico Genérico9",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 165,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 165,
+      "fecha": {
+        "$date": "2020-01-01T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000001-9",
+        "nombre": "Paciente Genérico1",
+        "telefono": "900000001",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 166,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 166,
+      "fecha": {
+        "$date": "2020-01-02T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000002-7",
+        "nombre": "Paciente Genérico2",
+        "telefono": "900000002",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000000-8",
+        "nombre": "Médico Genérico1",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 167,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 167,
+      "fecha": {
+        "$date": "2020-01-03T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000003-5",
+        "nombre": "Paciente Genérico3",
+        "telefono": "900000003",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000001-6",
+        "nombre": "Médico Genérico2",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 168,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 168,
+      "fecha": {
+        "$date": "2020-01-04T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000004-3",
+        "nombre": "Paciente Genérico4",
+        "telefono": "900000004",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000002-4",
+        "nombre": "Médico Genérico3",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 169,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 169,
+      "fecha": {
+        "$date": "2020-01-05T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000005-1",
+        "nombre": "Paciente Genérico5",
+        "telefono": "900000005",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000003-2",
+        "nombre": "Médico Genérico4",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 170,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 170,
+      "fecha": {
+        "$date": "2020-01-06T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000006-K",
+        "nombre": "Paciente Genérico6",
+        "telefono": "900000006",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000004-0",
+        "nombre": "Médico Genérico5",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 171,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 171,
+      "fecha": {
+        "$date": "2020-01-07T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000007-8",
+        "nombre": "Paciente Genérico7",
+        "telefono": "900000007",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000005-9",
+        "nombre": "Médico Genérico6",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 172,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 172,
+      "fecha": {
+        "$date": "2020-01-08T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000008-6",
+        "nombre": "Paciente Genérico8",
+        "telefono": null,
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000006-7",
+        "nombre": "Médico Genérico7",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 173,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 173,
+      "fecha": {
+        "$date": "2020-01-09T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000009-4",
+        "nombre": "Paciente Genérico9",
+        "telefono": "900000009",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000007-5",
+        "nombre": "Médico Genérico8",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 174,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 174,
+      "fecha": {
+        "$date": "2020-01-10T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000010-8",
+        "nombre": "Paciente Genérico10",
+        "telefono": "900000010",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000008-3",
+        "nombre": "Médico Genérico9",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 175,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 175,
+      "fecha": {
+        "$date": "2020-01-11T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000011-6",
+        "nombre": "Paciente Genérico11",
+        "telefono": "900000011",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000009-K",
+        "nombre": "Médico Genérico10",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 176,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 176,
+      "fecha": {
+        "$date": "2020-01-12T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000012-4",
+        "nombre": "Paciente Genérico12",
+        "telefono": "900000012",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000010-5",
+        "nombre": "Médico Genérico11",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 177,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 177,
+      "fecha": {
+        "$date": "2020-01-13T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000013-2",
+        "nombre": "Paciente Genérico13",
+        "telefono": "900000013",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000011-3",
+        "nombre": "Médico Genérico12",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 178,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 178,
+      "fecha": {
+        "$date": "2020-01-14T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000014-0",
+        "nombre": "Paciente Genérico14",
+        "telefono": "900000014",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000012-1",
+        "nombre": "Médico Genérico13",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 179,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 179,
+      "fecha": {
+        "$date": "2020-01-15T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000015-9",
+        "nombre": "Paciente Genérico15",
+        "telefono": "900000015",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000013-K",
+        "nombre": "Médico Genérico14",
+        "especialidad": {
+          "id": 1,
+          "nombre": "Cardiología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 180,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 180,
+      "fecha": {
+        "$date": "2020-01-16T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000016-7",
+        "nombre": "Paciente Genérico16",
+        "telefono": null,
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000014-8",
+        "nombre": "Médico Genérico15",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 181,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 181,
+      "fecha": {
+        "$date": "2020-01-17T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000017-5",
+        "nombre": "Paciente Genérico17",
+        "telefono": "900000017",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000015-6",
+        "nombre": "Médico Genérico16",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 182,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 182,
+      "fecha": {
+        "$date": "2020-01-18T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000018-3",
+        "nombre": "Paciente Genérico18",
+        "telefono": "900000018",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 183,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 183,
+      "fecha": {
+        "$date": "2020-01-19T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000019-1",
+        "nombre": "Paciente Genérico19",
+        "telefono": "900000019",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 184,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 184,
+      "fecha": {
+        "$date": "2020-01-20T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000020-5",
+        "nombre": "Paciente Genérico20",
+        "telefono": "900000020",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "16482753-1",
+        "nombre": "Dr. Felipe Muñoz",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 185,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 185,
+      "fecha": {
+        "$date": "2020-01-21T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000021-3",
+        "nombre": "Paciente Genérico21",
+        "telefono": "900000021",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "17246813-5",
+        "nombre": "Dra. Camila Fuentes",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 186,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 186,
+      "fecha": {
+        "$date": "2020-01-22T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000022-1",
+        "nombre": "Paciente Genérico22",
+        "telefono": "900000022",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "98765432-1",
+        "nombre": "Dra. María González",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 187,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 187,
+      "fecha": {
+        "$date": "2020-01-23T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000023-K",
+        "nombre": "Paciente Genérico23",
+        "telefono": "900000023",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "00000000-1",
+        "nombre": "Dr. Andrés Vidal",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 188,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 188,
+      "fecha": {
+        "$date": "2020-01-24T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000024-8",
+        "nombre": "Paciente Genérico24",
+        "telefono": null,
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000000-8",
+        "nombre": "Médico Genérico1",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 189,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 189,
+      "fecha": {
+        "$date": "2020-01-25T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000025-6",
+        "nombre": "Paciente Genérico25",
+        "telefono": "900000025",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000001-6",
+        "nombre": "Médico Genérico2",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 190,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 190,
+      "fecha": {
+        "$date": "2020-01-26T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000026-4",
+        "nombre": "Paciente Genérico26",
+        "telefono": "900000026",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000002-4",
+        "nombre": "Médico Genérico3",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 191,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 191,
+      "fecha": {
+        "$date": "2020-01-27T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000027-2",
+        "nombre": "Paciente Genérico27",
+        "telefono": "900000027",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000003-2",
+        "nombre": "Médico Genérico4",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 192,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 192,
+      "fecha": {
+        "$date": "2020-01-28T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000028-0",
+        "nombre": "Paciente Genérico28",
+        "telefono": "900000028",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000004-0",
+        "nombre": "Médico Genérico5",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 193,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 193,
+      "fecha": {
+        "$date": "2020-01-29T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000029-9",
+        "nombre": "Paciente Genérico29",
+        "telefono": "900000029",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000005-9",
+        "nombre": "Médico Genérico6",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 194,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 194,
+      "fecha": {
+        "$date": "2020-01-30T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000030-2",
+        "nombre": "Paciente Genérico30",
+        "telefono": "900000030",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000006-7",
+        "nombre": "Médico Genérico7",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 195,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 195,
+      "fecha": {
+        "$date": "2020-01-31T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000031-0",
+        "nombre": "Paciente Genérico31",
+        "telefono": "900000031",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000007-5",
+        "nombre": "Médico Genérico8",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 196,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 196,
+      "fecha": {
+        "$date": "2020-02-01T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000032-9",
+        "nombre": "Paciente Genérico32",
+        "telefono": null,
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000008-3",
+        "nombre": "Médico Genérico9",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 197,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 197,
+      "fecha": {
+        "$date": "2020-02-02T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000033-7",
+        "nombre": "Paciente Genérico33",
+        "telefono": "900000033",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000009-K",
+        "nombre": "Médico Genérico10",
+        "especialidad": {
+          "id": 5,
+          "nombre": "Dermatología"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 198,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 198,
+      "fecha": {
+        "$date": "2020-02-03T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000034-5",
+        "nombre": "Paciente Genérico34",
+        "telefono": "900000034",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000010-5",
+        "nombre": "Médico Genérico11",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 199,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 199,
+      "fecha": {
+        "$date": "2020-02-04T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000035-3",
+        "nombre": "Paciente Genérico35",
+        "telefono": "900000035",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000011-3",
+        "nombre": "Médico Genérico12",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 200,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 200,
+      "fecha": {
+        "$date": "2020-02-05T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000036-1",
+        "nombre": "Paciente Genérico36",
+        "telefono": "900000036",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000012-1",
+        "nombre": "Médico Genérico13",
+        "especialidad": {
+          "id": 6,
+          "nombre": "Neurología"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 201,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 201,
+      "fecha": {
+        "$date": "2020-02-06T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000037-K",
+        "nombre": "Paciente Genérico37",
+        "telefono": "900000037",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "10000013-K",
+        "nombre": "Médico Genérico14",
+        "especialidad": {
+          "id": 2,
+          "nombre": "Pediatría"
+        }
+      },
+      "centro": {
+        "id": 2,
+        "nombre": "SaludUSM Vitacura",
+        "comuna": "Vitacura",
+        "region": "RM"
+      }
+    }
+  },
+  {
+    "_id": 202,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 202,
+      "fecha": {
+        "$date": "2020-02-07T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000038-8",
+        "nombre": "Paciente Genérico38",
+        "telefono": "900000038",
+        "prevision": {
+          "id": 2,
+          "tipo": "Isapre"
+        }
+      },
+      "medico": {
+        "rut": "10000014-8",
+        "nombre": "Médico Genérico15",
+        "especialidad": {
+          "id": 4,
+          "nombre": "Medicina General"
+        }
+      },
+      "centro": {
+        "id": 3,
+        "nombre": "SaludUSM Valparaíso",
+        "comuna": "Valparaíso",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 203,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 203,
+      "fecha": {
+        "$date": "2020-02-08T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000039-6",
+        "nombre": "Paciente Genérico39",
+        "telefono": "900000039",
+        "prevision": {
+          "id": 3,
+          "tipo": "Particular"
+        }
+      },
+      "medico": {
+        "rut": "10000015-6",
+        "nombre": "Médico Genérico16",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 4,
+        "nombre": "SaludUSM Viña del Mar",
+        "comuna": "Viña del Mar",
+        "region": "VA"
+      }
+    }
+  },
+  {
+    "_id": 204,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 204,
+      "fecha": {
+        "$date": "2020-02-09T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000040-K",
+        "nombre": "Paciente Genérico40",
+        "telefono": null,
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "12345678-9",
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": {
+          "id": 3,
+          "nombre": "Traumatología"
+        }
+      },
+      "centro": {
+        "id": 5,
+        "nombre": "SaludUSM Concepción",
+        "comuna": "Concepción",
+        "region": "BI"
+      }
+    }
+  },
+  {
+    "_id": 205,
+    "generado_en": {
+      "$date": "2026-11-05T01:33:14.673Z"
+    },
+    "cita": {
+      "id": 205,
+      "fecha": {
+        "$date": "2020-02-10T00:00:00Z"
+      },
+      "hora": "09:00:00",
+      "estado": {
+        "id": 2,
+        "nombre": "Atendida"
+      },
+      "paciente": {
+        "rut": "00000001-9",
+        "nombre": "Paciente Genérico1",
+        "telefono": "900000001",
+        "prevision": {
+          "id": 1,
+          "tipo": "Fonasa"
+        }
+      },
+      "medico": {
+        "rut": "13579246-8",
+        "nombre": "Dr. Pedro Soto",
+        "especialidad": {
+          "id": 7,
+          "nombre": "Psiquiatría"
+        }
+      },
+      "centro": {
+        "id": 1,
+        "nombre": "SaludUSM San Joaquín",
+        "comuna": "San Joaquín",
+        "region": "RM"
+      }
+    }
+  }
+]

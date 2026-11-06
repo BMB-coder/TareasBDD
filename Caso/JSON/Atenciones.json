@@ -1,0 +1,1154 @@
+[
+  {
+    "_id": 1,
+    "cita_id": 1,
+    "motivo": "Fiebre y congestión nasal",
+    "observacion": "Rinofaringitis; presión arterial elevada en control.",
+    "diagnosticos_id": [
+      "I10",
+      "J00"
+    ],
+    "recetas": [
+      {
+        "receta_id": 1,
+        "medicamento": "Paracetamol 500 mg",
+        "dosis": "1 comprimido cada 8 horas",
+        "dias": 5
+      },
+      {
+        "receta_id": 2,
+        "medicamento": "Losartán 50 mg",
+        "dosis": "1 comprimido cada 24 horas",
+        "dias": 30
+      },
+      {
+        "receta_id": 21,
+        "medicamento": "Medicamento de prueba grupo 3",
+        "dosis": "Pauta ficticia grupo 1",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 2,
+    "cita_id": 2,
+    "motivo": "Dolor de garganta y fiebre",
+    "observacion": "Amígdalas inflamadas con exudado.",
+    "diagnosticos_id": [
+      "J00",
+      "J03"
+    ],
+    "recetas": [
+      {
+        "receta_id": 3,
+        "medicamento": "Amoxicilina 500 mg",
+        "dosis": "1 cápsula cada 8 horas",
+        "dias": 7
+      },
+      {
+        "receta_id": 4,
+        "medicamento": "Ibuprofeno 400 mg",
+        "dosis": "1 comprimido cada 8 horas",
+        "dias": 5
+      },
+      {
+        "receta_id": 22,
+        "medicamento": "Medicamento de prueba grupo 3",
+        "dosis": "Pauta ficticia grupo 1",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 3,
+    "cita_id": 3,
+    "motivo": "Irritación cutánea en antebrazos",
+    "observacion": "Dermatitis de contacto leve.",
+    "diagnosticos_id": [
+      "L30"
+    ],
+    "recetas": [
+      {
+        "receta_id": 5,
+        "medicamento": "Hidrocortisona crema 1%",
+        "dosis": "Aplicar 2 veces al día",
+        "dias": 10
+      },
+      {
+        "receta_id": 23,
+        "medicamento": "Medicamento de prueba grupo 3",
+        "dosis": "Pauta ficticia grupo 1",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 4,
+    "cita_id": 5,
+    "motivo": "Control de presión arterial",
+    "observacion": "Presión 150/95 mmHg. Se ajusta tratamiento.",
+    "diagnosticos_id": [
+      "I10"
+    ],
+    "recetas": [
+      {
+        "receta_id": 6,
+        "medicamento": "Losartán 50 mg",
+        "dosis": "1 comprimido cada 24 horas",
+        "dias": 30
+      },
+      {
+        "receta_id": 24,
+        "medicamento": "Medicamento de prueba grupo 3",
+        "dosis": "Pauta ficticia grupo 1",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 5,
+    "cita_id": 6,
+    "motivo": "Tos y dificultad respiratoria",
+    "observacion": "Sibilancias leves, cuadro viral asociado.",
+    "diagnosticos_id": [
+      "J00",
+      "J45"
+    ],
+    "recetas": [
+      {
+        "receta_id": 7,
+        "medicamento": "Paracetamol jarabe 120 mg/5 ml",
+        "dosis": "5 ml cada 8 horas",
+        "dias": 5
+      },
+      {
+        "receta_id": 8,
+        "medicamento": "Salbutamol inhalador",
+        "dosis": "2 inhalaciones cada 6 horas",
+        "dias": 7
+      },
+      {
+        "receta_id": 25,
+        "medicamento": "Medicamento de prueba grupo 3",
+        "dosis": "Pauta ficticia grupo 1",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 6,
+    "cita_id": 8,
+    "motivo": "Cefalea recurrente",
+    "observacion": "Migraña sin aura, examen neurológico normal.",
+    "diagnosticos_id": [
+      "G43"
+    ],
+    "recetas": [
+      {
+        "receta_id": 9,
+        "medicamento": "Sumatriptán 50 mg",
+        "dosis": "1 comprimido al inicio de la crisis",
+        "dias": 10
+      },
+      {
+        "receta_id": 26,
+        "medicamento": "Medicamento de prueba grupo 3",
+        "dosis": "Pauta ficticia grupo 2",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 7,
+    "cita_id": 10,
+    "motivo": "Dolor epigástrico y acidez",
+    "observacion": "Dolor a la palpación en epigastrio.",
+    "diagnosticos_id": [
+      "K21",
+      "K29"
+    ],
+    "recetas": [
+      {
+        "receta_id": 10,
+        "medicamento": "Omeprazol 20 mg",
+        "dosis": "1 cápsula cada 24 horas en ayunas",
+        "dias": 30
+      },
+      {
+        "receta_id": 27,
+        "medicamento": "Medicamento de prueba grupo 3",
+        "dosis": "Pauta ficticia grupo 2",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 8,
+    "cita_id": 12,
+    "motivo": "Insomnio y ansiedad",
+    "observacion": "Síntomas ansiosos de 3 meses de evolución.",
+    "diagnosticos_id": [
+      "F41"
+    ],
+    "recetas": [
+      {
+        "receta_id": 11,
+        "medicamento": "Sertralina 50 mg",
+        "dosis": "1 comprimido cada 24 horas",
+        "dias": 60
+      },
+      {
+        "receta_id": 28,
+        "medicamento": "Medicamento de prueba grupo 3",
+        "dosis": "Pauta ficticia grupo 2",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 9,
+    "cita_id": 13,
+    "motivo": "Dolor lumbar tras caída",
+    "observacion": "Esguince de tobillo y lumbago mecánico.",
+    "diagnosticos_id": [
+      "M54",
+      "S93"
+    ],
+    "recetas": [
+      {
+        "receta_id": 12,
+        "medicamento": "Ibuprofeno 600 mg",
+        "dosis": "1 comprimido cada 8 horas",
+        "dias": 7
+      },
+      {
+        "receta_id": 29,
+        "medicamento": "Medicamento de prueba grupo 3",
+        "dosis": "Pauta ficticia grupo 2",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 10,
+    "cita_id": 15,
+    "motivo": "Control cardiovascular",
+    "observacion": "Hipertensión y glicemia elevada.",
+    "diagnosticos_id": [
+      "E11",
+      "I10"
+    ],
+    "recetas": [
+      {
+        "receta_id": 13,
+        "medicamento": "Metformina 850 mg",
+        "dosis": "1 comprimido cada 12 horas",
+        "dias": 90
+      },
+      {
+        "receta_id": 14,
+        "medicamento": "Losartán 50 mg",
+        "dosis": "1 comprimido cada 24 horas",
+        "dias": 30
+      },
+      {
+        "receta_id": 30,
+        "medicamento": "Medicamento de prueba grupo 3",
+        "dosis": "Pauta ficticia grupo 2",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 11,
+    "cita_id": 16,
+    "motivo": "Resfrío y dolor de espalda",
+    "observacion": "Cuadro viral leve y contractura dorsal.",
+    "diagnosticos_id": [
+      "J00",
+      "M54"
+    ],
+    "recetas": [
+      {
+        "receta_id": 15,
+        "medicamento": "Paracetamol 500 mg",
+        "dosis": "1 comprimido cada 8 horas",
+        "dias": 5
+      },
+      {
+        "receta_id": 31,
+        "medicamento": "Medicamento de prueba grupo 4",
+        "dosis": "Pauta ficticia grupo 3",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 12,
+    "cita_id": 18,
+    "motivo": "Control de diabetes",
+    "observacion": "Hemoglobina glicosilada 7,8%.",
+    "diagnosticos_id": [
+      "E11",
+      "J00"
+    ],
+    "recetas": [
+      {
+        "receta_id": 16,
+        "medicamento": "Metformina 850 mg",
+        "dosis": "1 comprimido cada 12 horas",
+        "dias": 90
+      },
+      {
+        "receta_id": 32,
+        "medicamento": "Medicamento de prueba grupo 4",
+        "dosis": "Pauta ficticia grupo 3",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 13,
+    "cita_id": 19,
+    "motivo": "Dolor lumbar persistente",
+    "observacion": "Lumbago sin irradiación.",
+    "diagnosticos_id": [
+      "M54"
+    ],
+    "recetas": [
+      {
+        "receta_id": 17,
+        "medicamento": "Diclofenaco 50 mg",
+        "dosis": "1 comprimido cada 12 horas",
+        "dias": 7
+      },
+      {
+        "receta_id": 33,
+        "medicamento": "Medicamento de prueba grupo 4",
+        "dosis": "Pauta ficticia grupo 3",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 14,
+    "cita_id": 20,
+    "motivo": "Malestar general",
+    "observacion": "Resfrío común; presión arterial controlada.",
+    "diagnosticos_id": [
+      "I10",
+      "J00"
+    ],
+    "recetas": [
+      {
+        "receta_id": 18,
+        "medicamento": "Paracetamol 500 mg",
+        "dosis": "1 comprimido cada 8 horas",
+        "dias": 4
+      },
+      {
+        "receta_id": 34,
+        "medicamento": "Medicamento de prueba grupo 4",
+        "dosis": "Pauta ficticia grupo 3",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 15,
+    "cita_id": 22,
+    "motivo": "Ansiedad y dolor cervical",
+    "observacion": "Mejoría parcial con tratamiento.",
+    "diagnosticos_id": [
+      "F41",
+      "M54"
+    ],
+    "recetas": [
+      {
+        "receta_id": 19,
+        "medicamento": "Sertralina 50 mg",
+        "dosis": "1 comprimido cada 24 horas",
+        "dias": 60
+      },
+      {
+        "receta_id": 35,
+        "medicamento": "Medicamento de prueba grupo 4",
+        "dosis": "Pauta ficticia grupo 3",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 16,
+    "cita_id": 24,
+    "motivo": "Diarrea y control de glicemia",
+    "observacion": "Gastroenteritis aguda en paciente diabético.",
+    "diagnosticos_id": [
+      "A09",
+      "E11"
+    ],
+    "recetas": [
+      {
+        "receta_id": 20,
+        "medicamento": "Sales de rehidratación oral",
+        "dosis": "1 sobre después de cada deposición",
+        "dias": 3
+      },
+      {
+        "receta_id": 36,
+        "medicamento": "Medicamento de prueba grupo 4",
+        "dosis": "Pauta ficticia grupo 4",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 17,
+    "cita_id": 26,
+    "motivo": "Control de resfrío",
+    "observacion": "Evolución favorable; sin indicación de fármacos.",
+    "diagnosticos_id": [
+      "I10",
+      "J00"
+    ],
+    "recetas": [
+      {
+        "receta_id": 37,
+        "medicamento": "Medicamento de prueba grupo 4",
+        "dosis": "Pauta ficticia grupo 4",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 18,
+    "cita_id": 39,
+    "motivo": "Motivo de prueba grupo 2",
+    "observacion": "Observación de prueba grupo 4",
+    "diagnosticos_id": [
+      "A09"
+    ],
+    "recetas": [
+      {
+        "receta_id": 38,
+        "medicamento": "Medicamento de prueba grupo 4",
+        "dosis": "Pauta ficticia grupo 4",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 19,
+    "cita_id": 40,
+    "motivo": "Motivo de prueba grupo 2",
+    "observacion": "Observación de prueba grupo 4",
+    "diagnosticos_id": [
+      "E11"
+    ],
+    "recetas": [
+      {
+        "receta_id": 39,
+        "medicamento": "Medicamento de prueba grupo 4",
+        "dosis": "Pauta ficticia grupo 4",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 20,
+    "cita_id": 165,
+    "motivo": "Motivo de prueba grupo 2",
+    "observacion": "Observación de prueba grupo 4",
+    "diagnosticos_id": [
+      "F41"
+    ],
+    "recetas": [
+      {
+        "receta_id": 40,
+        "medicamento": "Medicamento de prueba grupo 4",
+        "dosis": "Pauta ficticia grupo 4",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 21,
+    "cita_id": 166,
+    "motivo": "Motivo de prueba grupo 3",
+    "observacion": "Observación de prueba grupo 5",
+    "diagnosticos_id": [
+      "G43"
+    ],
+    "recetas": [
+      {
+        "receta_id": 41,
+        "medicamento": "Medicamento de prueba grupo 5",
+        "dosis": "Pauta ficticia grupo 5",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 22,
+    "cita_id": 167,
+    "motivo": "Motivo de prueba grupo 3",
+    "observacion": "Observación de prueba grupo 5",
+    "diagnosticos_id": [
+      "I10"
+    ],
+    "recetas": [
+      {
+        "receta_id": 42,
+        "medicamento": "Medicamento de prueba grupo 5",
+        "dosis": "Pauta ficticia grupo 5",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 23,
+    "cita_id": 168,
+    "motivo": "Motivo de prueba grupo 3",
+    "observacion": "Observación de prueba grupo 5",
+    "diagnosticos_id": [
+      "J00"
+    ],
+    "recetas": [
+      {
+        "receta_id": 43,
+        "medicamento": "Medicamento de prueba grupo 5",
+        "dosis": "Pauta ficticia grupo 5",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 24,
+    "cita_id": 169,
+    "motivo": "Motivo de prueba grupo 3",
+    "observacion": "Observación de prueba grupo 5",
+    "diagnosticos_id": [
+      "J03"
+    ],
+    "recetas": [
+      {
+        "receta_id": 44,
+        "medicamento": "Medicamento de prueba grupo 5",
+        "dosis": "Pauta ficticia grupo 5",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 25,
+    "cita_id": 170,
+    "motivo": "Motivo de prueba grupo 3",
+    "observacion": "Observación de prueba grupo 5",
+    "diagnosticos_id": [
+      "J45"
+    ],
+    "recetas": [
+      {
+        "receta_id": 45,
+        "medicamento": "Medicamento de prueba grupo 5",
+        "dosis": "Pauta ficticia grupo 5",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 26,
+    "cita_id": 171,
+    "motivo": "Motivo de prueba grupo 3",
+    "observacion": "Observación de prueba grupo 6",
+    "diagnosticos_id": [
+      "K21"
+    ],
+    "recetas": [
+      {
+        "receta_id": 46,
+        "medicamento": "Medicamento de prueba grupo 5",
+        "dosis": "Pauta ficticia grupo 6",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 27,
+    "cita_id": 172,
+    "motivo": "Motivo de prueba grupo 3",
+    "observacion": "Observación de prueba grupo 6",
+    "diagnosticos_id": [
+      "K29"
+    ],
+    "recetas": [
+      {
+        "receta_id": 47,
+        "medicamento": "Medicamento de prueba grupo 5",
+        "dosis": "Pauta ficticia grupo 6",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 28,
+    "cita_id": 173,
+    "motivo": "Motivo de prueba grupo 3",
+    "observacion": "Observación de prueba grupo 6",
+    "diagnosticos_id": [
+      "L30"
+    ],
+    "recetas": [
+      {
+        "receta_id": 48,
+        "medicamento": "Medicamento de prueba grupo 5",
+        "dosis": "Pauta ficticia grupo 6",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 29,
+    "cita_id": 174,
+    "motivo": "Motivo de prueba grupo 3",
+    "observacion": "Observación de prueba grupo 6",
+    "diagnosticos_id": [
+      "M54"
+    ],
+    "recetas": [
+      {
+        "receta_id": 49,
+        "medicamento": "Medicamento de prueba grupo 5",
+        "dosis": "Pauta ficticia grupo 6",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 30,
+    "cita_id": 175,
+    "motivo": "Motivo de prueba grupo 3",
+    "observacion": "Observación de prueba grupo 6",
+    "diagnosticos_id": [
+      "S93"
+    ],
+    "recetas": [
+      {
+        "receta_id": 50,
+        "medicamento": "Medicamento de prueba grupo 5",
+        "dosis": "Pauta ficticia grupo 6",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 31,
+    "cita_id": 176,
+    "motivo": "Motivo de prueba grupo 4",
+    "observacion": "Observación de prueba grupo 7",
+    "diagnosticos_id": [
+      "Z00"
+    ],
+    "recetas": [
+      {
+        "receta_id": 51,
+        "medicamento": "Medicamento de prueba grupo 6",
+        "dosis": "Pauta ficticia grupo 7",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 32,
+    "cita_id": 177,
+    "motivo": "Motivo de prueba grupo 4",
+    "observacion": "Observación de prueba grupo 7",
+    "diagnosticos_id": [
+      "A09"
+    ],
+    "recetas": [
+      {
+        "receta_id": 52,
+        "medicamento": "Medicamento de prueba grupo 6",
+        "dosis": "Pauta ficticia grupo 7",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 33,
+    "cita_id": 178,
+    "motivo": "Motivo de prueba grupo 4",
+    "observacion": "Observación de prueba grupo 7",
+    "diagnosticos_id": [
+      "E11"
+    ],
+    "recetas": [
+      {
+        "receta_id": 53,
+        "medicamento": "Medicamento de prueba grupo 6",
+        "dosis": "Pauta ficticia grupo 7",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 34,
+    "cita_id": 179,
+    "motivo": "Motivo de prueba grupo 4",
+    "observacion": "Observación de prueba grupo 7",
+    "diagnosticos_id": [
+      "F41"
+    ],
+    "recetas": [
+      {
+        "receta_id": 54,
+        "medicamento": "Medicamento de prueba grupo 6",
+        "dosis": "Pauta ficticia grupo 7",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 35,
+    "cita_id": 180,
+    "motivo": "Motivo de prueba grupo 4",
+    "observacion": "Observación de prueba grupo 7",
+    "diagnosticos_id": [
+      "G43"
+    ],
+    "recetas": [
+      {
+        "receta_id": 55,
+        "medicamento": "Medicamento de prueba grupo 6",
+        "dosis": "Pauta ficticia grupo 7",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 36,
+    "cita_id": 181,
+    "motivo": "Motivo de prueba grupo 4",
+    "observacion": "Observación de prueba grupo 8",
+    "diagnosticos_id": [
+      "I10"
+    ],
+    "recetas": [
+      {
+        "receta_id": 56,
+        "medicamento": "Medicamento de prueba grupo 6",
+        "dosis": "Pauta ficticia grupo 8",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 37,
+    "cita_id": 182,
+    "motivo": "Motivo de prueba grupo 4",
+    "observacion": "Observación de prueba grupo 8",
+    "diagnosticos_id": [
+      "J00"
+    ],
+    "recetas": [
+      {
+        "receta_id": 57,
+        "medicamento": "Medicamento de prueba grupo 6",
+        "dosis": "Pauta ficticia grupo 8",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 38,
+    "cita_id": 183,
+    "motivo": "Motivo de prueba grupo 4",
+    "observacion": "Observación de prueba grupo 8",
+    "diagnosticos_id": [
+      "J03"
+    ],
+    "recetas": [
+      {
+        "receta_id": 58,
+        "medicamento": "Medicamento de prueba grupo 6",
+        "dosis": "Pauta ficticia grupo 8",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 39,
+    "cita_id": 184,
+    "motivo": "Motivo de prueba grupo 4",
+    "observacion": "Observación de prueba grupo 8",
+    "diagnosticos_id": [
+      "J45"
+    ],
+    "recetas": [
+      {
+        "receta_id": 59,
+        "medicamento": "Medicamento de prueba grupo 6",
+        "dosis": "Pauta ficticia grupo 8",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 40,
+    "cita_id": 185,
+    "motivo": "Motivo de prueba grupo 4",
+    "observacion": "Observación de prueba grupo 8",
+    "diagnosticos_id": [
+      "K21"
+    ],
+    "recetas": [
+      {
+        "receta_id": 60,
+        "medicamento": "Medicamento de prueba grupo 6",
+        "dosis": "Pauta ficticia grupo 8",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 41,
+    "cita_id": 186,
+    "motivo": "Motivo de prueba grupo 5",
+    "observacion": "Observación de prueba grupo 9",
+    "diagnosticos_id": [
+      "K29"
+    ],
+    "recetas": [
+      {
+        "receta_id": 61,
+        "medicamento": "Medicamento de prueba grupo 7",
+        "dosis": "Pauta ficticia grupo 9",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 42,
+    "cita_id": 187,
+    "motivo": "Motivo de prueba grupo 5",
+    "observacion": "Observación de prueba grupo 9",
+    "diagnosticos_id": [
+      "L30"
+    ],
+    "recetas": [
+      {
+        "receta_id": 62,
+        "medicamento": "Medicamento de prueba grupo 7",
+        "dosis": "Pauta ficticia grupo 9",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 43,
+    "cita_id": 188,
+    "motivo": "Motivo de prueba grupo 5",
+    "observacion": "Observación de prueba grupo 9",
+    "diagnosticos_id": [
+      "M54"
+    ],
+    "recetas": [
+      {
+        "receta_id": 63,
+        "medicamento": "Medicamento de prueba grupo 7",
+        "dosis": "Pauta ficticia grupo 9",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 44,
+    "cita_id": 189,
+    "motivo": "Motivo de prueba grupo 5",
+    "observacion": "Observación de prueba grupo 9",
+    "diagnosticos_id": [
+      "S93"
+    ],
+    "recetas": [
+      {
+        "receta_id": 64,
+        "medicamento": "Medicamento de prueba grupo 7",
+        "dosis": "Pauta ficticia grupo 9",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 45,
+    "cita_id": 190,
+    "motivo": "Motivo de prueba grupo 5",
+    "observacion": "Observación de prueba grupo 9",
+    "diagnosticos_id": [
+      "Z00"
+    ],
+    "recetas": [
+      {
+        "receta_id": 65,
+        "medicamento": "Medicamento de prueba grupo 7",
+        "dosis": "Pauta ficticia grupo 9",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 46,
+    "cita_id": 191,
+    "motivo": "Motivo de prueba grupo 5",
+    "observacion": "Observación de prueba grupo 10",
+    "diagnosticos_id": [
+      "A09"
+    ],
+    "recetas": [
+      {
+        "receta_id": 66,
+        "medicamento": "Medicamento de prueba grupo 7",
+        "dosis": "Pauta ficticia grupo 10",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 47,
+    "cita_id": 192,
+    "motivo": "Motivo de prueba grupo 5",
+    "observacion": "Observación de prueba grupo 10",
+    "diagnosticos_id": [
+      "E11"
+    ],
+    "recetas": [
+      {
+        "receta_id": 67,
+        "medicamento": "Medicamento de prueba grupo 7",
+        "dosis": "Pauta ficticia grupo 10",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 48,
+    "cita_id": 193,
+    "motivo": "Motivo de prueba grupo 5",
+    "observacion": "Observación de prueba grupo 10",
+    "diagnosticos_id": [
+      "F41"
+    ],
+    "recetas": [
+      {
+        "receta_id": 68,
+        "medicamento": "Medicamento de prueba grupo 7",
+        "dosis": "Pauta ficticia grupo 10",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 49,
+    "cita_id": 194,
+    "motivo": "Motivo de prueba grupo 5",
+    "observacion": "Observación de prueba grupo 10",
+    "diagnosticos_id": [
+      "G43"
+    ],
+    "recetas": [
+      {
+        "receta_id": 69,
+        "medicamento": "Medicamento de prueba grupo 7",
+        "dosis": "Pauta ficticia grupo 10",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 50,
+    "cita_id": 195,
+    "motivo": "Motivo de prueba grupo 5",
+    "observacion": "Observación de prueba grupo 10",
+    "diagnosticos_id": [
+      "I10"
+    ],
+    "recetas": [
+      {
+        "receta_id": 70,
+        "medicamento": "Medicamento de prueba grupo 7",
+        "dosis": "Pauta ficticia grupo 10",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 51,
+    "cita_id": 196,
+    "motivo": "Motivo de prueba grupo 6",
+    "observacion": "Observación de prueba grupo 11",
+    "diagnosticos_id": [
+      "J00"
+    ],
+    "recetas": [
+      {
+        "receta_id": 71,
+        "medicamento": "Medicamento de prueba grupo 8",
+        "dosis": "Pauta ficticia grupo 11",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 52,
+    "cita_id": 197,
+    "motivo": "Motivo de prueba grupo 6",
+    "observacion": "Observación de prueba grupo 11",
+    "diagnosticos_id": [
+      "J03"
+    ],
+    "recetas": [
+      {
+        "receta_id": 72,
+        "medicamento": "Medicamento de prueba grupo 8",
+        "dosis": "Pauta ficticia grupo 11",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 53,
+    "cita_id": 198,
+    "motivo": "Motivo de prueba grupo 6",
+    "observacion": "Observación de prueba grupo 11",
+    "diagnosticos_id": [
+      "J45"
+    ],
+    "recetas": [
+      {
+        "receta_id": 73,
+        "medicamento": "Medicamento de prueba grupo 8",
+        "dosis": "Pauta ficticia grupo 11",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 54,
+    "cita_id": 199,
+    "motivo": "Motivo de prueba grupo 6",
+    "observacion": "Observación de prueba grupo 11",
+    "diagnosticos_id": [
+      "K21"
+    ],
+    "recetas": [
+      {
+        "receta_id": 74,
+        "medicamento": "Medicamento de prueba grupo 8",
+        "dosis": "Pauta ficticia grupo 11",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 55,
+    "cita_id": 200,
+    "motivo": "Motivo de prueba grupo 6",
+    "observacion": "Observación de prueba grupo 11",
+    "diagnosticos_id": [
+      "K29"
+    ],
+    "recetas": [
+      {
+        "receta_id": 75,
+        "medicamento": "Medicamento de prueba grupo 8",
+        "dosis": "Pauta ficticia grupo 11",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 56,
+    "cita_id": 201,
+    "motivo": "Motivo de prueba grupo 6",
+    "observacion": "Observación de prueba grupo 12",
+    "diagnosticos_id": [
+      "L30"
+    ],
+    "recetas": [
+      {
+        "receta_id": 76,
+        "medicamento": "Medicamento de prueba grupo 8",
+        "dosis": "Pauta ficticia grupo 12",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 57,
+    "cita_id": 202,
+    "motivo": "Motivo de prueba grupo 6",
+    "observacion": "Observación de prueba grupo 12",
+    "diagnosticos_id": [
+      "M54"
+    ],
+    "recetas": [
+      {
+        "receta_id": 77,
+        "medicamento": "Medicamento de prueba grupo 8",
+        "dosis": "Pauta ficticia grupo 12",
+        "dias": 5
+      }
+    ]
+  },
+  {
+    "_id": 58,
+    "cita_id": 203,
+    "motivo": "Motivo de prueba grupo 6",
+    "observacion": "Observación de prueba grupo 12",
+    "diagnosticos_id": [
+      "S93"
+    ],
+    "recetas": [
+      {
+        "receta_id": 78,
+        "medicamento": "Medicamento de prueba grupo 8",
+        "dosis": "Pauta ficticia grupo 12",
+        "dias": 3
+      }
+    ]
+  },
+  {
+    "_id": 59,
+    "cita_id": 204,
+    "motivo": "Motivo de prueba grupo 6",
+    "observacion": "Observación de prueba grupo 12",
+    "diagnosticos_id": [
+      "Z00"
+    ],
+    "recetas": [
+      {
+        "receta_id": 79,
+        "medicamento": "Medicamento de prueba grupo 8",
+        "dosis": "Pauta ficticia grupo 12",
+        "dias": 4
+      }
+    ]
+  },
+  {
+    "_id": 60,
+    "cita_id": 205,
+    "motivo": "Motivo de prueba grupo 6",
+    "observacion": "Observación de prueba grupo 12",
+    "diagnosticos_id": [
+      "A09"
+    ],
+    "recetas": [
+      {
+        "receta_id": 80,
+        "medicamento": "Medicamento de prueba grupo 8",
+        "dosis": "Pauta ficticia grupo 12",
+        "dias": 5
+      }
+    ]
+  }
+]

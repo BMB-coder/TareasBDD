@@ -1,0 +1,34 @@
+[
+  {
+    "_id": 1,
+    "nombre": "Cardiología"
+  },
+  {
+    "_id": 2,
+    "nombre": "Pediatría"
+  },
+  {
+    "_id": 3,
+    "nombre": "Traumatología"
+  },
+  {
+    "_id": 4,
+    "nombre": "Medicina General"
+  },
+  {
+    "_id": 5,
+    "nombre": "Dermatología"
+  },
+  {
+    "_id": 6,
+    "nombre": "Neurología"
+  },
+  {
+    "_id": 7,
+    "nombre": "Psiquiatría"
+  },
+  {
+    "_id": 8,
+    "nombre": "Gastroenterología"
+  }
+]

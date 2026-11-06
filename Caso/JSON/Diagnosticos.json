@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "A09",
+    "descripcion": "Gastroenteritis de presunto origen infeccioso"
+  },
+  {
+    "_id": "E11",
+    "descripcion": "Diabetes mellitus tipo 2"
+  },
+  {
+    "_id": "F41",
+    "descripcion": "Otros trastornos de ansiedad"
+  },
+  {
+    "_id": "G43",
+    "descripcion": "Migraña"
+  },
+  {
+    "_id": "I10",
+    "descripcion": "Hipertensión esencial (primaria)"
+  },
+  {
+    "_id": "J00",
+    "descripcion": "Rinofaringitis aguda (resfriado común)"
+  },
+  {
+    "_id": "J03",
+    "descripcion": "Amigdalitis aguda"
+  },
+  {
+    "_id": "J45",
+    "descripcion": "Asma"
+  },
+  {
+    "_id": "K21",
+    "descripcion": "Enfermedad del reflujo gastroesofágico"
+  },
+  {
+    "_id": "K29",
+    "descripcion": "Gastritis y duodenitis"
+  },
+  {
+    "_id": "L30",
+    "descripcion": "Otras dermatitis"
+  },
+  {
+    "_id": "M54",
+    "descripcion": "Dorsalgia"
+  },
+  {
+    "_id": "S93",
+    "descripcion": "Luxación y esguince de tobillo y pie"
+  },
+  {
+    "_id": "Z00",
+    "descripcion": "Examen general sin queja o diagnóstico informado"
+  }
+]

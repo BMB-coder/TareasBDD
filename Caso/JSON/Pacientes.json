@@ -1,0 +1,592 @@
+[
+  {
+    "_id": "00000000-0",
+    "nombre": "Martina Díaz",
+    "telefono": "912345670",
+    "nacimiento": {
+      "$date": "1995-01-01T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "paciente.prueba@example.test",
+    "contrasena_hash": "$2y$10$kLjbFHC7SZ7JLBksG67x/..wwk0TVER5LhJxycjRbm1Ex/niirt8a"
+  },
+  {
+    "_id": "00000001-0",
+    "nombre": "Tomás Rivas",
+    "telefono": "912345671",
+    "nacimiento": {
+      "$date": "2000-01-02T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "paciente2@gmail.com",
+    "contrasena_hash": "$2y$10$xfb1lfdIPImxhViFV0I1EOP7icBe4dDc7Wsfq0wudo6Qs0LtnJxYu"
+  },
+  {
+    "_id": "00000001-9",
+    "nombre": "Paciente Genérico1",
+    "telefono": "900000001",
+    "nacimiento": {
+      "$date": "2010-01-01T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico1@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000002-7",
+    "nombre": "Paciente Genérico2",
+    "telefono": "900000002",
+    "nacimiento": {
+      "$date": "2000-01-02T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico2@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000003-5",
+    "nombre": "Paciente Genérico3",
+    "telefono": "900000003",
+    "nacimiento": {
+      "$date": "2000-01-03T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico3@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000004-3",
+    "nombre": "Paciente Genérico4",
+    "telefono": "900000004",
+    "nacimiento": {
+      "$date": "2000-01-04T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico4@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000005-1",
+    "nombre": "Paciente Genérico5",
+    "telefono": "900000005",
+    "nacimiento": {
+      "$date": "2000-01-05T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico5@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000006-K",
+    "nombre": "Paciente Genérico6",
+    "telefono": "900000006",
+    "nacimiento": {
+      "$date": "2000-01-06T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico6@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000007-8",
+    "nombre": "Paciente Genérico7",
+    "telefono": "900000007",
+    "nacimiento": {
+      "$date": "2000-01-07T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico7@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000008-6",
+    "nombre": "Paciente Genérico8",
+    "telefono": null,
+    "nacimiento": {
+      "$date": "2000-01-08T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico8@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000009-4",
+    "nombre": "Paciente Genérico9",
+    "telefono": "900000009",
+    "nacimiento": {
+      "$date": "2000-01-09T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico9@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000010-8",
+    "nombre": "Paciente Genérico10",
+    "telefono": "900000010",
+    "nacimiento": {
+      "$date": "2000-01-10T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico10@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000011-6",
+    "nombre": "Paciente Genérico11",
+    "telefono": "900000011",
+    "nacimiento": {
+      "$date": "2000-01-11T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico11@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000012-4",
+    "nombre": "Paciente Genérico12",
+    "telefono": "900000012",
+    "nacimiento": {
+      "$date": "2000-01-12T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico12@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000013-2",
+    "nombre": "Paciente Genérico13",
+    "telefono": "900000013",
+    "nacimiento": {
+      "$date": "2000-01-13T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico13@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000014-0",
+    "nombre": "Paciente Genérico14",
+    "telefono": "900000014",
+    "nacimiento": {
+      "$date": "2000-01-14T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico14@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000015-9",
+    "nombre": "Paciente Genérico15",
+    "telefono": "900000015",
+    "nacimiento": {
+      "$date": "2000-01-15T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico15@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000016-7",
+    "nombre": "Paciente Genérico16",
+    "telefono": null,
+    "nacimiento": {
+      "$date": "2000-01-16T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico16@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000017-5",
+    "nombre": "Paciente Genérico17",
+    "telefono": "900000017",
+    "nacimiento": {
+      "$date": "2000-01-17T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico17@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000018-3",
+    "nombre": "Paciente Genérico18",
+    "telefono": "900000018",
+    "nacimiento": {
+      "$date": "2000-01-18T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico18@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000019-1",
+    "nombre": "Paciente Genérico19",
+    "telefono": "900000019",
+    "nacimiento": {
+      "$date": "2000-01-19T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico19@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000020-5",
+    "nombre": "Paciente Genérico20",
+    "telefono": "900000020",
+    "nacimiento": {
+      "$date": "2000-01-20T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico20@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000021-3",
+    "nombre": "Paciente Genérico21",
+    "telefono": "900000021",
+    "nacimiento": {
+      "$date": "2000-01-21T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico21@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000022-1",
+    "nombre": "Paciente Genérico22",
+    "telefono": "900000022",
+    "nacimiento": {
+      "$date": "2000-01-22T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico22@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000023-K",
+    "nombre": "Paciente Genérico23",
+    "telefono": "900000023",
+    "nacimiento": {
+      "$date": "2000-01-23T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico23@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000024-8",
+    "nombre": "Paciente Genérico24",
+    "telefono": null,
+    "nacimiento": {
+      "$date": "2000-01-24T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico24@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000025-6",
+    "nombre": "Paciente Genérico25",
+    "telefono": "900000025",
+    "nacimiento": {
+      "$date": "2000-01-25T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico25@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000026-4",
+    "nombre": "Paciente Genérico26",
+    "telefono": "900000026",
+    "nacimiento": {
+      "$date": "2000-01-26T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico26@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000027-2",
+    "nombre": "Paciente Genérico27",
+    "telefono": "900000027",
+    "nacimiento": {
+      "$date": "2000-01-27T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico27@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000028-0",
+    "nombre": "Paciente Genérico28",
+    "telefono": "900000028",
+    "nacimiento": {
+      "$date": "2000-01-28T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico28@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000029-9",
+    "nombre": "Paciente Genérico29",
+    "telefono": "900000029",
+    "nacimiento": {
+      "$date": "2000-01-29T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico29@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000030-2",
+    "nombre": "Paciente Genérico30",
+    "telefono": "900000030",
+    "nacimiento": {
+      "$date": "2000-01-30T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico30@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000031-0",
+    "nombre": "Paciente Genérico31",
+    "telefono": "900000031",
+    "nacimiento": {
+      "$date": "2000-01-31T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico31@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000032-9",
+    "nombre": "Paciente Genérico32",
+    "telefono": null,
+    "nacimiento": {
+      "$date": "2000-02-01T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico32@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000033-7",
+    "nombre": "Paciente Genérico33",
+    "telefono": "900000033",
+    "nacimiento": {
+      "$date": "2000-02-02T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico33@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000034-5",
+    "nombre": "Paciente Genérico34",
+    "telefono": "900000034",
+    "nacimiento": {
+      "$date": "2000-02-03T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico34@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000035-3",
+    "nombre": "Paciente Genérico35",
+    "telefono": "900000035",
+    "nacimiento": {
+      "$date": "2000-02-04T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico35@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000036-1",
+    "nombre": "Paciente Genérico36",
+    "telefono": "900000036",
+    "nacimiento": {
+      "$date": "2000-02-05T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico36@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000037-K",
+    "nombre": "Paciente Genérico37",
+    "telefono": "900000037",
+    "nacimiento": {
+      "$date": "2000-02-06T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico37@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000038-8",
+    "nombre": "Paciente Genérico38",
+    "telefono": "900000038",
+    "nacimiento": {
+      "$date": "2000-02-07T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": "pacientegenerico38@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000039-6",
+    "nombre": "Paciente Genérico39",
+    "telefono": "900000039",
+    "nacimiento": {
+      "$date": "2000-02-08T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": "pacientegenerico39@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "00000040-K",
+    "nombre": "Paciente Genérico40",
+    "telefono": null,
+    "nacimiento": {
+      "$date": "2000-02-09T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": "pacientegenerico40@gmail.com",
+    "contrasena_hash": null
+  },
+  {
+    "_id": "10987654-3",
+    "nombre": "Jorge Herrera",
+    "telefono": "933445566",
+    "nacimiento": {
+      "$date": {
+        "$numberLong": "-373507200000"
+      }
+    },
+    "sexo": "M",
+    "prevision_id": 3,
+    "email": null,
+    "contrasena_hash": null
+  },
+  {
+    "_id": "11223344-5",
+    "nombre": "Luis Castro",
+    "telefono": "966778899",
+    "nacimiento": {
+      "$date": "1972-01-30T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": null,
+    "contrasena_hash": null
+  },
+  {
+    "_id": "15678901-K",
+    "nombre": "Ana Rojas",
+    "telefono": "955667788",
+    "nacimiento": {
+      "$date": "1982-11-05T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": null,
+    "contrasena_hash": null
+  },
+  {
+    "_id": "18234567-0",
+    "nombre": "Francisca Reyes",
+    "telefono": "944556677",
+    "nacimiento": {
+      "$date": "1990-09-14T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 2,
+    "email": null,
+    "contrasena_hash": null
+  },
+  {
+    "_id": "20123456-7",
+    "nombre": "Carlos Silva",
+    "telefono": "911223344",
+    "nacimiento": {
+      "$date": "1995-04-12T00:00:00Z"
+    },
+    "sexo": "M",
+    "prevision_id": 1,
+    "email": null,
+    "contrasena_hash": null
+  },
+  {
+    "_id": "21098765-4",
+    "nombre": "Sofía Morales",
+    "telefono": "977889900",
+    "nacimiento": {
+      "$date": "2001-12-08T00:00:00Z"
+    },
+    "sexo": "Otro",
+    "prevision_id": 3,
+    "email": null,
+    "contrasena_hash": null
+  },
+  {
+    "_id": "23456789-6",
+    "nombre": "Valentina Torres",
+    "telefono": "922334455",
+    "nacimiento": {
+      "$date": "2015-06-20T00:00:00Z"
+    },
+    "sexo": "F",
+    "prevision_id": 1,
+    "email": null,
+    "contrasena_hash": null
+  }
+]
